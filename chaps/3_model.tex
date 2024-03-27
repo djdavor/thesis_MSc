@@ -27,20 +27,30 @@ Few observations are in order. First, it is clear that the stock price is public
 
 
 \subsection{Two ESOs}
-Consider an American call option with maturity T (usually 10 years - see Marquardt (2002)), strike price $K$ 
-For simplicity, we set $K=S_0$. The vesting period is denoted by $t_v$ (usually 2 to 4 years); in any case, $t_v < T$.
-Vesting effects and what happens if employee leaves the firm ...
+We consider as ESO an American call option with maturity T - usually 10 years (\cite{marquardt2002cost}) - with strike price $K$. For simplicity, we set $K=S_0$. The vesting period is denoted by $t_v$ (usually 2 to 4 years); in any case, $t_v \le T$.\footnote{Note that when $t_v = T$ we have an European option.} Therefore, the executive cannot exercise the option when $t \in [0, t_v)$, but is free to do so when $t \in [t_v, T]$. The choice of the inclusion of $t_v$ is immaterial. We do not model explicitly the possibility of the executive leaving the firm; however, we assume that if this happens during the vesting period she receives zero payment, while if this happens after $t_v$ she will exercise the ESO only if it is in-the-money. %[fn] some model this
 
-The vesting period is key - otherwise clearly both agents would ask for R one, since they could in theory exercise it immediately and no wealth-maximizing agent would choose the RN option.
-We constrain the options to be exercised simultaneously, which simplifies our problem. 
-We have already discussed that a traditional ESO contract prohibits the agent both from selling the option and hedging the risk
-    %some extensions allow for selling it after some time though, so to be able to recover also the time value of the option
-    it is also this feature that makes the analysis of executive's risk aversion relevant
-A contract can be represented by (n, K), with n being the number of options granted at exercise price K. (case K = 0 corresponds to restricted stock)
+Now, we assume the firm can only offer two types of ESOs. We call the first one Risk-Neutral (RN) and the second one Risky (R):
+\begin{enumerate}
+    \item RN: this is the usual ESO. The option cannot be exercised before $t_v$, after which the executive can exercise one unit of RN for one unit of firm stock. The option expires at time T; at expiry, the employee will exercise it if in-the-money. The payoff at any $t \in [0, T]$ is thus $\max \{0, S_t - K \} = (S_t - K)^+$. We denote a generic risk-neutral option RN with $RN (T, K, t_v)$.
+    \item R: this is a modified version of ESO, that takes from the literature on ESOs with reload option and DESOs (....).
+    Similarly to before, the option cannot be exercised before $t_v$. However, when exercised, one unit of R is converted into $\alpha \in (0,1)$ units of stock and $1 - \alpha + \gamma$ units of RN, with $\gamma > 0$. The new RN option will have strike price $S_\tau$, where $\tau$ is the time of exercise. Keeping $T, K, t_v$ fixed, we can identify a specific R option with $(\alpha, \gamma)$, which we can denote as $R_{\alpha, \gamma} (T, K, t_v)$. Note that for $\gamma = 1$, we have a proper ESO with reload option. %literature on this
+
+    %The payoff is 
+\end{enumerate}
+Let us illustrate R with an example. Consider a Risky ESO with maturity at $T=10$ years, strike price $K=S_0=\$5$, vesting period $t_v=3$ years, $\alpha = 0.7$, and $\gamma=0.1$. We denote it with $R_{0.7, 0.1} (10, 5, 3)$. This means that the executive cannot exercise the option in the first 3 years. After the 3rd year, he can choose to exercise it at any point within the 10th year. Suppose he decides the exercise the option 2 years after the vesting period ended, that is, 5 years from the date of initial issuance. Assume that the stock price when he decides to exercise it is $S_5 = \$10$. Therefore, the executive buys $0.7$ of a stock at $5$ dollars, netting thus a profit of $0.7*(\$10-\$5)=\$3.5$ on the trade. Moreover, she receives $0.3+0.1=0.4$ worth of new $RN(10, 5, 3)$, which will thus expire at $T=15$ and be exercisable since year $5+3=8$ at strike price $S_5=\$5$. 
+It is clear from this example why the vesting period is key for both options to make sense. Suppose by contra that there was no vesting period in neither option. Then, since $\gamma > 0$ and the stock price cannot clearly be negative, no rational executive would choose the RN because in the worst scenario they can decide to exercise simultaneously the R and the new RN they would obtain, obtaining $\alpha + (1-\alpha+\gamma)=1+\gamma > 1$, where the right side is the number of stocks they would get from the RN option. It is exactly this additional vesting period that increases the risk for the executive, driven by the stochastic process of the underlying stock. Holding this security is risky because it could as well be that the stock price goes under $\$5$, at least after the 8th year - when the vesting period of the RN ends - so that the option goes out-of-money and the executive will never exercise it, netting thus only \$3.5. On the contrary, if the executive held a RN option and exercised it similarly at year 5, she would have obtained a payoff of \$5. This loss of $\$1.5$ is the risk associated with exercising the RN rather than the R option, and represents the \textit{maximal downside} the executive could expect in this case; clearly, the upside is, at least in theory, infinite. The intuition is that a low risk averse executive would then be willing to take this risk, while a risk averse agent would prefer the \$5 payoff of the RN option, foregoing thus the potential of a larger profit. Note however that the agents do not know a priori - when they will need to choose which option they prefer - the extent of the potential \textit{maximal downside} associated to choosing the R over the RN at any time $t$. This, and the fact that a traditional ESO contract prohibits the agent both from selling the option and hedging part the firm-specific risk, makes the analysis of executive's risk aversion relevant.
+
+For simplicity we have focused on the case of one option, assuming also that shares can be fractioned, but in reality we work with larger numbers - this does not however compromise the final result. We will anyways constrain the options to be exercised simultaneously, which simplifies our problem (and is consistent with the empirical findings on block exercise of ESOs%lit
+). 
+
+%some extensions allow for selling it after some time though, so to be able to recover also the time value of the option
+%A contract can be represented by (n, K), with n being the number of options granted at exercise price K. (case K = 0 corresponds to restricted stock)
 
 
 \subsection{Executive}
 (he, agent) risk-averse and effort-averse executive 
+extremely simplified model -> we usually have overlapping ESOs, ...
+Risk aversion is relevant because the employee cannot sell the ESO nor perfectly hedge against it, hence it remains exposed to at least the portion of firm-specific risk.
 The executive can affect the price either by exerting effort (in the form of added drift component), which causes her disutility, or by choosing the volatility of the projects (in the form of added volatility component). Therefore, the maximi
 Incentives: delta (/ vega in this case)
 Reservation utility - same for both agents (simplifying assumption)
@@ -62,8 +72,6 @@ Show with brackets how the pay/wealth of the agent evolves for different T's (be
 (she, principal)
 The firm may offer two different compensation schemes: apart from cash, it offers a portion of compensation in the form of ESOs. We focus only on the latter portion. The firm grants ESOs as a performance incentive scheme
 It is risk neutral hence maximizes the expected value
-
-
 
 
 \subsection{Problem}
