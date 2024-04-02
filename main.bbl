@@ -83,6 +83,45 @@
       \field{title}{Executive stock options as a screening mechanism}
       \field{year}{2005}
     \endentry
+    \entry{cvitanic2013dynamics}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d07a6a48cadc58d8456b9aead8f489a6}{%
+           family={Cvitanić},
+           familyi={C\bibinitperiod},
+           given={Jakša},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8744fe1437fb0851632a483887fd06ca}{%
+           family={Wan},
+           familyi={W\bibinitperiod},
+           given={Xuhu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=05cb79d321d2204abbd58e48b2333ea0}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Huali},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{308c28cc03807931f3085bcbb62d1239}
+      \strng{fullhash}{308c28cc03807931f3085bcbb62d1239}
+      \strng{bibnamehash}{308c28cc03807931f3085bcbb62d1239}
+      \strng{authorbibnamehash}{308c28cc03807931f3085bcbb62d1239}
+      \strng{authornamehash}{308c28cc03807931f3085bcbb62d1239}
+      \strng{authorfullhash}{308c28cc03807931f3085bcbb62d1239}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Management science}
+      \field{number}{5}
+      \field{title}{Dynamics of contract design with screening}
+      \field{volume}{59}
+      \field{year}{2013}
+      \field{pages}{1229\bibrangedash 1244}
+      \range{pages}{16}
+    \endentry
     \entry{marquardt2002cost}{article}{}
       \name{author}{1}{}{%
         {{hash=35fa197526293858ac68d07d46065574}{%
