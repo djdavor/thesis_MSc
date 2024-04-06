@@ -1,0 +1,88 @@
+\section{Valuation}
+Valuation of options has been a great area of research, starting with Black-Scholes derivatives pricing and building upon it.
+    relevant for accounting statements and tax returns - IASB has changed valuation practices several times to ensure harmonization
+    shape of valuation function -> executive's exposure to risk and incentives
+    valuation and hedge ratio/delta provide approximation of the incentive of option (which remain however limited and dependent on the full comp package!)
+
+
+\subsection{Firm Cost} 
+%Objective value
+
+BS: what is it?
+    Assumptions: constant volatility, no dividends, and efficient markets
+
+    \begin{assumption}
+        The rate of return on the riskless asset is constant and denoted as risk-free interest rate $r$.
+    \end{assumption}
+        
+    \begin{assumption}
+        The instantaneous log return of the stock price is an infinitesimal random walk with drift: the stock price follows a geometric Brownian motion, and it is assumed that the drift and volatility of the motion are constant.
+    \end{assumption}
+
+    \begin{assumption}
+        The stock does not pay any dividends.
+    \end{assumption}
+
+    \begin{assumption}
+        The market is arbitrage-free.
+    \end{assumption}
+
+    \begin{assumption}
+        It is possible to borrow and lend any amount (even fractional) of cash at the riskless rate.
+    \end{assumption}
+
+    \begin{assumption}
+        It is possible to buy and sell any amount (even fractional) of the stock.
+    \end{assumption}
+    
+    \begin{assumption}
+        There are no transaction fees.
+    \end{assumption}
+    
+    Under these assumptions, \cite{black1973pricing} showed that it is possible to create a hedged position (i.e., a long position in the underlying stock and a long position in the option) whose value is independent of the price of the underlying. This dynamic hedging strategy leads to a PDE governing the price of the option, whose solution is given by the Black-Scholes formula.
+
+    Note that the penultimate assumption assumes the possibility of short-selling, which in the case of ESOs may not be feasible. However, this is not always true, hence we use Black-Scholes as a good approximation. Note that not all of these assumptions are strictly necessary: extensions of this basic model are able to account for dynamic interest rates, transaction costs and taxes, and dividend payout.  
+
+
+    BUT, BS can only be used with European option (options exercisable only at maturity). However, in our case we are dealing with American-stlye options, hence we resort to a different valuation methodology: binomial model.
+
+BM: 
+
+
+
+We wrote a short Python code to price our ESOs using the binomial model, and the Black-Scholes only for computing the intrinsic value of the option at exercise time.
+"Our function takes the following parameters as input: "
+\begin{itemize}
+    \item $S$: spot price of the underlying firm stock
+    \item $K$: strike price of the option. In our case, we always set it equal to S (fn: some propose to set it slightly higher ...)
+    \item $T$: time to maturity (in years)
+    \item $v$: vesting period of the option (in years)
+    \item $r$: risk-free interest rate
+    \item $m$: exercise multiple
+    \item $sigma$: volatility of the underlying firm stock
+\end{itemize}
+    
+    It is practice to also specify the type of option (call or put) which we do not do since they are all call options and compute directly the corresponding payoff.
+
+
+
+
+
+
+
+\subsection{Executive value}
+%Subjective value
+
+
+
+
+
+
+
+\subsection{Comparative statics}
+
+
+
+
+
+* effect of time vesting?? "time vesting has a relatively small impact on valuation but may dramatically affect the optimal exercise policy" \cite{dybvig2003employee}
