@@ -4,3 +4,5 @@ risk-averseless
 escamotage
 nonnegative
 Black-Scholes
+Scholes
+riskless

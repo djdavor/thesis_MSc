@@ -1,0 +1,1 @@
+{"rule":"EN_UNPAIRED_BRACKETS","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q critique the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q standards because they fail to account some key elements of ESOs; in doing so, they present an \"Enhanced\\E$"}

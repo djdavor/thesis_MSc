@@ -26,6 +26,10 @@
     A bit outdated but still... \cite{huddart1996employee}
     Why: diversification vs liquidity concerns \cite{murphy2019employees}
 
+%valuation
+    \cite{hull2004value} critique the \cite{fasb123} standards because they fail to account some key elements of ESOs; in doing so, they present an "Enhanced FASB123", which accounts for the possibility of the employees leaving the company after the vesting period (and hence, exercising if the option is in-the-money when leaving) and it incorporates the employee's early exercise policy (in the form of the current stock price as a multiple of strike price, above which the employee will exercise).
+
+
 
 %possible critics
     Bunch of other benefits: attract motivated and entrepreneurial employees, do not expend cash immediately, retention of employees  \cite{hall2003trouble}
@@ -39,7 +43,7 @@
     Also referred to as restoration or replacement options; they are call option that grant new options once exercised
     Reload option exercised when in-money; it is exotic option; fee structure \cite{zhang2010knightian}
     See \cite{hemmer1998optimal} and \cite{hemmer2000reload}
-    First used by Cook for Norwest Corporation
+    First used by Cook for Norwest Corporation 
     data + valuation model - see \cite{dybvig2003employee}
     + encourage stock ownership 
     heterogeneity in how they have been implemented - see Frederic W. Cook and Company (1998) and Hemmer, Matsunaga, and Shevlin (1998) 
@@ -47,8 +51,9 @@
             LB: just follow the American exercise policy and never exercise the reloaded option
             UB: recursive example; strict inequality when stock grants dividends, bc they won't be enjoyed by the reload option holder 
             they use infinite reloads but I will focus on only one reload 
-    -> illustrate with an example
-
+    → illustrate with an example
+    \cite{fasb123} states that the optimal valuation would be when the option is granted, but that no valuation method seemed able to do so.
+    But \cite{saly1999valuing} show that it is possible to do so using a binomial option pricing model. What's more, ignoring them actually understates the value of the ESO \cite{saly1998ignoring}
 
 %dynamic ESOs 
     \cite{huang2013dynamic}:
@@ -68,7 +73,8 @@
 
 
 \subsection{Empirics on (executives') risk aversion} %ORANGE
-
+    Definition of risk aversion: $\EX[u(c)] \le u(\EX[c])$ / $u$ is concave function
+    More risk averse: strictly increasing transformation of one's other
     Has clearly an effect on early exercise \cite{izhakian2017risk} \cite{murphy2019employees}
     See also effect on block exercise in \cite{grasselli2009risk}
 

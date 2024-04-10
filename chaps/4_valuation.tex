@@ -1,7 +1,7 @@
 \section{Valuation}
 Valuation of options has been a great area of research, starting with Black-Scholes derivatives pricing and building upon it.
-    relevant for accounting statements and tax returns - IASB has changed valuation practices several times to ensure harmonization
-    shape of valuation function -> executive's exposure to risk and incentives
+    Relevant for accounting statements and tax returns - FASB has changed valuation practices several times to ensure harmonization
+    shape of valuation function → executive's exposure to risk and incentives
     valuation and hedge ratio/delta provide approximation of the incentive of option (which remain however limited and dependent on the full comp package!)
 
 
@@ -9,8 +9,7 @@ Valuation of options has been a great area of research, starting with Black-Scho
 %Objective value
 
 BS: what is it?
-    Assumptions: constant volatility, no dividends, and efficient markets
-
+    allows for closed-form solution
     \begin{assumption}
         The rate of return on the riskless asset is constant and denoted as risk-free interest rate $r$.
     \end{assumption}
@@ -46,11 +45,12 @@ BS: what is it?
 
     BUT, BS can only be used with European option (options exercisable only at maturity). However, in our case we are dealing with American-stlye options, hence we resort to a different valuation methodology: binomial model.
 
-BM: 
+BM: (see Battauz lecture notes + \cite{cox1979option} for a description)
+    NOT closed-form solution (another approach would be Monte-Carlo or finite difference methods)
+    lattice-based 
 
 
-
-We wrote a short Python code to price our ESOs using the binomial model, and the Black-Scholes only for computing the intrinsic value of the option at exercise time.
+We wrote a short Python code to price our ESOs using the binomial model, and the Black-Scholes only for computing the intrinsic value of the option at exercise time. We employ the \cite{cox1979option} binomial tree method to value the option.
 "Our function takes the following parameters as input: "
 \begin{itemize}
     \item $S$: spot price of the underlying firm stock
@@ -66,6 +66,8 @@ We wrote a short Python code to price our ESOs using the binomial model, and the
 
 
 
+%Show table with simulations at different n
+%Simulate also with trinomial model
 
 
 
@@ -73,6 +75,11 @@ We wrote a short Python code to price our ESOs using the binomial model, and the
 \subsection{Executive value}
 %Subjective value
 
+%Build up on previous code
+%%% Can re-use the stock price movements (both binomial and trinomial ways)
+%%% Calculate at each node the utility from max{exercise, do NOT exercise}
+%%%%%% -> find the utility value at initial node through recursion
+%%% Using the inverse of the utility function, find the cash level that yields the same utility
 
 
 
@@ -80,7 +87,7 @@ We wrote a short Python code to price our ESOs using the binomial model, and the
 
 
 \subsection{Comparative statics}
-
+%Simulations to compare the two values
 
 
 
