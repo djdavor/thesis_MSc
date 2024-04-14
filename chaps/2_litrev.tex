@@ -40,6 +40,8 @@
     They allow to recover the time value of options (ie, the value foregone when exercising the option): it is defined as the option price minus the intrinsic value (underlying - strike price if in-money, otherwise) at time $t$; the intuition is that the underlying could grow even more and hence, in that case, by exercising later one could make a larger profit. This possibility is forgone by the option holder that exercises before ,maturity.
 
 %reload options
+    Reload provision is an option enhancement, whereby the exercise automatically triggers the award of new at-the-mone options. 
+        %explain the meaning of at-the-money in the "some basic terminology" section
     Also referred to as restoration or replacement options; they are call option that grant new options once exercised
     Reload option exercised when in-money; it is exotic option; fee structure \cite{zhang2010knightian}
     See \cite{hemmer1998optimal} and \cite{hemmer2000reload}
