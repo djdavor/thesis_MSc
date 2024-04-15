@@ -63,7 +63,7 @@ Valuation of options has been a great area of research, starting with Black-Scho
 
     However, despite its mathematical rigor and closed-form solution, as well as computational efficiency, the Black-Scholes can only be used with European options (options exercisable only at maturity). Therefore, since we are dealing with American ESOs, we need to resort to a different valuation methodology: binomial model.
 
-\subsubsection*{Lattice-based models)} 
+\subsubsection*{Lattice tree methods)} 
 \textbf{Binomial model}
 The binomial model was first proposed by William Sharpe in the 1978 (\cite{sharpe1978investments}) and later formalized by Cox, Ross and Rubinstein (CRR) in 1979 (\cite{cox1979option}). It uses a lattice-based approach to model the price of the underlying stock price. We employ it to value our executive stock options, since they are, as we saw before, American options.\footnote{Recall that Black-Scholes can be used only with European options, i.e., options exercisable only at maturity. Nevertheless, Black-Scholes valuation provides a lower-bound to the value of American options. Indeed, giving the holder the possibility to exercise before maturity also cannot be worse for her, because she can always simply hold the option up to maturity and then deciding, mimicking thus a European option.}
 Similarly to Monte Carlo simulations and finite difference methods, the binomial options pricing model does not yield a closed-form solution, but works quite well with sufficiently high number $n$ of time steps, i.e., with a sufficiently discretized grid (i.e., a small $\Delta t$). Clearly, for European options, as $\Delta t \rightarrow 0$, the binomial model approaches the Black-Scholes value.
@@ -86,7 +86,7 @@ The intuition behind the model is quite simple. We discretize the evolution of t
 
 We can divide the procedure in three main steps: (i) build the stock tree, (ii) calculate the option value at each terminal node, (iii) go backwards and decide at each node whether it is optimal to exercise or keep the option.
 
-We use the original CRR method and set $u = e^{\sigma \sqrt{\Delta t}}$ and $d = e^{-\sigma \sqrt{\Delta t}}=\frac{1}{u}$, which are the multiplicative factors if the stock price goes up or down, respectively. Therefore, the value of the stock when it goes up or down depends also on its underlying volatility. Moreover, the condition $d = \frac{1}{u}$ ensures that the tree is recombinant, meaning that what matters is the number of ups and downs, not their order. This means that if the stock price moves up and then down, the stock price will be the same as if it instead moved first down and then up. This is convenient also because it allows the tree representation of the underlying stock price, ensuring that all the nodes are nicely connected, and it fastens the calculation of the option price (indeed, note that in this way the number of total nodes is reduced). 
+We use the original CRR method and set $u = e^{\sigma \sqrt{\Delta t}}$ and $d = e^{-\sigma \sqrt{\Delta t}}=\frac{1}{u}$, which are the multiplicative factors if the stock price goes up or down, respectively. Note that the price multipliers $u$ and $d$ depend thus only on volatility of the underlying and time step $\Delta t$ and not on the drift.\footnote{This is the reason for which the probability of going up is usually higher in this model, to compensate for the missing account of the drift component} Therefore, the value of the stock when it goes up or down depends also on its underlying volatility. Moreover, the condition $d = \frac{1}{u}$ ensures that the tree is recombinant, meaning that what matters is the number of ups and downs, not their order. This means that if the stock price moves up and then down, the stock price will be the same as if it instead moved first down and then up. This is convenient also because it allows the tree representation of the underlying stock price, ensuring that all the nodes are nicely connected, and it fastens the calculation of the option price (indeed, note that in this way the number of total nodes is reduced). 
 
 In the second step, we simply compute the option value at expiration, i.e., its intrinsic value, which in our case is $\max \{0, S_T - K \}$ since we have a call option.
 
@@ -102,9 +102,9 @@ The trinomial option pricing model was  first developed by Phelim Boyle in 1986 
     At any time step, the underlying's price can only move one of three ways: either up, down, or remain stable.
 \end{assumption}
 As before, $u = e^{\sigma \sqrt{\Delta t}}$, $d = e^{-\sigma \sqrt{\Delta t}}=\frac{1}{u}$, and now $m=1$. Moreover, we need to change the risk-neutral probabilities (before we had two, now three), which become slightly more complicated:\footnote{Recall that we do not consider dividend yields on our stock, hence the formulas are slightly easier than usually presented.}
-$$ p_u = \Biggl(\frac{e^{r \Delta t / 2} - e^{-\sigma \sqrt{\Delta t / 2}}}{e^{\sigma \sqrt{\Delta t / 2}} - e^{-\sigma \sqrt{\Delta t / 2}}}\Biggr)^2 $$
-$$ p_d = \Biggl(\frac{e^{\sigma \sqrt{\Delta t / 2}} - e^{r \Delta t / 2}}{e^{\sigma \sqrt{\Delta t / 2}} - e^{-\sigma \sqrt{\Delta t / 2}}}\Biggr)^2 $$
-$$ p_m = 1 - (p_u + p_d) $$
+$$ q_u = \Biggl(\frac{e^{r \Delta t / 2} - e^{-\sigma \sqrt{\Delta t / 2}}}{e^{\sigma \sqrt{\Delta t / 2}} - e^{-\sigma \sqrt{\Delta t / 2}}}\Biggr)^2 $$
+$$ q_d = \Biggl(\frac{e^{\sigma \sqrt{\Delta t / 2}} - e^{r \Delta t / 2}}{e^{\sigma \sqrt{\Delta t / 2}} - e^{-\sigma \sqrt{\Delta t / 2}}}\Biggr)^2 $$
+$$ q_m = 1 - (p_u + p_d) $$
 
 Therefore, the idea of the procedure is the same: we compute the stock price tree and then proceed backwards to determine the optimal decision at each node. The difference now is that the option at each non-terminal node is computed based on three later nodes - instead of two - and their relative probabilities.
 The trinomial model produces more accurate results compared to the binomial model when using fewer time steps, but the binomial model is usually preferred due to its faster implementation.
@@ -118,7 +118,7 @@ We employ the \cite{cox1979option} initial binomial tree approach; however, we a
 
 We now comment the relevant code used - the full code can be found in the appendix.
 
-\subsubsection*{RN option}
+\subsubsection{RN option}
 The function rn\_eso is defined as \verb|rn_eso(S0,K,T,v,r,N,sigma,m)| and takes the following parameters as input:
 \begin{itemize}
     \item $S$: spot price of the underlying firm stock
@@ -148,7 +148,7 @@ At each step, the relevant decision is the following: if the option is either no
  \label{fig:val_rn}
 \end{figure}
 
-\subsubsection*{R option}
+\subsubsection{R option}
 We define the function r\_eso as \verb|r_eso(S0,K,T,v,r,N,sigma,m,alpha,gamma)|.
     
 
@@ -212,54 +212,98 @@ Clearly, this methodology equals the previous when $\gamma = 0$. Therefore, it c
 
 %%% NOTE that our methodology is different from simply taking the value of the option computed before at the initial node and plugging it in.
 
-We now turn to the subjective value of the option to the risk-averse executive, which we will compute using the trinomial tree under a utility maximization framework. In our setting, the executive is interested in maximizing its expected utility at time $t=0$; therefore, she will take a forward-looking perspective at the possible stock price grid and, by backwards induction on each decisional node, compute the utility she can expect. This will be translated in the amount of cash compensation she would require to forgo each option, resulting thus in a sort of certainty equivalent approach in continuous time. 
+We now turn to the subjective value of the option to the risk-averse executive, that we compute using the trinomial model under a utility maximization framework. In our setting, the executive is interested in maximizing its expected utility at time $t=0$; therefore, she will take a forward-looking perspective at the possible stock price grid and, by backwards induction starting from the terminal nodes, she will compute the utility she can expect given the initial parameters. This will then be translated in the amount of cash compensation she would require to give up her options, which results therefore in a certainty equivalence in continuous time. 
 
-We build on the model proposed by \cite{lau2005valuation} that computes the value of an option with multiple reloads and fixed expiry date using a trinomial tree under the framework of maximizing the expected utility value of the terminal wealth, where the risk aversion factor is embedded in the coefficient and choice of the utility function. However, differently from them, our R option can be reloaded only once, which allows us to simplify the algorithm. For the RN option, the procedure will even be simpler. The key in both cases is that, at each non-terminal node, the executive is maximizing her utility by deciding whether to exercise or continue (hold), and this is done as before by dynamic programming starting from the terminal nodes.
-To be more precise, \cite{lau2005valuation} construct the numerical approximation extending the trinomial model via the forward shooting approach, which basically consists in augmenting the information at each node with a vector of auxiliary variables and modeling the function that describes how the vector evolves from one node to the following. We do not need to do such formal specification as our model is simpler; we instead compute the evolution of the non-firm related wealth at each node rather than computing it before. This is sensible since it is computationally insignificant.
+We build on the model proposed by \cite{lau2005valuation} that computes the value of an option with multiple reloads and fixed expiry date using a trinomial tree under the framework of maximizing the expected utility value of the terminal wealth, where the risk aversion factor is embedded in the coefficient and choice of the utility function. However, differently from them, our R option can be reloaded only once, which allows us to simplify the algorithm. For the RN option, the procedure will be even simpler. The key in both cases is that, at each non-terminal node, the executive is maximizing her utility by deciding whether to exercise or continue (hold), and this will be done as before by dynamic programming starting from the terminal nodes.
+To be more precise, \cite{lau2005valuation} construct the numerical approximation extending the trinomial model via the forward shooting approach, which basically consists in augmenting the information at each node with a vector of auxiliary variables and modeling the function that describes how the vector evolves from one node to the following. We do not need such formal specification as our model is simpler than theirs; we will instead compute the non-firm related wealth available at each node using the appropriate formula rather than computing it when building the stock price tree. This approach is sensible as it is simpler yet computationally the same.
 
-We use the same parameters from above for the two options, in addition to whose we add the following ones: 
+We use the same parameters from above for the two options. In addition, we need to add the following: 
 \begin{itemize}
-    \item $risk: $ coefficient of risk aversion
-    \item $c: $ non-firm related initial wealth, that grows continously at risk-free rate 
-    \item $n_s: $ number of stocks held by the executive
-    \item $n_o: $ number of options held by the executive
+    \item $rho: $ coefficient of relative risk aversion
+    \item $c: $ non-firm related initial wealth, that grows continuously at the risk-free rate $r$
+    \item $n_s: $ number of stocks initially held by the executive
+    \item $n_o: $ number of options initially held by the executive
 \end{itemize}
-Note that, at each time step $n$, the value of the non-firm related wealth $c_n$ is computed as $c_n = c \Bigl(1+\frac{r}{N}\Bigr)^{n}$, where $N$ is the number of time steps in a given year.
+Note that, at each time step $t$, the value of the non-firm related wealth $c_t$ is computed as $c_t = c \bigl(1+\frac{r}{N}\bigr)^{t}$, where $N$ is the number of time steps in a given year and $r$ the annual risk-free rate. 
 
 
 As mentioned before, we want to find $E_c$ such that 
-$$U(risk, n_s, n_o, c) = U(risk, n_S, 0, c + E_c) $$
-where we included only the most relevant parameters entering the executive's utility function. Therefore, the external wealth of the executive becomes also relevant now, both in terms of absolute wealth and portfolio composition (i.e., percentage of wealth in stocks). This is relevant because the utility function is not separable, hence our results will be sensible to the initial values we will choose, as we will see later.
+$$U(\rho, n_s, n_o, c) = U(\rho, n_S, 0, c + E_c) $$
+where we included only the most relevant parameters entering the executive's utility function. Therefore, the external wealth of the executive becomes relevant now, both in terms of absolute wealth and portfolio composition (i.e., percentage of total wealth held in firm stocks). As we will see later, it is relevant because the utility function is not separable, hence our results will be sensible to the initial values we will choose.
 
 Recall that we defined the executive's utility of wealth with the power utility function, that is, 
-$$u(w, \rho) = \frac{w^{1-\gamma}}{1-\gamma}$$
-with $\rho = $ being the coefficient of risk aversion. 
-The inverse utility is thus $$w(u, \rho) = \Bigl(u(1-\rho)\Bigr)^{\frac{1}{1-\rho}}$$
-We use these two formulas and define respectively the functions \verb|u(w, rho)| and \verb|u_minus(u, rho)| which return respectively $u$ and $w$. We use them to compute the exercise value at each node and deriving then the certainty equivalent.
+$$u(w, \rho) = \frac{w^{1-\rho}}{1-\rho}$$
+with $\rho = 1 - \gamma $ being the (constant) coefficient of relative risk aversion. 
+The inverse utility is given by 
+$$w(u, \rho) = \Bigl(u(1-\rho)\Bigr)^{\frac{1}{1-\rho}}$$
+We use these two formulas to define the functions \verb|u(w, rho)| and \\
+\verb|u_minus(u, rho)| that return $u$ and $w$, respectively. We will use them to compute the exercise value at each node and deriving then the certainty equivalent.
 
 %The former is the utility function in every state. Note that the function is monotonically increasing in $W$, hence also its inverse is strictly increasing, and so is the certainty equivalent. In other words, 
 %The utility function is used for two purposes: deciding whether to exercise or not at each node, and deriving the certainty equivalent at time 0.
 
-Note we are assuming that only block exercise is possible as is common in the literature. A detailed analysis of separate exercises would be quite complex and computationally intensive. Moreover, we do not discount executive's utility passing from one state to the next. Therefore, the estimates we are providing can be considered as an upper bound in this sense.
-Finally, a possible modification of the algoritm would be embedding also here an exercise multiple mechanism, whereby we could make it dependent on the risk aversion of the executive.\footnote{For example, we could set $\frac{m}{1+\rho}$ as the threshold for early exercise for some fixed $m$, so that it would be lower for more risk averse holders.} We do not however explore this venue here.
+Note that we follow the approach used in the literature and assume that only block exercise is possible  to simplify our algorithm. A detailed analysis of separate exercises would be quite complex and computationally intensive. Moreover, we do not discount executive's utility from one time period to the following; in this sense, the estimates we are providing can be considered as an upper bound of the executive value.
+Finally, a possible modification of the algorithm would be to embed also here an exercise multiple mechanism, that we could make dependent on the risk aversion coefficient of the executive.\footnote{For example, we could set $\frac{m}{1+\rho}$ as the threshold for early exercise for some fixed $m$, so that it would be lower for more risk averse holders. In other words, more risk averse executives would exercise earlier, which is consistent with the empirical findings.} However, we do not explore this venue here.
+We will now outline briefly the main components of our algorithm, as done before.
+
+\subsubsection{RN option}
+We define the function \verb|CE_rn_trinomial(S0,K,T,v,r,N,sigma,rho, n_s,n_o,c)| to compute the executive value of the RN option. At each node, the exercise utility is computed considering the total wealth at the node, which is the sum of the non-firm related wealth $c$ invested at the risk-free rate $r$, the stock value, and the option value. Figure \ref*{fig:ce_rn} shows the relevant part of the code.
+
+\begin{figure}[H]
+    \begin{lstlisting}[breaklines, basicstyle=\ttfamily\small]
+        cont_value = q_u * U[j+1,i+1] + q_d*U[j,i+1] + q_m*U[j,i]
+        excs_value = util(c*((1+r/N)**n)+ n_s*S[j,n] + n_o*max(0, S[j,n]-K), rho)
+        
+        if vested:
+            U[j,i] = max(cont_value, excs_value)
+        else: 
+            U[j,i] = cont_value
+    \end{lstlisting}
+ \label{fig:ce_rn}
+\end{figure}
+
+Note that the continuation value is the average of three different values, which reflect the possible paths the stock can follow, weighted by the respective risk-neutral probabilities. The exercise value is instead the utility of the wealth at the node, which is the sum of the non-firm related wealth, the stock value, and the option value. The decision function is the same as before, with the only difference that we are now maximizing the expected utility of the terminal wealth.
+
+After this backwards iteration, we finally compute the executive value $E_c$ as \\
+\verb|RN_ce = (u_minus(U[0,0], rho)-c-n_s*S0)/n_o|.
+In other words, we find the level of wealth at time $t=0$ required to reach the same utility as the executive would have with the RN options. From this, we subtract the initial wealth and the value of the stocks, and then divide by the number of options to find the certainty equivalent value per RN option.
+
+\subsubsection{R option}
+We follow a similar approach and define the function\\
+\verb|def CE_r_trinomial(S0,K,T,v,r,N,sigma,rho, alpha,gamma, n_s,n_o,c)| to compute the executive value of the R option. The main difference is that we now need to compute the exercise value at each node considering also the time value that gets recouped at exercise. The procedure follows a similar approach to that of the R option as firm cost. The relevant part of the code is shown in figure \ref*{fig:ce_r}.
+
+\begin{figure}[H]
+    \begin{lstlisting}[breaklines, basicstyle=\ttfamily\small]
+        cont_value = q_u * U[j+1,i+1] + q_d*U[j,i+1] + q_m*U[j,i]
+        excs_value = util(  c*((1+r/N)**n) +              
+                            n_s*S[j,n] + 
+                            max(0, 
+                                n_o*(alpha*(S[j,n]-K)) + 
+                                CE_rn_trinomial(S[j,n],S[j,n],T,v,r,N,sigma,rho,n_s,n_o*(1-alpha+gamma),c*((1+r/N)**n))), rho)
+
+        if vested:
+            U[j,i] = max(cont_value, excs_value)
+        else: 
+            U[j,i] = cont_value
+    \end{lstlisting}
+    \label{fig:ce_r}
+\end{figure}
 
 
-\subsubsection*{RN option}
-Exercise decision follows the usual DP approach: compare expected exercise utility vs expected continuation utility of holding the option.
--> expected utility -> cash equivalent
 
-\subsubsection*{R option}
-
-
-
-
-
+Note that now the exercise value is more complicated than before. Indeed, the option value is now given by the immediate exercise payoff $S-K$, where $S$ is the stock price at a given node, multiplied by $\alpha$, plus the cash equivalent of the new $(1-\alpha+\gamma)$ options that the executive receives. Therefore, she may a priori decide also to exercise the option even if the stock price is below the strike price, as the time value that gets recouped may be higher than the intrinsic value. This could happen for example when $\alpha$ is quite low and $\gamma$ is consistent. 
+After the backwards iteration, we compute the executive value $E_c$ in the same way of the RN option.
 
 
 \subsection{Comparative statics}
 %Simulations to compare the two values
 We now perform a series of numerical simulations to analyze how the two valuations differ as a function of changing parameters.
-We use the following parameters: ....
+We use the following parameters when not specified differently: $S0$ = 30, $K$ = 30, $T$ = 10, $v$ = 3, $r$ = 0.045, $N$ = 100, $sigma$ = 0.3, $m$ = 2, $rho$ = 2, $alpha$ = 0.75, $gamma$ = 0.25, $c$ = 5000000, $n_s$ = 110000, $n_o$ = 50000.
+
+The 
+
+
+
 
 %Deadweight loss: (cost - value)/cost * 100%
 

@@ -70,13 +70,24 @@ the intuition is that the delta measures the sensitivity of the option to the ch
 
 Now, assuming that the agent discounts the utility at some rate $r>0$, the expected utility $U(\cdot)$ is given by
 $$U(\rho_i, c_i, a_i) = r \EX \Bigg[ \int_{0}^{T} e^{-rs} \Big[u(c_i(s), \rho_i) - g(a_i(s)) \Big] ds \Bigg] $$
-The executive has a reservation utility $R \ge 0$, which will play a role when solving the problem. We assume both types of agents have the same reservation utility and normalize it to 0. %DO WE?
+The executive has a reservation utility $R \ge 0$, which will play a role in solving the problem. We assume both types of agents have the same reservation utility and normalize it to 0. %DO WE?
 
 
 %CARA (Constant Absolute Risk-Aversion) preference: $u(c_t, a_t) = -\frac{1}{\rho} \exp^{-\rho c_t} - g(a_t)$, with $\rho>0$ being the absolute risk-aversion coefficient.
 Note that in our basic formulation we assume the executive is tied forever to the principal once he accepts the contract, or at least until time T. Moreover, we are considering an extremely simplified model: in practice, the executive usually holds ESOs with different strike prices and vesting periods as they are granted over time as the job contract goes on. In our setting, we are only considering the effect of the grant of one ESO, which is the only one the agent receives up to time T. 
 
 
+The coefficient of absolute risk aversion (CARA) at wealth $w$ is defined as:
+$$\alpha(w) = -\frac{u''(w)}{u'(w)}$$
+
+and the coefficient of relative risk aversion (CRRA) at wealth $w$ as:
+$$ \rho(w) = w \alpha(w) = -\frac{wu''(w)}{u'(w)} $$
+In our case, we have 
+$$ \alpha(w) = \frac{1-\gamma}{w}$$
+and
+$$ \rho(w) = 1-\gamma$$
+
+Note that $\rho(w)$ is constant and equal to $1-\gamma$ at all wealth levels $w$, which means that the executive's degree of risk aversion does not depend on her wealth level. 
 
 %Optimal stopping time 
     %show result from standard stopping theory
@@ -126,3 +137,11 @@ Show with brackets how the pay/wealth of the agent evolves for different T's (be
 %%% "The model also considers only a single grant of options when, in practice, executives are granted new options every year and typically build up large inventories of options with different strikes and expiration dates."
 
 % "Standard theory for tradable options assumes the option holder chooses the exercise policy to maximize the option’s present value, because, when the option is tradable, maximizing present value is consistent with maximizing expected utility", BUT this fails to be true due to nontransferability of ESOs. Hence, the difference btw the subjective cost and the objective firm value origins in the nontransferability of ESOs. 
+
+\subsection*{Comment}
+
+%The model is a continuous-time principal-agent model with moral hazard and adverse selection. The executive is risk-averse and the firm is risk-neutral. The executive knows her own type, while the firm only knows the distribution of types. The stock price is driven by a geometric Brownian motion process. The executive affects the stock price by exerting effort and choosing the project's volatility. The executive receives ESOs as compensation, which can be either Risk-Neutral (RN) or Risky (R). The executive's utility is a function of the payment, risk aversion, and effort. The firm maximizes the expected value of the executive's compensation. The problem is a constrained maximization problem with continuous incentive compatibility constraints. The screening may happen because of the risk from the underlying and the vesting period. The problem is difficult because it needs to give instantaneous incentives for the agent to work and the aggregate incentives for the agent to reveal its true type at time 0 need to be sufficiently good. The model has limitations, such as allowing only for a single block exercise of the option and considering only a single grant of options. The difference between the subjective cost and the objective firm value originates in the nontransferability of ESOs.
+
+- The executive exercises using cash rather than stock
+    → assume that the executive always has enough cash to exercise the option
+    → insignificant assumption bc we only skip the passage whereby he buys stock with cash and then uses it to exercise; or when she exercises the option and then sells the stock to the market adding thus to her non-firm related wealth
