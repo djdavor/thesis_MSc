@@ -229,7 +229,7 @@ Note that, at each time step $t$, the value of the non-firm related wealth $c_t$
 
 As mentioned before, we want to find $E_c$ such that 
 $$U(\rho, n_s, n_o, c) = U(\rho, n_S, 0, c + E_c) $$
-where we included only the most relevant parameters entering the executive's utility function. Therefore, the external wealth of the executive becomes relevant now, both in terms of absolute wealth and portfolio composition (i.e., percentage of total wealth held in firm stocks). As we will see later, it is relevant because the utility function is not separable, hence our results will be sensible to the initial values we will choose.
+where we included only the most relevant parameters entering the executive's utility function. Therefore, the external wealth of the executive becomes relevant now, both in terms of absolute wealth and portfolio composition (i.e., percentage of total wealth held in firm stocks). As we will see later, it is relevant because the utility function is not separable, hence our results will be sensible to the initial values we will choose. In other words, $E_c$ is the adjustment to the executive's wealth required to keep her on the same utility level while not granting her any option.
 
 Recall that we defined the executive's utility of wealth with the power utility function, that is, 
 $$u(w, \rho) = \frac{w^{1-\rho}}{1-\rho}$$
@@ -316,6 +316,7 @@ Objective incentive usually measured by delta of the two options
 Employee incentive: $$\text{Subjective incentive} = \frac{\text{\%  increase in executive value}}{\text{\% increase in stock price}} $$
     this for 1\% increase in the stock price
     ... we confirm the finding of \cite{lau2005valuation} that the incentive work better for less risk averse employees 
+    this is the pay-performance sensitivity following \cite{jensen1990performance} → slope of executive value line 
 
 $$ \text{Deadweight cost} = \frac{\text{Firm cost - Executive value}}{Firm cost} \times 100\%  $$
     Expected decrease with higher gamma: locks in some of the gains via stock price appreciation
@@ -328,13 +329,23 @@ $$\text{Cost ratio} = \frac{\text{Executive value of R }(\alpha, 0)}{\text{Execu
 
 
 + Impact of outside wealth on leverage and deadweight loss: table with results for these two variables as initial wealth changes and composition of portfolio (\% stocks in portfolio, as measured at time t=0)
-    we assume that the executive rebalances his portoflio maintaining the initial portfolio allocation 
+    we assume that the executive rebalances his portfolio maintaining the initial portfolio allocation 
 
 + Compute critical stock price (decreasing with time to maturity and risk aversion)
 
 
+Executive value line: CE values as function of stock price
 
+Valuation depends upon 6 factors:  exercise price, stock price, dividend yield, stock-return volatility, risk-free rate, and the time until expiration. \cite{hall2002stock}
 
 
 %After one time period $\Delta t$, the stock price becomes either Sd or Su.
 %Note that our #time steps is per year, not total as is common in the literature. In this way, we are effectively building an even finer grid which should approximate even better our results.
+
+%"If the executive decides to exercise his options early, the profits from the exercise are invested in the riskless asset, which is then held until the final period."
+%In a BS world, NO early exercises but holding until maturity is optimal; BUT here we have nontransferability + NO perfect hedge -> early exercise may be preferable
+
+
+
+%WE MAY for simplicity assume that the option can be exercised only when in-the-money -> this simplifies analysis, but may not portray the reality.
+%Nevertheless it is consistent with the usual practice of reload options, where the executive can exercise only when the stock price is above the strike price.
