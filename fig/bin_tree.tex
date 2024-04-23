@@ -14,15 +14,15 @@
   \node[squarednode] at (1.5,-1.5) (C) {$S_0 d$};
   \node[squarednode] at (-3,-3) (D) {$S_0 u^2$};
   \node[squarednode] at (0,-3) (E) {$S_0 ud$};
-  \node[squarednode] at (3,-3) (F) {$S_0 d^2$};
+  \node[squarednode] at (3,-3) (F) {$S_0 d^2$};  
   
   %Lines
-  \draw[->] (A) -- (B) node[midway,above] {$q$};
-  \draw[->] (A) -- (C) node[midway,above] {$1-q$};
-  \draw[->] (B) -- (D) node[midway,above] {$q$};
-  \draw[->] (B) -- (E) node[midway,above] {$1-q$};
-  \draw[->] (C) -- (E) node[midway,above] {$q$};
-  \draw[->] (C) -- (F) node[midway,above] {$1-q$};
+  \draw[->] (A) -- (B) node[midway,above left] {$q$};
+  \draw[->] (A) -- (C) node[midway,above right] {$1-q$};
+  \draw[->] (B) -- (D) node[midway,above left] {$q$};
+  \draw[->] (B) -- (E) node[midway,above right] {$1-q$};
+  \draw[->] (C) -- (E) node[midway,above left] {$q$};
+  \draw[->] (C) -- (F) node[midway,above right] {$1-q$};
   
   %Labels
   \node[right] at (4,0) {$n=0$};

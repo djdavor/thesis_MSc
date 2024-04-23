@@ -1,13 +1,13 @@
 \section{Theoretical model}
 %Put the formulas into equations so that they can be cited later on 
 
-Consider a continuous-time principal-agent model (with finite horizon $[0, T]$) with both moral hazard and adverse selection. The two decision-makers here are the executive (agent) and the firm (principal).
-We build up on the idea of the continuous-time principal-agent model pioneered by Sannikov (\cite{sannikov2008continuous}) and on the work on screening using ESOs by Cadenillas, Cvitanić and Zapatero (\cite{cadenillas2002executive}, \cite{cadenillas2005executive}). The difference from the latter is that we consider executives that are heterogeneous in their risk aversion.
+Consider a continuous-time principal-agent model with both moral hazard and adverse selection. The two decision-makers here are the executive (agent) and the firm (principal). The horizon is finite: $T \in [0, \infty)$.
+We take inspiration from the models in \cite{sannikov2008continuous} and \cite{cadenillas2002executive}. 
 %%Difference from the latters: from the first, ...; from the second, ...
 
-We assume that markets are complete and frictionless, i.e., there are no taxes nor transaction costs - the former is a strong assumption but necessary to keep the problem simple.\footnote{Note that the agents' optimal policies may be otherwise influenced by the incidence of taxes on wealth. For example, an executive may anticipate or postpone the exercise of options due to changes in taxation which, despite being of interest, is out of our scope.}
+We assume that markets are complete and frictionless, i.e., there are no taxes nor transaction costs --- the former is a strong assumption but necessary to keep the problem simple.\footnote{Note that the agents' optimal policies may be otherwise influenced by the incidence of taxes on wealth. For example, an executive may anticipate or postpone the exercise of options due to changes in taxation which, despite being of interest, is out of our scope.}
 
-Consider a risk-neutral firm and a risk-averse executive. Suppose the executive knows her own type $\rho$, while the firm only knows the distribution of types $\lambda$. We illustrate the main components of our model and then summarize the problem faced by the agents.
+Consider a risk-neutral firm and a risk-averse executive. Suppose the executive knows her own type $\rho$, while the firm only knows the distribution of types $\lambda$. The firm offers two contracts to induce the agent to exert effort. We illustrate the main components of our model and then summarize the problem faced by the agents.
 %short summary: the agent has partial control over the output process (stock price) in which both parties are interested. 
     %The control (effort) is not however observable by the principal and is costly for the agent. 
     %The principal can control it through compensation in form of ESOs. 
@@ -26,109 +26,168 @@ When the firm is managed by the executive, the dynamics of the stock price S in 
 $$ dS_t = \mu S_t dt + a_t S_t dt + \delta \sigma_t S_t dt + \sigma S_t dW_t $$
 which, similarly to before, and assuming $\mu = 0$, can be re-written as 
 $$ \frac{dS_t}{S_t} = a_t dt + \delta \sigma_t dt + \sigma dW_t $$
-where $a = \{a_t\}_{t \ge 0}$ and $\sigma = \{\sigma_t\}_{t \ge 0}$ are two adapted stochastic processes and $\delta \ge 0$ is a constant. The process $a$ represents the effort exerted by the executive and is such that $a(t) \ge 0 \forall t \ge 0$, progressively measurable with respect to $\mathscr{F}$, while $\sigma$ is the choice of volatility level. While the interpretation of the former is straightforward, the latter is justified by the fact that we assume the executive could possibly face a menu of projects with different volatilities - not necessarily with different expected return - so that this choice is ultimately reflected also in the stock price. 
-The interpretation behind $\delta$ is more subtle and taken from \cite{cadenillas2005executive}: it basically serves as a control for the impact of a project on the firm's overall stock volatility. For example, smaller firms may exhibit higher $\delta$ because they have less executives and hence each project matters, while for larger firms the impact of a single project on their stock price may be more limited. Or, we can interpret it as the \textit{relevance} of the executives, that is, when hiring C-level executives the $\delta$ would be higher - since they are expected to have a larger impact on the company trajectory - compared to when hiring middle managers, for example.
+where $a = \{a_t\}_{t \ge 0}$ and $\sigma = \{\sigma_t\}_{t \ge 0}$ are two adapted stochastic processes and $\delta \ge 0$ is a constant. The process $a$ represents the effort exerted by the executive and is such that $a(t) \ge 0 \quad \forall t \ge 0$, progressively measurable with respect to $\mathscr{F}$, while $\sigma$ is the choice of volatility level. While the interpretation of the former is straightforward, the latter is justified by the fact that we assume the executive could possibly face a menu of projects with different volatilities --- not necessarily with different expected return --- so that this choice is ultimately reflected also in the stock price. 
+The interpretation behind $\delta$ is more subtle and taken from \cite{cadenillas2005executive}: it basically serves as a control for the impact of a project on the firm's overall stock volatility. For example, smaller firms may exhibit higher $\delta$ because they have less executives and hence each project matters, while for larger firms the impact of a single project on their stock price may be more limited. Or, we can interpret it as the \textit{relevance} of the executives, that is, when hiring C-level executives the $\delta$ would be higher --- since they are expected to have a larger impact on the company trajectory --- compared to when hiring middle managers, for example.
 
 Few observations are in order. First, it is clear that the stock price is publicly observable by all parties, but its components are not. Therefore, the firm cannot perfectly observe the effort of the executive nor differentiate between the stock's intrinsic volatility and the part of volatility generated by the project's choice. Second, we do not distinguish between systematic and idiosyncratic volatility of the stock, which would be of interest for executive's hedging\footnote{Indeed, executives are often prohibited from trading the firm's stock on the market, prohibiting thus a hedge against their ESOs by shorting the stock. Therefore, the executive can only hedge against the idiosyncratic portion, which makes this problem even more interesting} but not relevant for our case. Finally, we are clearly in a partial equilibrium setting: if this was not the case, the price of the stock would have already incorporated all the possible information in the economy and there would be no room for influence from executives' decisions, making our analysis useless.
 
 
 \subsection{Two ESOs}
-We consider as ESO an American call option with maturity T - usually 10 years (\cite{marquardt2002cost}) - with strike price $K$. For simplicity, we set $K=S_0$. The vesting period is denoted by $t_v$ (usually 2 to 4 years); in any case, $t_v \le T$.\footnote{Note that when $t_v = T$ we have an European option.} Therefore, the executive cannot exercise the option when $t \in [0, t_v)$, but is free to do so when $t \in [t_v, T]$. The choice of the inclusion of $t_v$ is immaterial. We do not model explicitly the possibility of the executive leaving the firm; however, we assume that if this happens during the vesting period she receives zero payment, while if this happens after $t_v$ she will exercise the ESO only if it is in-the-money. %[fn] some model this
+We consider as ESO an American call option with maturity T, which we set at 10 years (as in \cite{marquardt2002cost}) with strike price $K$. We assume options are granted at-the-money, hence $K=S_0$. The vesting period is denoted by $t_v$ and fixed at 2 years. %footnote{Note that when $t_v = T$ we have a European option.} 
+Therefore, the executive cannot exercise the option when $t \in [0, t_v)$, but is free to do so whenever $t \in [t_v, T]$, i.e., as soon as the option gets vested. 
+%We do not model explicitly the possibility of the executive leaving the firm; however, we assume that if this happens during the vesting period she receives zero payment, while if this happens after $t_v$ she will exercise the ESO only if it is in-the-money. %[fn] some model this
 
-Now, we assume the firm can only offer two types of ESOs. We call the first one Risk-Neutral (RN) and the second one Risky (R):
+Now, we assume the firm can only offer two types of ESOs, and she has control over the structure of the second. We call the first one Risk-Neutral (RN) and the second one Risky (R):
 \begin{enumerate}
-    \item RN: this is the usual ESO. The option cannot be exercised before $t_v$, after which the executive can exercise one unit of RN for one unit of firm stock. The option expires at time T; at expiry, the employee will exercise it if in-the-money. The payoff at any $t \in [0, T]$ is thus $\max \{0, S_t - K \} = (S_t - K)^+$. We denote a generic risk-neutral option RN with $RN (T, K, t_v)$.
-    \item R: this is a modified version of ESO, that takes from the literature on ESOs with reload option and DESOs (....).
-    Similarly to before, the option cannot be exercised before $t_v$. However, when exercised, one unit of R is converted into $\alpha \in (0,1)$ units of stock and $1 - \alpha + \gamma$ units of RN, with $\gamma > 0$. The new RN option will have strike price $S_\tau$, where $\tau$ is the time of exercise. Keeping $T, K, t_v$ fixed, we can identify a specific R option with $(\alpha, \gamma)$, which we can denote as $R_{\alpha, \gamma} (T, K, t_v)$. Note that for $\gamma = 1$, we have a proper ESO with reload option. %literature on this
-
-    %The payoff is 
+    \item RN: this is the usual ESO. The option cannot be exercised before $t_v$. After $t_v$, the executive can exercise and receives the difference between the stock and the strike price when doing so. The option expires at time T; at expiry, the employee will exercise only if it is in-the-money, otherwise the option simply expires. We denote a generic risk-neutral option as $RN$.
+    \item R: this is a modified version of RN, that takes from the literature on ESOs with reload option and DESOs (\cite{huang2013dynamic}).
+    Similarly to before, the option cannot be exercised before $t_v$. However, if exercised at time $\tau \ge t_v$, one unit of R is now converted into (i) the cash equivalent of $\alpha \in (0,1)$ units of stock, plus (ii) $(1 - \alpha + \gamma)$ units of new RN, with $\gamma \ge 0$. The new RN option will have strike price $S_\tau$. Keeping $T, K, t_v$ fixed, we can thus identify uniquely the R option with $(\alpha, \gamma)$. Therefore, we denote it as $R_{\alpha, \gamma}$. Note that, for $\alpha = \gamma = 1$, we have a traditional ESO with reload option, while for $\alpha = 1$ and $\gamma = 0$ we have the RN option from above.
 \end{enumerate}
-Let us illustrate R with an example. Consider a Risky ESO with maturity at $T=10$ years, strike price $K=S_0=\$5$, vesting period $t_v=3$ years, $\alpha = 0.7$, and $\gamma=0.1$. We denote it with $R_{0.7, 0.1} (10, 5, 3)$. This means that the executive cannot exercise the option in the first 3 years. After the 3rd year, he can choose to exercise it at any point within the 10th year. Suppose he decides the exercise the option 2 years after the vesting period ended, that is, 5 years from the date of initial issuance. Assume that the stock price when he decides to exercise it is $S_5 = \$10$. Therefore, the executive buys $0.7$ of a stock at $5$ dollars, netting thus a profit of $0.7*(\$10-\$5)=\$3.5$ on the trade. Moreover, she receives $0.3+0.1=0.4$ worth of new $RN(10, 5, 3)$, which will thus expire at $T=15$ and be exercisable since year $5+3=8$ at strike price $S_5=\$5$. 
-It is clear from this example why the vesting period is key for both options to make sense. Suppose by contra that there was no vesting period in neither option. Then, since $\gamma > 0$ and the stock price cannot clearly be negative, no rational executive would choose the RN because in the worst scenario they can decide to exercise simultaneously the R and the new RN they would obtain, obtaining $\alpha + (1-\alpha+\gamma)=1+\gamma > 1$, where the right side is the number of stocks they would get from the RN option. It is exactly this additional vesting period that increases the risk for the executive, driven by the stochastic process of the underlying stock. Holding this security is risky because it could as well be that the stock price goes under $\$5$, at least after the 8th year - when the vesting period of the RN ends - so that the option goes out-of-money and the executive will never exercise it, netting thus only \$3.5. On the contrary, if the executive held a RN option and exercised it similarly at year 5, she would have obtained a payoff of \$5. This loss of $\$1.5$ is the risk associated with exercising the RN rather than the R option, and represents the \textit{maximal downside} the executive could expect in this case; clearly, the upside is, at least in theory, infinite. The intuition is that a low risk averse executive would then be willing to take this risk, while a risk averse agent would prefer the \$5 payoff of the RN option, foregoing thus the potential of a larger profit. Note however that the agents do not know a priori - when they will need to choose which option they prefer - the extent of the potential \textit{maximal downside} associated to choosing the R over the RN at any time $t$. This, and the fact that a traditional ESO contract prohibits the agent both from selling the option and hedging part the firm-specific risk, makes the analysis of executive's risk aversion relevant.
+Note that the exercise of ESOs usually involves stocks: the strike price is paid out in stocks, and the firm gives a new stock to the holder for each unit of the option exercised. 
+However, we assume that the executive exercises the option using cash and receives cash in return. This is a simplification that makes the problem easier and does not affect the final result.\footnote{Indeed, this can be imagined as the executive using cash to first buy the stock with which she exercises, and then selling off immediately the received stock to receive cash. Therefore, the only assumption we are making here is the liquidity of the stock, which we can however safely assume to be liquid enough since it is publicly traded. In technical terms, we are assuming these ESOs are cash-settled rather than physically delivered.}
 
-For simplicity we have focused on the case of one option, assuming also that shares can be fractioned, but in reality we work with larger numbers - this does not however compromise the final result. We will anyways constrain the options to be exercised simultaneously, which simplifies our problem (and is consistent with the empirical findings on block exercise of ESOs%lit
-). 
+Let us illustrate the second option, R, through an example. Consider an $R$ ESO with maturity at $T=10$ years, strike price $K=S_0=\$5$, vesting period $t_v=2$ years, $\alpha = 0.7$, and $\gamma=0.1$. We denote it with $R_{0.7, 0.1}$. This means that the executive cannot exercise the option in the first 2 years. After the $2^{\text{nd}}$ year, she can choose to exercise it at any point within the $10^{\text{th}}$ year. Suppose she decides to exercise the option 3 years after the vesting period ended, that is, 5 years from the date of initial issuance. Assume that the stock price when he decides to exercise it is $S_5 = \$10$. Therefore, the executive buys $0.7$ of a stock at $\$5$ when the stock is trading at $\$10$, netting thus an immediate gain of $0.7*(\$10-\$5)=\$3.5$ on the trade. Moreover, she receives $0.3+0.1=0.4$ worth of new $RN$, which will thus expire at $T=15$ and be exercisable starting from year $5+2=7$ at strike price $S_5=\$5$. 
+It is clear from this example why the vesting period is key so that the existence of both options is justified. Suppose \textit{by contra} that there was no vesting period in neither option (or, at least, in the RN option). Then, since $\gamma > 0$ and the stock price cannot clearly be negative, no rational executive would choose the $RN$ option. Indeed, the executive could always decide to exercise simultaneously the R and the new RN she obtains, totaling thus $\alpha + (1-\alpha+\gamma)=1+\gamma > 1$, where the right side is the number of stocks they would get from the $RN$ option. But it is exactly this additional vesting period that increases the risk for the executive, which is driven by the stochastic process of the underlying stock. Holding this security is risky because it could as well be that the stock price goes under $\$5$, at least after the 7th year --- when the vesting period of the $RN$ ends --- so that the option goes out-of-money and the executive will never exercise it, netting thus only the initial \$3.5. On the contrary, if the executive held an $RN$ option and exercised it at year 5, she would have obtained a payoff of \$5. This loss of $\$1.5$ is the risk associated with exercising the $RN$ rather than the $R$ option, and represents the maximal downside the executive can expect; clearly, the upside is, at least in theory, infinite. The intuition is that a low risk averse executive would then be willing to take this risk, while a sufficiently risk averse agent would prefer the \$5 payoff of the RN option, foregoing thus the potential of a larger profit. 
+%Note however that the agents do not know a priori --- when they will need to choose which option they prefer --- the extent of the potential \textit{maximal downside} associated to choosing the R over the RN at any time $t$.  --> UNTRUE: it is (1-alpha)*S_tau
+This, and the fact that a traditional ESO contract prohibits the agent both from selling the option and hedging part the firm-specific risk, makes the analysis of executive's risk aversion relevant.
+
+We have focused for simplicity on the case of one option, assuming also that shares can be fractioned, but in reality executives are granted many options all at once --- we will account for the latter in our numerical analysis. We will in any case constrain the options to be exercised simultaneously, which simplifies our problem greatly, and is consistent with many empirical findings on block exercise of ESOs.
 
 %some extensions allow for selling it after some time though, so to be able to recover also the time value of the option
-%A contract can be represented by (n, K), with n being the number of options granted at exercise price K. (case K = 0 corresponds to restricted stock)
+%!! A contract can be represented by (n, K), with n being the number of options granted at exercise price K. (case K = 0 corresponds to restricted stock)
 
 
 \subsection{Executive}
-%for wealth modeling, see \cite{}
-Consider a risk- and effort-averse executive (she). The executive affects stock price dynamics by exerting costly effort - which adds as the drift component of the stock price - and by choosing the project with the desired volatility, which is not costly and affects part of the volatility component of the stock. Therefore, the maximization problem of the executive involves both the choice of effort and volatility. 
+Consider a risk- and effort-averse executive (she). The executive affects stock price dynamics by exerting costly effort --- which adds as the drift component of the stock price --- and by choosing the project with the desired volatility, which is not costly and affects part of the volatility component of the stock. Therefore, the maximization problem of the executive involves both the choice of effort and volatility. 
 
-The executive signs a contract with the principal, whereby she can choose if she prefers to get $n$ units of RN or of R options. By simplicity, normalize $n$ to simply being equal to 1 unit. %is this OK?? 
-Both are set at strike price $K = S_0$. If the executive decides to exercise at time $\tau \in [0, T]$, she nets a profit of $S_\tau - K$. At time $\tau = T$, she will exercise if and only if $S_\tau > K$ - we use the strict inequality because exercising has always some small cost involved, be it also immaterial in the form of time spent.
-\\Note we can see this alternatively as a payment that the agent receives. %from whommmm??
-Therefore, we have a stream of payments $c = \{c_t\}_{t \in [0, T]}$; in the case of the RN option, there will be at most one $\bar{t}$ such that $c(\bar{t}) > 0$, that we can then identify uniquely as $\tau$, while in the case of the R option we may have at most two $\bar{t}_1, \bar{t}_2$ such that $c(\bar{t}_1), c(\bar{t}_2) > 0$. We denote them by $\tau_1, \tau_2$.
-This trick may not seem very intuitive at first, but is perfectly legitimate and will allow us to solve the problem using tools from \cite{sannikov2008continuous} and \cite{cvitanic2013dynamics}. Note that agent's limited liability requires positive consumption at any time $t$, so that $c(\cdot)$ is a nonnegative function.
-%%This payment needs NOT to be coming from the principal! It would assume that the agent is selling its stock to the company itself, BUT in reality the profit is given by (i) selling the stock to somebody else (NOT necessarily the firm, if not in the special case of stock buyback) at a higher price than (ii) the strike price at which it buys it from the firm.
+Assume that the wealth of the executive at time $t$ is given by: 
 
-Therefore, the executive's utility of payment is denoted by $u(c(t), \rho)$, where $u(\cdot)$ is increasing and concave. Normalize $u(0) = 0$ and let $v(\cdot) = u^{-1}(\cdot)$ denote the inverse function. Suppose that $\rho$ indicates the risk aversion of the executive and takes only two values in $\Theta = \{\rho_L, \rho_H \}$ - we abuse terminology and call executive of type $\rho_L$ risk-lover (she is \textbf{L}ow risk averse) and the executive of type $\rho_H$ risk-averse (she is \textbf{H}igh risk averse). Clearly, denoting the $\rho_L$ type as risk-lover does not mean she always prefers to be exposed to more risk rather than less, but simply that she is less risk averse than the other type. The executive knows her own type, but the firm does not. However, the distribution of types in the population $\lambda = \Prob(\rho = \rho_L)$ is common knowledge. Clearly, $\Prob(\rho = \rho_H) = 1 - \lambda$. Recall that risk aversion is relevant here because the employee cannot sell the ESO nor perfectly hedge against it, hence it remains exposed to at least the portion of firm-specific risk.
-On the other hand, the agent chooses effort $a_t \in [0, a_M]$ and effort is costly: we denote the cost of effort by $g(a_t)$ such that $g(\cdot)$ is continuous, increasing and convex ($g'(\cdot) > 0$ and $g''(\cdot)<0$). We normalize it so that the expected output given effort $a_t$ is $a_t$, and $g(0) = 0$. Therefore, if effort is not compensated in some way, the executive would not have the incentive to exert effort. As we will see in the next chapter, the incentive for exerting effort has been measured by the delta of the ESO: %see lit
-the intuition is that the delta measures the sensitivity of the option to the changes of the underlying stock, and since the agent affects the drift of the stock with her effort, she will exert it insofar this translates into a better value of her option. Others propose to also look at the option's vega, for similar reasons because the executive can also affect the volatility of the stock. For what concerns the choice of volatility, we could see the projects as comparable in risk, since higher risk yields (proportionally) higher expected return; note that choice of volatility has no cost of effort for the executive, but it affects the expected value of the compensation package. Indeed, volatility can increase the value of the stock and hence the compensation package, but at the cost of exposing the executive to higher risk - both of these are further magnified by the intrinsic leverage effect of options \cite{cadenillas2005executive}.
+$$ W_t = n_S S_t + n_O (S_t-K)^+ + c(1+r_f)^t   $$ 
 
+where $n_S$ is the number of shares of the stock, $n_O$ is the number of options, $c$ is the initial cash invested at the risk-free rate $r_f$. $S_t$ is the value of the stock at time $t$, while $(S_t-K)^+$ is the payoff of the option at time $t$.\footnote{Note that the option value cannot be realized when the option is not vested. However, we assume this is a perceived value of the option, which the executive can use to make decisions.}
 
-Now, assuming that the agent discounts the utility at some rate $r>0$, the expected utility $U(\cdot)$ is given by
-$$U(\rho_i, c_i, a_i) = r \EX \Bigg[ \int_{0}^{T} e^{-rs} \Big[u(c_i(s), \rho_i) - g(a_i(s)) \Big] ds \Bigg] $$
-The executive has a reservation utility $R \ge 0$, which will play a role in solving the problem. We assume both types of agents have the same reservation utility and normalize it to 0. %DO WE?
-
-
-%CARA (Constant Absolute Risk-Aversion) preference: $u(c_t, a_t) = -\frac{1}{\rho} \exp^{-\rho c_t} - g(a_t)$, with $\rho>0$ being the absolute risk-aversion coefficient.
-Note that in our basic formulation we assume the executive is tied forever to the principal once he accepts the contract, or at least until time T. Moreover, we are considering an extremely simplified model: in practice, the executive usually holds ESOs with different strike prices and vesting periods as they are granted over time as the job contract goes on. In our setting, we are only considering the effect of the grant of one ESO, which is the only one the agent receives up to time T. 
-
-
-The coefficient of absolute risk aversion (CARA) at wealth $w$ is defined as:
-$$\alpha(w) = -\frac{u''(w)}{u'(w)}$$
-
+The executive's utility of wealth is a power utility function:
+$$ \bar{u}(W_t) = \frac{W_t^{\gamma}}{\gamma} $$
+where $\gamma > 0$ is the coefficient of risk aversion. The coefficient of absolute risk aversion (CARA) at wealth $w$ is defined as:
+$$\alpha(w) = -\frac{\bar{u}''(w)}{\bar{u}'(w)} = \frac{1-\gamma}{w}$$
 and the coefficient of relative risk aversion (CRRA) at wealth $w$ as:
-$$ \rho(w) = w \alpha(w) = -\frac{wu''(w)}{u'(w)} $$
-In our case, we have 
-$$ \alpha(w) = \frac{1-\gamma}{w}$$
-and
-$$ \rho(w) = 1-\gamma$$
+$$ \rho(w) = w \alpha(w) = -\frac{w\bar{u}''(w)}{\bar{u}'(w)} = 1-\gamma$$
 
-Note that $\rho(w)$ is constant and equal to $1-\gamma$ at all wealth levels $w$, which means that the executive's degree of risk aversion does not depend on her wealth level. 
+Hence, the executive's degree of relative risk aversion is constant and equal to $\rho = 1-\gamma$ at all wealth levels $w$, which means that the executive's degree of risk aversion does not depend on her wealth level. Hence, we can re-write the utility of wealth as:
+$$ \bar{u}(W_t) = \frac{W_t^{1-\rho}}{1-\rho} $$
 
-%Optimal stopping time 
-    %show result from standard stopping theory
-    %NOT of interest here → we'll take it almost for granted, as if it was exogenous → would involve some complex modeling
-    %we can just assume that the more risk-averse agent will exercise earlier, ie, $t_v^{\rho_H} < t_v^{\rho_L}$ -- CAN WE??
-        %this can be probably proved formally by exploiting definition of stopping time + shape of utility function
-%Graph: Relationship strike price and utility of agent
+We assume that $\rho$ takes only two values in P $= \{\rho_L, \rho_H \}$ --- we abuse slightly terminology and call executive of type $\rho_L$ risk-lover (she is \textit{L}ow risk averse) and the executive of type $\rho_H$ risk-averse (she is \textit{H}igh risk averse). Therefore, $\rho_H > \rho_L$. Clearly, denoting the $\rho_L$ type as risk-lover does not mean she always prefers to be exposed to more risk rather than less, but simply that she is less risk averse than the other type. The executive knows her own type, but the firm does not. However, the distribution of types in the population $\lambda = \Prob(\rho = \rho_L)$ is common knowledge. Clearly, $\Prob(\rho = \rho_H) = 1 - \lambda$. Recall that risk aversion is relevant here because the employee cannot sell the ESO nor perfectly hedge against it, hence it remains exposed to at least the portion of firm-specific risk.
+On the other hand, the agent chooses effort $a_t \in [0, a_M]$ and effort is costly: we denote the cost of effort by $g(a_t)$ such that $g(\cdot)$ is continuous, increasing and convex ($g'(\cdot) > 0$ and $g''(\cdot)<0$). We normalize it so that the expected output given effort $a_t$ is $a_t$, and $g(0) = 0$. For simplicity, we can simply assume that $g$ takes a quadratic form. Therefore, if effort is not compensated in some way, the executive would not have the incentive to exert effort. 
+As we will see in the next chapter, the incentive for exerting effort has been measured by the delta of the ESO: the intuition is that the delta measures the sensitivity of the option to the changes of the underlying stock, and since the agent affects the drift of the stock with her effort, she will exert it insofar this translates into a better value of her option. Others propose to also look at the option's vega, for similar reasons because the executive can also affect the volatility of the stock. For what concerns the choice of volatility, we could see the projects as comparable in risk, since higher risk yields (proportionally) higher expected return; note that choice of volatility has no cost of effort for the executive, but it affects the expected value of the compensation package. Indeed, volatility can increase the value of the stock and hence the compensation package, but at the cost of exposing the executive to higher risk --- both of these features are further magnified by the intrinsic leverage effect of options \cite{cadenillas2005executive}.
 
+Combining the two sides, we obtain that the agent's preferences are represented by an additively separable von-Neumann Morgenstern utility function:
+$$ u_\rho (W_t, a) = \frac{W_t^{1-\rho}}{1-\rho} - \frac{1}{2}a_t^2 $$
 
+The executive's utility is given by the expected utility of wealth, discounted at the rate $r>0$:
+
+$$ U_\rho (a, \sigma, \theta) = \EX \Biggl[r \int_{0}^{T} e^{-rt} u_\rho (W_t, a) dt \Biggr]$$
+
+where $a$ is the effort/output process, $\sigma$ is the volatility process of the chosen project, and $\theta$ is the chosen ESO contract (we describe it in the next section). We assume that $a_t=a$ and $\sigma_t=\sigma$ for all $t \in [0, T]$. The reservation utility of the executive is denoted by $\hat{U} \ge 0$. Clearly, the executive will accept the contract if the expected utility of the contract is greater than or equal to the reservation utility.
+Note that we assume the executive is tied forever to the principal once he accepts the contract, or at least until time T, hence we do not model bargaining or exiting dynamics. Moreover, we are considering an extremely simplified model: in practice, the executive usually holds ESOs with different strike prices and vesting periods since they are granted over time as the job contract goes on. In our setting, we are only considering the effect of one grant of ESO, which is the only one the agent receives up to time T. 
 
 \subsection{Firm}
-(he, principal)
-The firm may offer two different compensation schemes: apart from cash, it offers a portion of compensation in the form of ESOs. We focus only on the latter portion. The firm grants ESOs as a performance incentive scheme
-The company compensates the agent with ESOs
-It is risk neutral hence maximizes the expected value
+The firm/principal (he) is risk-neutral. The firm knows the distribution of types, but not the type of the agent under adverse selection. Moreover, under moral hazard, he cannot observe the choices of effort and volatility. 
+The firm pays the executive through a comprehensive package that includes three different components: cash, (restricted) stocks, and ESOs. In our analysis, we fix the first two and focus our analysis on ESOs only.\footnote{In practice, the agent considers the whole compensation package, including also bonus and other benefits, when considering her value of the ESO contract. We will account for this by running some sensitivity analysis.} 
 
 
-Time horizon of the firm matches the above described one
+The firm offers two contracts to the agent, one including the RN option and the other the R option. The contract space is defined as
+$$ \Theta = \Biggl( \mathds{1}_{RN}, \bigl\{ \mathds{1}_{R_{\alpha, \gamma}} \bigr\}_{\alpha \in (0,1), \gamma \in [0, 1)} \Biggr) \times \mathbb{Z}^+ $$
+where $\mathds{1}_{RN}$ is the indicator function for the RN option, and $\mathds{1}_{R_{\alpha, \gamma}}$ is the indicator function for the R option with parameters $\alpha$ and $\gamma$. The firm offers two contracts, one with the RN option and the other with the R option, i.e., $\theta_{RN} = (\mathds{1}_{RN}, n_{RN})$ and $\theta_{R} = (\mathds{1}_{R_{\alpha, \gamma}}, n_R) $. In principle, the firm can offer a different number of options depending on the chosen contract, but for simplicity we set $n_{RN} = n_R = n$. Therefore, $\theta_{RN} = (\mathds{1}_{RN}, n)$ and $\theta_{R} = (\mathds{1}_{R_{\alpha, \gamma}}, n) $. The firm chooses how to structure the R option, that is, he chooses the values of $\alpha$ and $\gamma$; this is the control the firm has over the compensation package. The function $C(\cdot)$ denotes the cost of the ESO contract multiplied by the number of options in the contract. We will define this valuation function in the next chapter, but for now we take it for granted.
 
-%See \cite{sannikov2008continuous} for a nice theoretical modeling of the firm's problem 
-
+The time horizon of the firm matches the agent's. The firm is risk neutral, hence the utility is linear and given by:
+$$ \Pi (\alpha, \gamma; \beta, \mu) = \beta \EX \Big[ S_T \Big] - \Big[ \mu C(\theta_{RN}) + (1-\mu) C(\theta_{R_{\alpha, \gamma}}) \Big] $$
+where $S_T$ is the ``terminal'' stock price at T, $\mu$ is the share of executives choosing the RN option, $C(\cdot)$ is the cost of the ESO contract multiplied by the number of options in the contract. Finally, $\beta$ measures how relevant it is for the firm to maximize the stock price at time T. For example, for firm with large capitalization (i.e., large number of shares outstanding), a small increase in the price of the stock can have a large impact on the firm's value. Differently, for firms with small capitalization, the impact of the stock price on the firm's value is less relevant. The controls $\alpha$ and $\gamma$ affect the expected terminal stock price through the executive's effort and project choice.
 
 \subsection{Problem}
-To summarize, we propose a principal–agent problem of moral hazard and adverse selection in continuous time whereby ... we are analyzing the problem of a risk-neutral company that can offer two types of ESOs as a form of compensation to hire a risk-averse executive. The coefficient of risk aversion for a given executive is unknown but its distribution is common knowledge.
-Recap of the two problems
--> formally, it is nothing more than a constrained maximization problem!
-%Assumptions
-Continuous incentive compatibility constraints
-Participation constraints may NOT be binding - for effort reasons
+So far we have seen the main features of our setting. We have a risk-averse executive that can choose the effort and volatility of the project, and a risk-neutral firm that can structure the R contract. The executive's utility is given by the expected utility of wealth, discounted at the rate $r>0$. The firm's utility is given by the expected value of the terminal stock price minus the cost of compensating the agent with the two options. The firm offers two contracts to the agent, one including the RN option and the other the R option. The firm chooses how to structure the R option, that is, he chooses the values of $\alpha$ and $\gamma$. The firm's problem is to maximize the expected profit, subject to the executive's participation constraints. In our ``realistic" setting, there is both adverse selection and moral hazard: a setting that we call third best. However, for benchmarking, we will consider also the case of complete information (first best), where the firm knows the type of the agent and there is no moral hazard, and the case of moral hazard only (second best). Unless we state it explicitly, we will assume the firm wants to employ both agents.
+
+For computational simplicity, $a$, $\sigma$, and $\rho$ will not take values on a continuum but rather on a binary discrete set, whose values we call low and high. Therefore, the agent solves the following maximization problem:
+
+\begin{equation}
+    \label{eqn:agent_problem}
+    \begin{aligned}
+    \max_{a, \sigma, \theta} \quad & U_\rho (a, \sigma, \theta) \\
+    \textrm{s.t.}       \quad & a \in \{ a_L, a_H \} \\
+                        \quad & \sigma \in \{ \sigma_L, \sigma_H \} \\
+                        \quad & \theta \in \{\theta_{RN}, \theta_{R_{\alpha, \gamma}} \} \\
+                        \quad & U_\rho(a, \sigma, \theta) \ge \hat{U}  \\
+    \end{aligned}
+\end{equation}
+
+%Complete info: NO moral hazard and NO adverse selection --- for benchamrking
+The firm anticipates problem \ref*{eqn:agent_problem} and incorporates it in its maximization problem. Therefore, under complete information and observability, the problem of the firm is:
+
+\begin{equation}
+    \label{eqn:pbl_bestI}
+    \begin{aligned}
+    \max_{\alpha, \gamma} \quad & \Pi (\alpha, \gamma; \beta, \mu) \\
+    \textrm{s.t.}       \quad & U_\rho(a, \sigma, \theta) \ge \hat{U} \quad \forall \rho \in \{ \rho_L, \rho_H \}  \\
+    \end{aligned}
+\end{equation}
+
+Therefore, the only constraint in problem \ref*{eqn:pbl_bestI} is that the executive's utility needs to be at least as high as her reservation utility, for both types of agents. The firm thus chooses the contract that maximizes its expected profit, subject to the executive's individual rationality (IR, or participation) constraint.
+
+%Moral hazard
+We now allow for moral hazard, i.e., the executive's choices of effort and volatility are not observable anymore by the firm. Therefore, we need to add the incentive compatibility (IC) constraints to the previous setting, which constraints even further the firm's maximization problem. Suppose that the firm wants to implement high effort and high volatility for both agents --- her problem now becomes:
+
+\begin{equation}
+    \label{eqn:pbl_bestII}
+    \begin{alignedat}{2}
+        \max_{\alpha, \gamma} \quad & \Pi (\alpha, \gamma; \beta, \mu) \\
+        \textrm{s.t.}       \quad & U_\rho(a, \sigma, \theta) \ge \hat{U} & \quad & \forall \rho \in \{ \rho_L, \rho_H \} \\
+                            \quad & U_\rho(a_H, \sigma_H, \theta) \ge U_\rho(a, \sigma, \theta) & & \forall a \in \{ a_L, a_H \}, \\
+                            \quad & & & \forall \sigma \in \{ \sigma_L, \sigma_H \}, \\
+                            \quad & & & \forall \theta \in \{ \theta_{RN}, \theta_{R_{\alpha, \gamma}} \} \\ 
+    \end{alignedat}
+\end{equation}
+
+The IC condition requires that under either the RN or the R option, both agents will be willing to exert high effort and choose high volatility and not deviate to a different combination of the two. Moreover, since the IR constraints imply that both types need to have an IR-compatible contract, the IC-compatible contract will also be IR-compatible, otherwise one of the two conditions fails.
+
+
+Finally, under both moral hazard and adverse selection, the situation gets trickier. Here, the firm can decide what type of contract she wants to implement --- be it separable (screening), pooling, or shutdown (i.e., one type of agent is not employed). As an example, suppose the firm wants to implement our contract of interest, i.e., the screening contract, whereby the high risk averse executive is granted a RN option and the low risk averse receives the R option, so that both agents exert high effort and high volatility. The problem of the firm is:
+
+\begin{equation}
+    \label{eqn:pbl_bestIII_screening}
+    \begin{alignedat}{2}
+        \max_{\alpha, \gamma} \quad & \Pi (\alpha, \gamma; \beta, \mu, \lambda) \\
+        \textrm{s.t.}       \quad & U_{\rho_L}(a, \sigma, \theta_{R_{\alpha, \gamma}}) \ge \hat{U} \\
+                            \quad & U_{\rho_H}(a, \sigma, \theta_{RN}) \ge \hat{U} \\
+                            \quad & U_{\rho_L}(a, \sigma, \theta_{R_{\alpha, \gamma}}) \ge U_{\rho_L}(a, \sigma, \theta) &\quad& \forall a \in \{ a_L, a_H \}, \\
+                            \quad & &\quad& \forall \sigma \in \{ \sigma_L, \sigma_H \}, \\
+                            \quad & &\quad& \forall \theta \in \{ \theta_{RN}, \theta_{R_{\alpha, \gamma}} \} \\ 
+                            \quad & U_{\rho_H}(a, \sigma, \theta_{RN}) \ge U_{\rho_H}(a, \sigma, \theta) &\quad& \forall a \in \{ a_L, a_H \}, \\
+                            \quad & &\quad& \forall \sigma \in \{ \sigma_L, \sigma_H \}, \\
+                            \quad & &\quad& \forall \theta \in \{ \theta_{RN}, \theta_{R_{\alpha, \gamma}} \} \\ 
+    \end{alignedat}
+    \end{equation}
+
+
+
+Note that now also $\lambda$ enters the firm's problem, since the type of the agent is not observable anymore. In principle, $\mu$ may either equal r differ from $\lambda$. Under the screening contract, $\mu \neq \lambda$ if $\lambda \in (0,1)$.
+The first two IR conditions require that under the designed contract, both agents will be willing to accept the contract. The last two IC conditions require that under high effort and high volatility, as well as under the designed contract, both agents will not deviate to a different combination, or lie and pretend to be of the other type to receive the other ESO option. Therefore, both agents will exert high effort and choose high volatility, and the firm will implement the screening contract, with the less risk averse type receiving the R option and the more risk averse type receiving the RN option.
+
+%For each, we have (i) screening, (ii) pooling, (iii) shutdown contract
 %Explain the conditions...
-The screening may happen bc of two reasons: (i) a more risk-averse agent could be made worse off by receiving more options (e.g., consider the case for $\gamma \rightarrow 0$ and the result from Stocks or Options? (..)) and (ii) risk from the underlying and the vesting period.
-IC: the agent may misreport -> temptation value
-shutdown contract (?)
-The problem is difficult and interesting because (i) it needs to give instantaneous incentives for the agent to work + (ii) the aggregate incentives for the agent to "reveal" its true type at time 0 need to be sufficiently good
-Two state variables: continuation value + temptation-value process
-→ optimal control, optimal stopping → derive then equilibrium utilities
+%The screening may happen bc of two reasons: (i) a more risk-averse agent could be made worse off by receiving more options (e.g., consider the case for $\gamma \rightarrow 0$ and the result from Stocks or Options? (..)) and (ii) risk from the underlying and the vesting period.
 
---> screening allows to offer a contract to both agents and make the risk-averseless agent exert higher effort (see next chapter)
+%The problem is difficult and interesting because (i) it needs to give instantaneous incentives for the agent to work + (ii) the aggregate incentives for the agent to "reveal" its true type at time 0 need to be sufficiently good
 
-Show with brackets how the pay/wealth of the agent evolves for different T's (before/after the exercises) \& when the options(s) are in/out the money
+
+%--> screening allows to offer a contract to both agents and make the risk-averseless agent exert higher effort (see next chapter)
+
+%Show with brackets how the pay/wealth of the agent evolves for different T's (before/after the exercises) \& when the options(s) are in/out the money
+
+
+
+
+
+
+
 
 
 
@@ -143,12 +202,10 @@ Show with brackets how the pay/wealth of the agent evolves for different T's (be
 
 \subsection*{Comment}
 
+The formulation of our model has some clear limitations. First, we assume that the executive is a ``contract-taker" and does not have any bargaining power. This is a strong assumption, especially at the C-level, where executives have a lot of bargaining power. Therefore, we are assuming the executive's reservation utility and the firm already account for this, so that the firm makes a single take-it-or-leave-it offer and the executive accepts it whenever IR– (and IC-) compatible. Second, we constrain executives to block exercise all options rather than being able to exercise them at different times. While empirical literature is consistent with some degree of block exercise, %cite 
+this still may not be completely realistic. Finally, we are not modeling other dynamics which may be of interest, such as the optimal stopping time for the agent to exercise the option, or the possibility of the executive to leave the firm. Both are clearly relevant for the optimal exercise of the ESOs, but would add a stochastic machinery to our problem, which is out of our scope. 
+
 %The model is a continuous-time principal-agent model with moral hazard and adverse selection. The executive is risk-averse and the firm is risk-neutral. The executive knows her own type, while the firm only knows the distribution of types. The stock price is driven by a geometric Brownian motion process. The executive affects the stock price by exerting effort and choosing the project's volatility. The executive receives ESOs as compensation, which can be either Risk-Neutral (RN) or Risky (R). The executive's utility is a function of the payment, risk aversion, and effort. The firm maximizes the expected value of the executive's compensation. The problem is a constrained maximization problem with continuous incentive compatibility constraints. The screening may happen because of the risk from the underlying and the vesting period. The problem is difficult because it needs to give instantaneous incentives for the agent to work and the aggregate incentives for the agent to reveal its true type at time 0 need to be sufficiently good. The model has limitations, such as allowing only for a single block exercise of the option and considering only a single grant of options. The difference between the subjective cost and the objective firm value originates in the nontransferability of ESOs.
-
-- The executive exercises using cash rather than stock
-    → assume that the executive always has enough cash to exercise the option
-    → insignificant assumption bc we only skip the passage whereby he buys stock with cash and then uses it to exercise; or when she exercises the option and then sells the stock to the market adding thus to her non-firm related wealth
-
 
 
 % See 3.2 in \cite{edmans2017executive} for a nice theoretical modeling.

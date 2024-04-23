@@ -4,7 +4,7 @@
 \centering
 \begin{tikzpicture}
     % Draw horizontal line
-    \draw (0,0) -- (10,0);
+    %\draw (0,0) -- (10,0);
     
     % Draw ticks
     \draw (0,-0.1) -- (0,0.1) node[anchor=south] {};
@@ -17,8 +17,8 @@
     \node at (10,-0.3) {T=10};
     
     % Draw colored lines and labels
-    \draw[red] (0,0) -- node[above] {nonvested} (3,0);
-    \draw[blue] (3,0) -- node[above, yshift=1.5pt] {vested} (10,0);
+    \draw[densely dotted] (0,0) -- node[above] {nonvested} (3,0);
+    \draw (3,0) -- node[above, yshift=1.5pt] {vested} (10,0);
 \end{tikzpicture}
 \caption{Visual representation of an ESO with 3y vesting period and 10y time to maturity.} 
 \label{fig:rep_vesting}

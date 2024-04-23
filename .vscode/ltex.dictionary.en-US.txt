@@ -21,3 +21,5 @@ Djekic
 nontransferability
 nonviability
 hedgeable
+volatilities
+fractioned
