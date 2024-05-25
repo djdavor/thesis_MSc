@@ -1,14 +1,5 @@
 \section{Equilibrium analysis}
 
-*Contracts are history dependent, BUT we write them recursively with few \#variables.
-*FOA: in static setting this allows to go past the IC constraints and solve the Lagrangian. Sufficient conditions in static setting are MLRP (monotone likelihood ratio property) and CDFC (convexity of distribution function condition). In dynamic the necessary conditions may be sufficient when the Hamiltonian is concave.
-    BUT not always valid; if not, check validity ex-post; conditions are necessary only to know in advance if it is gonna be valid
-
-
-
-
-ONLY moral hazard:
-- recursive representation conditions only on "promised"/continuation utility; when introducing also moral hazard, we need to condition on sth more
 
 
 
@@ -22,11 +13,50 @@ Goal: show how allocations change within the three different equilibria: full in
 %Optimal exercise: in the form of exercise policy, which is done by studying the so-called continuation region of the employee (ie, where the employee would continue to hold the option)
 
 
-\subsection*{Choice of parameters}
+\subsection*{Description}
 \cite{dai2005valuing} propose using N=10,000 as a good asymptotic approximation.
 
+Stock price Simulation
+    points and paths; horizon of 20 years (sufficient for R + reload option)
+    default parameters + additional effort and volatility
+    delta goes from 0 to 1
+
+Firm parameters
+    alphas and gammas it can offer
+    beta goes from 0 to 1 (large and small firm)
+
+Agent
+    default is 67/33 agent; then also 50/50 agent
+    a_h and a_l + sigma_h and sigma_l; low set to 0
+    key parameters are y_RN and y_R1,y_R2; see exercise years from empirical literature
+
+
+First, we simulate the paths under the different parameters, which is mainly influenced by the level of effort and volatility + stock price evolution accounts for whether the option is still to be exercised or has been exercised.
 
 
 
-\subsection{Different executives}
-Consider wealthy CEO vs manager at some Internet-based firm (\cite{carpenter1998exercise}) - the former has lower portion of wealth invested in options hence has the "risk-adjusted" risk-aversion lower than the latter. Alternatively, differences in valuation are reflective of differences in wealth composition rather than risk aversion alone!! \cite{henderson}  
+
++ we label the type of equilibrium, for each 1st, 2nd, or 3rd best:
+## Shutdown: 1 agent, 2 agents
+## Pooling: Same a and same sigma
+## Separating: else (either a or sigma different, both agents active)
+
+\subsection*{Simulation Results} 
+Base case - set fixed (justified) parameters
+HOW TO DISPLAY THEM??
+
+%Different:
+    FIRM: n_agents + lamb, beta, larger alphas and gammas set
+
+    AGENT: U_bar, delta, (rho_L/H, a_L/H, sigma_L/H) - absolute value and distance, y_RN/R1/R2
+
+    +: agent's different outside wealth
+
+    -> WHAT equilibrium gets selected? Is it first, second, third best? What's the value difference from the other type of equilibria? How sensitive it is to the change of parameters?
+
+
+%Consider wealthy CEO vs manager at some Internet-based firm (\cite{carpenter1998exercise}) - the former has lower portion of wealth invested in options hence has the "risk-adjusted" risk-aversion lower than the latter. Alternatively, differences in valuation are reflective of differences in wealth composition rather than risk aversion alone!! \cite{henderson}  
+
+
+\subsection*{Comparison with RN case only}
+ie, we set alphas = [1.0] and gamma = [0.0] and compare the results with the previous case.
