@@ -292,77 +292,37 @@ We follow a similar approach to the above and define the function\\
 Note that now the exercise value is more complicated than before. Indeed, the option value is now given by the immediate exercise payoff $S-K$, where $S$ is the stock price at a given node, multiplied by $\alpha$, plus the cash equivalent of the new $(1-\alpha+\gamma)$ options that the executive receives. Therefore, she may a priori decide also to exercise the option even if the stock price is below the strike price, as the time value that gets recouped may be higher than the intrinsic value. This could happen for example when $\alpha$ is quite low and $\gamma$ is sufficiently high. 
 After the backwards iteration, we compute the executive value $E_c$ in the same way of the RN option.
 
-
 \subsection{Comparative statics}
-%Simulations to compare the two values
-We now perform a series of numerical simulations to analyze how the two valuations differ as we change some key parameters.
-We use the following parameters when not specified differently: $S_0$ = 30, $K$ = 30, $T$ = 10, $v$ = 3, $r$ = 0.045, $N$ = 100, $sigma$ = 0.3, $m$ = 2, $rho$ = 2, $alpha$ = 0.75, $gamma$ = 0.25, $c$ = 1,700,000, $n_s$ = 110,000, $n_o$ = 300, if we want a 67-33 portfolio, otherwise we set $c$ = 2,500,000 and $n_s$ = 87,333 for a 50-50 portfolio.
+We now perform a series of numerical simulations to analyze how the objective (firm's) and subjective (agent's) valuations differ as we change some key parameters, and what this implies in terms of incentives. We start with the following parameters and change accordingly when needed: $S_0$ = 30, $K$ = 30, $T$ = 10, $v$ = 2, $r$ = 0.045, $N$ = 100, $sigma$ = 0.3, $m$ = 2, $rho$ = 2, $alpha$ = 0.75, $gamma$ = 0.25, $c$ = 1,700,000, $n_s$ = 110,000, and $n_o$ = 300 for a 67-33 portfolio, otherwise we set $c$ = 2,500,000 and $n_s$ = 87,333 for a 50-50 portfolio.
 
-\vspace*{30pt}
+\subsubsection*{Valuation Ratios}
+We first study the relationship between firm's and executive's valuation by examining 3 main ratios: firm cost, executive value, and deadweight ratio, which we define as follows:
 
-%Deadweight loss: (cost - value)/cost * 100%
-%PIC CAPTION: " Plot of the cost ratio against the number of reloads outstanding with varying level of risk aversion of the employee"
+\vspace{-2em}
+\begin{align*}
+    \text{Executive value ratio } (\alpha) &= \frac{\text{Executive value of R }(\alpha, 0)}{\text{Executive value of RN}} \\[1em]
+    \text{Firm cost ratio } (\alpha) & = \frac{\text{Firm cost of R }(\alpha, 0)}{\text{Firm cost of RN}} \\[1em]
+    \text{Deadweight ratio } (\alpha, \gamma) &= \frac{\text{Firm cost of R }(\alpha, \gamma) - \text{Executive value of R }(\alpha, \gamma)}{\text{Firm cost of R}(\alpha, \gamma)}
+\end{align*}
+\vspace{-2em}
 
+The first two ratios are useful to understand how the firm cost and executive value change with the introduction of the reload feature only, i.e., without any premium $\gamma$, while the third one allows to explore the difference between firm cost and executive value, now in the case of the R option. %WHEN was it mentioned before?
 
-%* effect of time vesting?? "time vesting has a relatively small impact on valuation but may dramatically affect the optimal exercise policy" \cite{dybvig2003employee}
+Table \ref*{tab:val_ratios} presents the results for the first two ratios with different values of $\alpha$. For the benchmark case of the 67-33 executive, we see that $\alpha = 1$, i.e., the RN option, provides the highest executive value, at all risk aversion levels. The same is true for the 50-50 executives with $\rho = 2, 2.5$, whereas the least risk-averse prefers slightly $R(0.75,0)$. But these differences are all quite small. The executive value is decreasing in the coefficient of risk aversion at all levels of $\alpha$, while the firm cost is increasing in $\alpha$, as expected. By comparing the ratios, it seems that the R option is more burdensome for the firm rather than for the agent.  
+\input{fig/values_ratios.tex}
 
-\textcolor{red}{THE FOLLOWING ARE THE ANALYSIS I WILL RUN - NUMERICAL SIMULATIONS FOR R OPTION IN PROGRESS \dots}
+Finally, Table \ref*{tab:deadweight_ratio} shows the deadweight ratio for different values of $\alpha$ and $\gamma$. We see that it is increasing in the executive type for all combinations of $(\alpha, \gamma)$, as the firm cost is fixed whereas the executive value decreases. But the interesting part is that the deadweight ratio is increasing in $\gamma$ at all $\alpha$ levels, for both the 67-33 and 50-50 executives, with rare (and small) exceptions. This is due to the fact that most times the executive value goes down with the introduction of the risk premium, but even when this does not happen the firm cost is increasing faster, hence the deadweight ratio goes up. This may appear as counterintuitive because one could have expected that a positive $\gamma$ locks in part of the gains deriving from stock price appreciation, enough so to compensate for the higher firm cost. 
+Therefore, it seems that also from a deadweight standpoint, it remains optimal for the firm to offer the RN option, rather than any of the considered R contracts. 
 
-\textbf{OBJECTIVE AND SUBJECTIVE DELTA AND VEGA OF OPTIONS:}
-    Delta measures the incentive to exert effort, vega the incentive to increase volatility. Subjective/executive values computed for 3 different levels of risk aversion. Show the following:
-
-    \begin{itemize}
-        \item Graph of delta change for changes in underlying stock price
-        \item Graph of vega change for changes in underlying volatility
-        \item Table/graph the values of the following formulas:
-    \end{itemize}
-
-$$ \text{Objective incentive} = \frac{\text{\% increase in firm cost}}{\text{\% increase in stock price}} $$
+\input{fig/deadweight_ratio.tex}
 
 
-$$ \text{Subjective (/Employee) incentive} = \frac{\text{\%  increase in executive value}}{\text{\% increase in stock price}}$$
-    %this for 1\% increase in the stock price
-    %... we confirm the finding of \cite{lau2005valuation} that the incentive work better for less risk averse employees 
-    %this is the pay-performance sensitivity following \cite{jensen1990performance} → slope of executive value line 
 
-$$\text{Difference in incentives} = \frac{\text{Objective Incentive - Subjective Incentive}}{\text{Subjective Incentive}} $$
-
-\vspace*{20pt}
-
-
-\textbf{DEADWEIGHT COST:}
-Table/graph the values of the following formula for RN option and R option (for different values of $\alpha$ and $\gamma$), for different levels of risk aversion:
-$$ \text{Deadweight cost} = \frac{\text{Firm cost - Executive value}}{\text{Firm cost}}  $$
-    %Expected decrease with higher gamma: locks in some of the gains via stock price appreciation
-    %Clearly the deadweight loss is increasing in the executive type: indeed note that in formula (ref ...)  the firm cost is fixed, hence since executive value is decreasing in risk aversion, the ratio is always decreasing.
-    \vspace*{20pt}
-
-
-\textbf{VALUES' RATIOS:}
-Table/graph the values of the following formulas for R option(for different values of $\alpha$), for different levels of risk aversion:
-$$\text{Executive value ratio} = \frac{\text{Executive value of R }(\alpha, 0)}{\text{Executive value of RN}}$$
-$$\text{Firm cost ratio} = \frac{\text{Firm cost of R }(\alpha, 0)}{\text{Firm cost of RN}}$$
-    %Always smaller than 1 for high risk-averse agents; but maybe changes sth with $\gamma > 0$ or with changing risk aversion
-    %=> what's the impact of risk aversion on this value vs on deadweight cost?
-    \vspace*{20pt}
-
-
-\textbf{IMPACT OF OUTSIDE WEALTH:}
-Re-run and compare the last two simulations for two different mixes of outside wealth: 50-50 portfolio and 67\% stock-33\% cash portfolio.
 
 %Impact of outside wealth on leverage and deadweight loss: table with results for these two variables as initial wealth changes and composition of portfolio (\% stocks in portfolio, as measured at time t=0)
     %we assume that the executive rebalances his portfolio maintaining the initial portfolio allocation 
 
 
-%+ C ompute critical stock price (decreasing with time to maturity and risk aversion)
-
-
-%Executive value line: CE values as function of stock price
-
-%Valuation depends upon 6 factors:  exercise price, stock price, dividend yield, stock-return volatility, risk-free rate, and the time until expiration. \cite{hall2002stock}
-
-
-%After one time period $\Delta t$, the stock price becomes either Sd or Su.
 %Note that our #time steps is per year, not total as is common in the literature. In this way, we are effectively building an even finer grid which should approximate even better our results.
 
 %"If the executive decides to exercise his options early, the profits from the exercise are invested in the riskless asset, which is then held until the final period."
@@ -371,4 +331,127 @@ Re-run and compare the last two simulations for two different mixes of outside w
 
 
 %WE MAY for simplicity assume that the option can be exercised only when in-the-money -> this simplifies analysis, but may not portray the reality.
-%Nevertheless it is consistent with the usual practice of reload options, where the executive can exercise only when the stock price is above the strike price.
+
+\subsubsection{Objective and subjective incentives}
+We now examine the effect on incentives implied by this difference in firm cost and executive value. Specifically, we analyze the incentives to exert effort and increase volatility, i.e., respectively the delta and vega of the two options. We refer to objective incentive when referring to the firm, as it is uniquely determined by firm's cost, and to subjective incentive when referring to the executive, since the value changes with her risk aversion. We limit ourselves to the case of 3 levels of risk aversion, namely $\rho \in \{1.5, 2, 2.5\}$ We study the following ratios: 
+
+\vspace{-2em}
+
+\begin{align*}
+\text{Objective delta} &= \frac{\text{\% increase in firm cost}}{\text{\% increase in stock price}} \\[1em]
+\text{Subjective delta} &= \frac{\text{\% increase in executive value}}{\text{\% increase in stock price}} \\[1em]
+\text{Objective vega} &= \frac{\text{\% increase in firm cost}}{\text{\% increase in stock volatility}} \\[1em]
+\text{Subjective vega} &= \frac{\text{\% increase in executive value}}{\text{\% increase in stock vol}}
+\end{align*}
+
+\vspace{1em}
+
+ %this for 1\% increase in the stock price - BUT we do it for dollar increase or 0.01 for volatility
+
+
+We first consider the RN option with the parameters from above. Figure \ref*{fig:rn_delta_obj} shows that the objective incentive is increasing in the stock price, as expected. We notice two things: first, it grows concavely up to $\$40$ ca., and then convexly; second, the incentive at $\$30$ is higher than $0.6$, whereas for an ATM call option we would expect it to be at $0.5$. On the other hand, subjective incentive displayed in Figure \ref*{fig:rn_delta_subj} shows a different pattern: it is very low when the option is OTM, jumps significantly when the option is close to being ATM, and then decreases slowly the deeper it goes ITM. This behavior can be interpreted as follows: the executive has a higher incentive to increase effort when the stock price gets closer to the strike price, as she feels she has more to gain, while she decreases the effort as the option gets more OTM because she feels she has less to gain now. Finally, we note that the incentive is higher for less risk-averse agents at all stock prices, which confirms that the incentive arguments works better for less risk averse employees (\cite{lau2005valuation}). Finally, in Figure \ref*{fig:rn_delta_comp} we compare the two incentives: we see that the objective incentive is higher than the subjective one when the option is OTM --- except for the subjective's spike just before the strike price --- while the subjective incentive is higher when the option is ITM. This suggests that the firm may underestimate the incentive effect of the option when it is OTM, and overestimate it when it is ITM; in other words, the firm may be better off by granting the option slightly ITM rather than OTM or ATM.
+
+\vspace*{15pt}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/delta_obj.png}
+        \caption{Objective}
+        \label{fig:rn_delta_obj}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/delta_subj.png}
+        \caption{Subjective}
+        \label{fig:rn_delta_subj}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/delta_comp.png}
+        \caption{Comparison}
+        \label{fig:rn_delta_comp}
+    \end{subfigure}
+    \caption{Effort incentives of RN option}
+    \label{fig:rn_delta_both}
+\end{figure}
+\vspace*{15pt}
+
+We now focus on the vega of the RN option. From the firm's perspective (Figure \ref*{fig:rn_vega_obj}), the executive has always a strong incentive to increase the volatility because e volatility increases the cost of the option by increasing the probability of it finishing ITM. But from the executive's perspective (Figure \ref*{fig:rn_vega_subj}), the incentive is always negative, which means that she would prefer to decrease rather than to increase volatility, the less so the less risk-averse she is. This is consistent with the idea that the executive is risk-averse and hence prefers a more stable stock price, and could imply that the firm's volatility is already too high for the executive, hence she does not want to increase if further. Therefore, we would expect the (risk-averse) executives to prefer projects with lower rather than higher volatility.
+
+\vspace*{15pt}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/vega_obj.png}
+        \caption{Objective}
+        \label{fig:rn_vega_obj}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/vega_subj.png}
+        \caption{Subjective}
+        \label{fig:rn_vega_subj}
+    \end{subfigure}
+    \caption{Volatility incentives of RN option}
+    \label{fig:rn_vega_both}
+\end{figure}
+\vspace*{15pt}
+
+We now move to the R option. For computational reasons, we will only consider an example with $\alpha = 0.75$ and $\gamma = 0.1$, shorter x-axis, and only one executive with $\rho = 2$. Figures \ref*{fig:r_delta_obj} and \ref*{fig:r_delta_subj} show a similar picture to the previous case of the RN option: the objective incentive is increasing steeply in the stock price, while the subjective is low in the OTM region, but then spikes just before the strike price. However, there are also two relevant differences: first, the objective incentive is close to 0 at $\$20$, while before it was well above $0.5$; second, both the overall level and the spike of the subjective incentive are lower than before, which seem to indicate that the executive perceives a lower incentive to exert effort with this R option rather than with the RN. Moreover, in Figure \ref*{fig:r_delta_comp} we see that the objective incentive is now always higher than the subjective one.
+
+\vspace*{15pt}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/r_delta_obj.png}
+        \caption{Objective}
+        \label{fig:r_delta_obj}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/r_delta_subj.png}
+        \caption{Subjective}
+        \label{fig:r_delta_subj}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/r_delta_comp.png}
+        \caption{Comparison}
+        \label{fig:r_delta_comp}
+    \end{subfigure}
+    \caption{Effort incentives of R(0.75, 0.1) option}
+    \label{fig:r_delta_both}
+\end{figure}
+\vspace*{15pt}
+
+To conclude, Figure \ref*{fig:r_vega_obj} and Figure \ref*{fig:r_vega_subj} show the volatility incentive of the R option. Compared to before, the objective incentive is still increasing, and it is higher, while the subjective incentive is still decreasing and negative, even lower than before. From the firm's (risk-neutral) perspective, volatility increases indeed the value of the current option, and especially of the reloaded option, both because higher volatility may imply even higher price for the reloaded part\footnote{Recall that, in general, the value of a call option is higher as time to maturity increases} and because we have ``more option" now because of the positive premium $\gamma$. On the other hand, the R option increases even more the timeframe of exposure to the stock volatility, which is not desirable for the risk-averse executive.
+
+\vspace*{15pt}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/r_vega_obj.png}
+        \caption{Objective}
+        \label{fig:r_vega_obj}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{fig/4/r_vega_subj.png}
+        \caption{Subjective}
+        \label{fig:r_vega_subj}
+    \end{subfigure}
+    \caption{Volatility incentives of R(0.75, 0) option}
+    \label{fig:r_vega_both}
+\end{figure}
+\vspace*{15pt}
+%%INSERT GRAPH OF DEADWEIGHT COST WITH RN OPTION (?) - NOT SURE

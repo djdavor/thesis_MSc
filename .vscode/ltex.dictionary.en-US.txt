@@ -23,3 +23,6 @@ nonviability
 hedgeable
 volatilities
 fractioned
+equilibria
+ITM
+OTM

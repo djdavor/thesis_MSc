@@ -1,25 +1,36 @@
 \section{Equilibrium analysis}
+In this chapter, we study the equilibrium outcomes of the theoretical model using numerical simulations. We first describe how our algorithm works and how we classify the possible first, second, and third best equilibria. Then, we present the results of the simulations under different parameter configurations and study how the equilibrium outcomes change. %We find that ...
+Finally, we also consider special cases of the model, namely when the executive can choose only effort or only volatility, and when the executive can choose only the RN option or the stock compensation. %We find that ...
 
 
 
 
+\subsection*{Description and Parameter Choice}
+%\cite{dai2005valuing} propose using N=10,000 as a good asymptotic approximation.
+
+We now briefly discuss the choice of some of the relevant parameters for the simulations. A complete list can be found at the beginning of the Notebook file. 
+r = 0.045, taken as the current risk-free rate of the 10 Year US Treasury Rate at May 14th (\cite{ychartrfrate}).
+N\_init\_r = 100 bc slow, but still provides good approximation as we have a total of 1,000 steps over the time frame of our ESO.
+sigma_c = 0.3 following the literature and the higher volatility few years ago, even though recent trend has been towards lower volatility
+For Brownian motion, we run a safe 100 paths and 10000 points, which is sufficient for our purposes. 
+For years, we choose 20 years as it is the most a reload option can be out. The most delicate choice is the average number of years until the RN option is exercises $y_RN$, as well as the reload option is first and second exercised, $y_R1$ and $y_R2$. We choose these values based on the empirical literature, .... -> influences stock price (effort and volatility cease) and agent's utility (wealth depends on whether and how many times the option has been exercised).
+10 as average size of C-suite. Agents are 67/33, but will then run robustness checks with 50/50 agents.
+Delicate choices of low and high values for rho, a, and sigma.
 
 
 
-Goal: show how allocations change within the three different equilibria: full info, moral hazard, moral hazard + adv. selection 
 
-
-
-%Optimal exercise: in the form of exercise policy, which is done by studying the so-called continuation region of the employee (ie, where the employee would continue to hold the option)
-
-
-\subsection*{Description}
-\cite{dai2005valuing} propose using N=10,000 as a good asymptotic approximation.
-
-Stock price Simulation
+Stock price Simulation as discretized - we take from \cite{qsbrownianpy} which bases on theoretical framework of \cite{glasserman2004monte}.
     points and paths; horizon of 20 years (sufficient for R + reload option)
-    default parameters + additional effort and volatility
-    delta goes from 0 to 1
+    default parameters + additional effort and volatility, when RN or R option has not yet been fully exercised.
+    %%INSERT GRAPH AS EXAMPLE
+
+Agent's utility is computed using risk-free rate $r$ for discounting, with the expectation being taken over all possible Brownian motion paths computed before. Wealth depends on whether and how many times the option has been exercised.
+
+Expected value of the stock price is simply $E[S] = S0 * e^{a_tot * t}$, where $a_tot$ is the sum of the efforts. Note that volatility does not play a role. ==> hence volatility does not play directly a role, if not if the principal wanted to implement a specific project with given volatility or some other factor not captured by our model.
+
+(First, we simulate the paths under the different parameters, which is mainly influenced by the level of effort and volatility + stock price evolution accounts for whether the option is still to be exercised or has been exercised.)
+The principal proposes a given R option (ie, chooses alpha and gamma), from which the agent computes her optimal controls $a^*$ and $\sigma^*$, which are then used to compute the agent's utility and the cost of the R option. The principal than ranks all (alpha, gamma) pairs based on the expected utility of his and ranks, using a constrained ordering in the different eq. bests.
 
 Firm parameters
     alphas and gammas it can offer
@@ -27,21 +38,22 @@ Firm parameters
 
 Agent
     default is 67/33 agent; then also 50/50 agent
-    a_h and a_l + sigma_h and sigma_l; low set to 0
-    key parameters are y_RN and y_R1,y_R2; see exercise years from empirical literature
+    $a_h$ and $a_l$ + $sigma_h$ and $sigma_l$; low set to 0
+    key parameters are $y_RN$ and $y_R1$,$y_R2$; see exercise years from empirical literature
 
 
-First, we simulate the paths under the different parameters, which is mainly influenced by the level of effort and volatility + stock price evolution accounts for whether the option is still to be exercised or has been exercised.
 
-
+For optimization issues, we run and save \textit{a priori} all the stock price path simulations, as well as all the possible utilities for the executive and the possible costs of the R option. This way, we can quickly access the values and avoid recalculating them for each iteration of the algorithm.
 
 
 + we label the type of equilibrium, for each 1st, 2nd, or 3rd best:
-## Shutdown: 1 agent, 2 agents
-## Pooling: Same a and same sigma
-## Separating: else (either a or sigma different, both agents active)
+1) Shutdown: 1 agent, 2 agents
+2) Pooling: Same a and same sigma
+3) Screening (or separating): else (either a or sigma different, both agents active)
+4) NO: if for both agents the constraints are not satisfied. Note that this implies a cascade effect, in the sense that if the first or second best is not satisfied, the (second and) third best will not be satisfied either. 
 
-\subsection*{Simulation Results} 
+
+\subsection*{Simulation Results (/Findings)} 
 Base case - set fixed (justified) parameters
 HOW TO DISPLAY THEM??
 
@@ -53,10 +65,21 @@ HOW TO DISPLAY THEM??
     +: agent's different outside wealth
 
     -> WHAT equilibrium gets selected? Is it first, second, third best? What's the value difference from the other type of equilibria? How sensitive it is to the change of parameters?
+    
+
+
 
 
 %Consider wealthy CEO vs manager at some Internet-based firm (\cite{carpenter1998exercise}) - the former has lower portion of wealth invested in options hence has the "risk-adjusted" risk-aversion lower than the latter. Alternatively, differences in valuation are reflective of differences in wealth composition rather than risk aversion alone!! \cite{henderson}  
 
 
-\subsection*{Comparison with RN case only}
+\subsection*{Special cases}
+\subsubsection*{RN option only}
 ie, we set alphas = [1.0] and gamma = [0.0] and compare the results with the previous case.
+\subsubsection*{Stock only (K=0)}
+
+\subsubsection*{Effort only}
+
+\subsubsection*{Volatility only}
+
+
