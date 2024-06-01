@@ -1,71 +1,122 @@
 \section{Equilibrium analysis}
-In this chapter, we study the equilibrium outcomes of the theoretical model using numerical simulations. We first describe how our algorithm works and how we classify the possible first, second, and third best equilibria. Then, we present the results of the simulations under different parameter configurations and study how the equilibrium outcomes change. %We find that ...
+In this chapter, we study the equilibrium outcomes of the theoretical model using numerical simulations. We first describe how our algorithm works and how we label the first, second, and third best equilibria. Then, we present the results of the simulations under different parameter configurations and study how the equilibrium outcomes change. %We find that ...
 Finally, we also consider special cases of the model, namely when the executive can choose only effort or only volatility, and when the executive can choose only the RN option or the stock compensation. %We find that ...
 
 
+\subsection*{Parameter Choice and Algorithm Design}
+We first discuss the choice of parameters for the simulations. A complete list can be found at Appendix X; %CREATE AND CITE
+therefore we will just focus on the ones that are most worthy to be discussed. We set the risk-free rate $r$ to 0.045, which is the current rate of the 10-Year US Treasury Rate as of May 14th, 2021 \cite{ychartrfrate}, and the volatility $\sigma_c$ to 0.3, as is done in the (older) literature, but is not far away from the volatility observed in the past few years. For our Brownian motion, we choose a time horizon of 20 years, which is the maximum time a reload option (including the reloaded) can be out. We then run 100 paths and 5,000 points, which is approximately one point per trading day over 20 years, and is sufficient for our purposes. For simplicity, we assume the stock has zero drift. The most delicate choice involves the average number of years until the RN option is exercised $y_{RN}$, as well as the reload option's first and second exercise, respectively $y_{R1}$ and $y_{R2}$. We choose $y_{RN} = 7$ based on the available empirical literature (Table 4 in \cite{murphy2019employees}), $y_{R2} = 7$ since the remaining part is a RN option, and assume $y_{R1}$ to be slightly lower and set it thus to 6. These choices are key since they influence both the stock price evolution --- they determine when effort and additional volatility cease --- and the agent's utility, as her wealth depends on whether and how many times the option has been exercised. Therefore, as with other key parameters, we will run robustness checks. We set N\_init $= 500$ since the algorithm for the RN option is fast, and N\_init\_r = 50 for computational reasons; our tests show that this provides nevertheless a good approximation of the cost of the R option, as we still have a total of 500 steps over the lifetime of the option. We set the number of agents to 10, which seems a reasonable number for a C-suite. Agents have a 67/33 portfolio, meaning that 67\% of their outside wealth is invested into firm stock and the remaining 33\% in cash; we set the exact numbers by replicating \cite{carpenter1998exercise}. We test also with a 50/50 portfolio. We allow for $\alpha$ to take value in $A = \{0.2, 0.5, 0.6, 0.7, 0.75, 0.8, 0.9, 1\}$ and $\gamma$ in $\Gamma = \{0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.5, 0.75, 1\}$; ideally we would like $\alpha$ and $\gamma$ to take values in the continuum $[0, 1]$ but need to choose these discrete subset for computational reasons. Finally, the other delicate choices are the high and low values of the coefficient of risk aversion $\rho$, the effort $a$, and the volatility $\sigma$. We set $\rho_L = 1.5$ and $\rho_H = 2.5$, $a_L = 0$ and $a_H = 1$, and $\sigma_L = 0$ and $\sigma_H = 0.01$. The first two are based on some values chosen by \cite{carpenter1998exercise}, while the latter are fine-tuned for realistic behavior of the stock price and utility functions. 
+
+\subsubsection*{Algorithm}
+We now provide a brief overview of the algorithm that returns the equilibrium outcomes. First, we simulate the stock price path by constructing an array of possible paths over the given timeframe, considering the relevant effort and volatility levels, that influence the stock price up until when the option is not exercised, reload option included. We discretize the stock's Geometric Brownian motion using the Python implementation of \cite{qsbrownianpy}, which is based on the theoretical framework of \cite{glasserman2004monte}. %INSERT GRAPH AS EXAMPLE
+We then compute the agent's utility using the risk-free rate $r$ for discounting, with the expectation being taken over all possible Brownian motion paths computed before. The agent's wealth at time $t$ depends on whether and how many times the option has been exercised. On the other hand, the expected value of the terminal stock price is simply $E[S_T] = S_0 * e^{a_{tot}*t}$, where $a_{tot}$ is the sum of the efforts. Note that volatility does not play a role in the expectation, which reflects the risk neutrality of the principal. Therefore, the choice of volatility is relevant as long gives some benefit to the agent, or in the case of the principal wanting to implement a specific project.
+From here, the principal proposes some R option, i.e., chooses $\alpha$ and $\gamma$, and the agent choose some controls $(a_L, a_H)$ and $(\sigma_L, \sigma_H)$ and either the R or RN option, which are then used to simulate the stock price and compute the agent's and principal's utilities. The principal then ranks all $(\alpha, \gamma, a_L, a_H, \sigma_L, \sigma_H, \theta_L, \theta_H)$ sets based on his utility; for the first, second, and third equilibria, he checks whether the constraints are satisfied and thus gets an updated ordering. Clearly, if an outcome is part of some higher equilibria, it is also an equilibrium in all lower cases. For example, if an outcome is part of a third equilibrium, then it is also a first and second equilibrium. Finally, the algorithm returns the ranked equilibrium outcomes, for each type of equilibrium. We label equilibria as either pooling, screening, shutdown, or no equilibrium. The first two are proper equilibria, in the sense that the given constraints are satisfied, with the difference being if both agents have the same equilibrium allocation, while the shutdown is not, since one agent is not active and chooses the outside option. No equilibrium means that for both agents the constraints are not satisfied, which implies a cascade effect on the higher equilibria: for example, if an allocation is not a first best, then it cannot be neither a second nor a third best.
 
 
-\subsection*{Description and Parameter Choice}
-%\cite{dai2005valuing} propose using N=10,000 as a good asymptotic approximation.
+\subsection*{Base Case} 
+Base case - set fixed (justified) parameters:
+    0, 1 eq: 4608 
+        means that reservation utility is not binding
+    2: 288 (only about 6\% of total)
+    3: 82 (only about 1.8\% of total)
 
-We now briefly discuss the choice of some of the relevant parameters for the simulations. A complete list can be found at the beginning of the Notebook file. 
-r = 0.045, taken as the current risk-free rate of the 10 Year US Treasury Rate at May 14th (\cite{ychartrfrate}).
-N\_init\_r = 100 bc slow, but still provides good approximation as we have a total of 1,000 steps over the time frame of our ESO.
-sigma_c = 0.3 following the literature and the higher volatility few years ago, even though recent trend has been towards lower volatility
-For Brownian motion, we run a safe 100 paths and 10000 points, which is sufficient for our purposes. 
-For years, we choose 20 years as it is the most a reload option can be out. The most delicate choice is the average number of years until the RN option is exercises $y_RN$, as well as the reload option is first and second exercised, $y_R1$ and $y_R2$. We choose these values based on the empirical literature, .... -> influences stock price (effort and volatility cease) and agent's utility (wealth depends on whether and how many times the option has been exercised).
-10 as average size of C-suite. Agents are 67/33, but will then run robustness checks with 50/50 agents.
-Delicate choices of low and high values for rho, a, and sigma.
+\input{fig/eqs/base_1st.tex}
+In the 1st best, the principal is best off by having both types of executives exerting high effort, and is indifferent whether they choose high or low volatility (recall that volatility does not enter directly principal's utility). Since all agents choose the RN option --- less expensive for the principal, and convenient if it nevertheless were to induce high effort --- the choice of $R(\alpha, \gamma)$ is immaterial and hence we have 288 possible outcomes that give the principal the highest utility. But none of them is incentive compatible for either executive. The following equilibria are basically ranked by decreasing cost of $R(\alpha, \gamma)$ for the executive, and where at least one agent does not choose the RN option --- if not both, if the difference in total cost is lower than having only one agent choose the R for the next values of ($\alpha, \gamma$). Therefore, we find first the outcomes with higher $\alpha$ and lower $\gamma$, then the others. 
+
+\input{fig/eqs/base_2nd.tex}
+The second and third best are more interesting. We have 288 allocations that are part of 2nd best equilibria: the first 72 give all the same utility to the principal, and agents choose low effort, high volatility, and RN option in all of them. However, most of them are not also third bests. In the remaining ones, one or both agents choose the R option, but again with low effort and high volatility. Therefore, we note that the principal is not able to induce high effort from the agent anymore. Finally, in the third best we are left with only 82 outcomes: the principal is indifferent among the first 5, which we show in Table .... Therefore, in the third best, we have an equilibrium whereby both agents choose the RN option, exert low effort and choose the project with higher volatility. The principal chooses any between $R(0.75, 0), R(0.8, 0), R(0.9, 0), R(1, 0)$, and $R(1, 0.05)$. 
+
+\input{fig/eqs/base_3rd.tex}
+
+Few comments are in order. First, we note that most equilibria are pooling: in the first best case, they are all pooling in effort whereas half is pooling and half is screening in volatility; in the second and third best instead, they are pure pooling in both effort and volatility, as agents choose low effort and high volatility. Second, as we would expect, agents' utility increases as we move to second and third best, whereas principal's goes down. The utility of the low risk-averse executive goes from 222.42 to 296.61, and the high risk-averse executive from 24.73 to 98.91. On the other hand, the principal's utility falls down from 209.39 to 17.71, mostly driven by the fall in terminal stock price, as a result of all to none agents exerting high effort and thus influencing the drift of the stock price evolution.
+
+%%Number of agents
+Changing the number of agents has little effect on the second and third best allocations, since agents do not exert effort hence the utilities remain the same. The only difference is in the first best, where the principal's utility increases as the number of agents increases, since there are more executives that exert high effort and hence the stock price is higher; however, this is due to the formulation of our algorithm, whereas if instead we were to consider a proportional system of total effort --- similar to how the cost of the two options is accounted in the principal's utility --- then the principal's utility would remain the same.
+
+%%Lambda
+Nothing relevant happens as the proportion of low risk-averse agents $\lambda$ changes. The only relevant difference is at the extremes $\lambda = 0$ or $\lambda = 1$, i.e., where we only have high risk-averse or low-risk averse executives, respectively. In this case, the choices of effort, volatility, and option of the non-present agent are irrelevant, which extends the possible allocations in the different equilibria. What matters is that the present agent chooses the RN option, high volatility, and high effort in the first best and low effort in the other two equilibria; therefore, the other agent can also choose the R option in the second and third best, for example.  
+
+%Beta
+Beta = 0: completely uninterested in stock price, hence all allocations where both agents choose the RN option are first best. This reamins in second and third best, where equilibria are pinned down by agents' incentive compatibility constraints. 
+At lower levels of beta, the principal is more interested in the cost of the options, whereas at higher levels he is more interested in the stock price. Hence, at higher betas, the principal may be less interested in discriminating with the two options but rather at maximizing the stock price (?).
 
 
-
-
-Stock price Simulation as discretized - we take from \cite{qsbrownianpy} which bases on theoretical framework of \cite{glasserman2004monte}.
-    points and paths; horizon of 20 years (sufficient for R + reload option)
-    default parameters + additional effort and volatility, when RN or R option has not yet been fully exercised.
-    %%INSERT GRAPH AS EXAMPLE
-
-Agent's utility is computed using risk-free rate $r$ for discounting, with the expectation being taken over all possible Brownian motion paths computed before. Wealth depends on whether and how many times the option has been exercised.
-
-Expected value of the stock price is simply $E[S] = S0 * e^{a_tot * t}$, where $a_tot$ is the sum of the efforts. Note that volatility does not play a role. ==> hence volatility does not play directly a role, if not if the principal wanted to implement a specific project with given volatility or some other factor not captured by our model.
-
-(First, we simulate the paths under the different parameters, which is mainly influenced by the level of effort and volatility + stock price evolution accounts for whether the option is still to be exercised or has been exercised.)
-The principal proposes a given R option (ie, chooses alpha and gamma), from which the agent computes her optimal controls $a^*$ and $\sigma^*$, which are then used to compute the agent's utility and the cost of the R option. The principal than ranks all (alpha, gamma) pairs based on the expected utility of his and ranks, using a constrained ordering in the different eq. bests.
-
-Firm parameters
-    alphas and gammas it can offer
-    beta goes from 0 to 1 (large and small firm)
-
-Agent
-    default is 67/33 agent; then also 50/50 agent
-    $a_h$ and $a_l$ + $sigma_h$ and $sigma_l$; low set to 0
-    key parameters are $y_RN$ and $y_R1$,$y_R2$; see exercise years from empirical literature
+%U_hat
+....
 
 
 
-For optimization issues, we run and save \textit{a priori} all the stock price path simulations, as well as all the possible utilities for the executive and the possible costs of the R option. This way, we can quickly access the values and avoid recalculating them for each iteration of the algorithm.
+%Rho
+1.5-2: same outcomes as before, only utility changes now
+2-2.5: same difference as above, but larger alpha set, which now includes also R(0.7, 0) and R(0.9, 0.5). Intuition is that now it is IC for the low risk-averse agent: before, it was not IC bc the agent was low risk-averse enough for her to prefer the R option, but as it increases she prefers the (safer) RN option and thus makes it part of third best too. Before it was only part of third equilibrium
+→ risk aversion of low type determines how many second bests are also third bests
+as we increase the high type the set increases but may be fake: it allows for low and high volatility of the other type, but is probably a precision issue with our code bc of very low numbers, and so the difference in utilities gets lost in the precision allowed by the code
+
+Enlargement of 3rd best set: 1.5: 5, 2: 7, 2.5: 72
+Already with 5: 288. Which means that any risky option is now compatible, bc all agents choose RN option but low risk averse agent would not deviate anymore to R because she is too risk averse now.
 
 
-+ we label the type of equilibrium, for each 1st, 2nd, or 3rd best:
-1) Shutdown: 1 agent, 2 agents
-2) Pooling: Same a and same sigma
-3) Screening (or separating): else (either a or sigma different, both agents active)
-4) NO: if for both agents the constraints are not satisfied. Note that this implies a cascade effect, in the sense that if the first or second best is not satisfied, the (second and) third best will not be satisfied either. 
+??impact on second best? all fake, due to precision issue!
+1.5-3 => 1.5-5
+2-3 => 2-5
+3-10 => 5-10
+
+and second to third best??
+
+Issue of precision bc numbers become smaller as risk aversion goes up
+
+%effort a
+0-0.5/1/2/5/10: nothing changes. $a_H$ in 1st best, $a_L$ in 2nd and 3rd best
+0.5-1: all 2nd best are NOT 3rd best now. In 2nd best, exec chooses RN option, whereas in 3rd best she would choose R option only. But since she does so with low effort, principal's cost is minimized at R(1,0) hence still RN option is chosen. Again, rest is decreasing in cost of R option for the principal.
+    %% r_eso_mod shall return rn_eso for R(1,0)
+    same for 0.5/1-2, 0.5-5, 
+
+1-1.01/1.001/1.0001: always low effort in equilibrium, but unique solution
+0-0.0001: NO unique equilibrium but as before;  
 
 
-\subsection*{Simulation Results (/Findings)} 
-Base case - set fixed (justified) parameters
+→ making this stricter leads to unique equilibria in third best, ie, 
+
+
+%sigma
+changing sigma has no direct effect on the principal, as he is risk-neutral
+same results → robust to changes in sigma. In first best, both are allowed, and in second and third best they still prefer to choose high volatility BUT with RN option → interesting thing
+Going from 0.02 to 0.05, increases utility for low type by 0.00026\% and for the high typoe by 0.00000000015\%: decreasing returns to volatility for more risk-averse type; BUT they are still low risk averse enough for volatility to be beneficial for them
+
+
+%years
+quite sensible to changes: 
+the
+theta_L when: 
+theta_L, theta_H = 1,1 for: 7,9,7; 7,8,7; 7,7,7, 5,7,5. In this case, R(1,0)=RN wins because it has the lowest cost among all R options
+7,6,6: in 3st best both are RN, but immediately below the low type would choose R option, whereas High type sticks with RN 
+5,6,5: as above, but the agent would prefer to choose RN option for first usual R proposals, then Risky
+Recall that in default case (7,6,7), theta_L prefers RN first then theta_R; for the other type precision issue
+
+
+%Delta - relevance of executive's volatility
+With 0, also naive screening , since executive's choice of volatility has no effect. But at all other levels, the results are confirmed; indeed, they can all be seen similarly as special cases of the sensitivities we have run on $\sigma$ before.
+
+
+
+%Alpha - relevance of executive's effort
+Same as the case of delta, except for the extreme case of 0, where the principal does not care if the agent exerts high or low effort. What matters is only that the agent chooses the RN option, which is the cheapest for the principal.
+
+
 HOW TO DISPLAY THEM??
+    Table: Top 3/5 outcomes
+    Table: Difference in P \& executive utilities across different bests
 
 %Different:
-    FIRM: n_agents + lamb, beta, larger alphas and gammas set
+    FIRM: n\_agents + lamb, beta, larger alphas and gammas set
 
-    AGENT: U_bar, delta, (rho_L/H, a_L/H, sigma_L/H) - absolute value and distance, y_RN/R1/R2
+    AGENT: U\_bar, delta, (rho\_L/H, a\_L/H, sigma\_L/H) - absolute value and distance, y\_RN/R1/R2
 
     +: agent's different outside wealth
 
     -> WHAT equilibrium gets selected? Is it first, second, third best? What's the value difference from the other type of equilibria? How sensitive it is to the change of parameters?
     
++ we notice second and third are always the same
 
 
 
@@ -76,10 +127,19 @@ HOW TO DISPLAY THEM??
 \subsection*{Special cases}
 \subsubsection*{RN option only}
 ie, we set alphas = [1.0] and gamma = [0.0] and compare the results with the previous case.
+nothing changes, apart from third best that now features only this.
+
 \subsubsection*{Stock only (K=0)}
+The two values cancel out hence the principal has the same utility.
 
 \subsubsection*{Effort only}
+Changes nothing for the principal, but lowers utility for agent. Under our assumptions (ie, principal is indifferent towards volatility) the agent would be better off by being left to choose some part of (idiosyncratic) volatility, as this would increase her utility.
 
 \subsubsection*{Volatility only}
+In third best, nothing changes for either one. In first best, principal is worse off bc cannot enjoy stock price benefits from having exec exerting high effort.
+
+\subsection*{Only Competitive Screening}
 
 
+\subsection*{Comments on the results}
+The choice of including only the proportion of agents that choose the RN and the R option respectively in the principal's utility, is given by the fact that it allows us from to isolate from the impact of the number of executives. Indeed, the parameter $\beta$ and $\delta$ can already be used to control for the size of the firm, hence it would be repetitive. Therefore, the impact of the number of agents is limited to the stock price path, when some of them exert high effort.
