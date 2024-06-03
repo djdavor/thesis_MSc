@@ -1024,7 +1024,6 @@
       \field{title}{Monte Carlo methods in financial engineering}
       \field{volume}{53}
       \field{year}{2004}
-      \true{nocite}
     \endentry
     \entry{gottlieb2014simultaneous}{article}{}
       \name{author}{2}{}{%
@@ -2078,7 +2077,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Brownian Motion Simulation with Python}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.quantstart.com/articles/brownian-motion-simulation-with-python/
       \endverb
@@ -2529,7 +2527,6 @@
       \field{labeltitlesource}{title}
       \field{title}{10 Year Treasury Rate (I:10YTCMR)}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://ycharts.com/indicators/10_year_treasury_rate
       \endverb
