@@ -8,19 +8,19 @@
     
     % Draw ticks
     \draw (0,-0.1) -- (0,0.1) node[anchor=south] {};
-    \draw (3,-0.1) -- (3,0.1) node[anchor=south] {};
+    \draw (2,-0.1) -- (2,0.1) node[anchor=south] {};
     \draw (10,-0.1) -- (10,0.1) node[anchor=south] {};
     
     % Add labels
     \node at (0,-0.3) {T=0};
-    \node at (3,-0.3) {T=3};
+    \node at (2,-0.3) {T=2};
     \node at (10,-0.3) {T=10};
     
     % Draw colored lines and labels
-    \draw[densely dotted] (0,0) -- node[above] {nonvested} (3,0);
-    \draw (3,0) -- node[above, yshift=1.5pt] {vested} (10,0);
+    \draw[densely dotted] (0,0) -- node[above] {nonvested} (2,0);
+    \draw (2,0) -- node[above, yshift=1.5pt] {vested} (10,0);
 \end{tikzpicture}
-\caption{Visual representation of an ESO with 3y vesting period and 10y time to maturity.} 
+\caption{Visual representation of an ESO with 2y vesting period and 10y time to maturity} 
 \label{fig:rep_vesting}
 \end{figure}
 

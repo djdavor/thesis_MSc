@@ -1,6 +1,6 @@
 \section{Valuation}
 
-    In this chapter, we compute the cost of the two options. We first introduce the methods we use to compute them --- namely Black-Scholes and lattice-based models --- and then show the main snippets of our code. We compute the cost to the employer under the risk-neutral framework and the executive value under the utility maximizing framework. Finally, we compute some comparative statics, which allow us to explore better the relationship between subjective and objective incentives induced by the two options, as well as to compare the objective and subjective valuations, and to analyze how they change with different parameters.
+    In this chapter, we compute the cost of the two option and study their sensitivities. We first introduce the methods we use to compute them --- namely Black-Scholes and lattice-based models --- and then show the main snippets of our code. We compute the cost to the employer under the risk-neutral framework and the executive value under the utility maximizing framework. Finally, we compute some comparative statics, which allow us to explore better the relationship between subjective and objective incentives induced by the two options, as well as to compare the objective and subjective valuations, and to analyze how they change with different parameters.
 
 
 
@@ -77,10 +77,11 @@ We need assumptions \ref*{ass:bs_1}, \ref*{ass:bs_3}, \ref*{ass:bs_4}, \ref*{ass
 \end{assumption}
 
 The intuition behind the model is quite simple. We discretize the evolution of the underlying stock price by building a binomial lattice (tree), for a given number of steps between the issue of the option and its maturity. Each node represents thus a possible price of the underlying stock. From each node, the stock price can either go up ($u$) or down ($d$), with probability $q$ or $1-q$. The key assumption is thus that the stock moves only in either one of these two directions. Therefore, the generic value of the stock at step $t$ with $k$ upward movements and $t-k$ downward movements is $S_t = S_0 u^k d^{t-k}$, where $S_0$ is the initial stock price at $t=0$. Figure \ref*{fig:bin_tree} provides a graphical representation of the first two levels of the stock price tree. 
-\input{fig/bin_tree}  %%-> FIX q/1-q location on arrows
+\input{fig/bin_tree}  
+
 We can divide the procedure in three main steps: (i) build the stock tree, (ii) calculate the option value at each terminal node, (iii) go backwards and decide at each node whether it is optimal to exercise or keep the option.
 
-We use the original CRR method and set $u = e^{\sigma \sqrt{\Delta t}}$ and $d = e^{-\sigma \sqrt{\Delta t}}=\frac{1}{u}$, which are the multiplicative factors if the stock price goes up or down, respectively. Note that the price multipliers $u$ and $d$ depend thus only on volatility of the underlying and time step $\Delta t$ and not on the drift.\footnote{This is the reason for which the probability of going up is usually higher in this model, to compensate for the missing account of the drift component.} Therefore, the value of the stock when it goes up or down depends also on its underlying volatility. Moreover, the condition $d = \frac{1}{u}$ ensures that the tree is recombinant, meaning that what matters is the number of ups and downs, not their order. This means that if the stock price moves up and then down, the stock price will be the same as if it instead moved first down and then up. Indeed, as can be seen from figure \ref*{fig:bin_tree}, $S_0ud$ can be reached by either first going up and down, or first down and then up. This is convenient also because it allows the tree representation of the underlying stock price, ensuring that all the nodes are nicely connected, and it fastens the calculation of the option price (indeed, note that in this way the number of total nodes is reduced). 
+We use the original CRR method and set $u = e^{\sigma \sqrt{\Delta t}}$ and $d = e^{-\sigma \sqrt{\Delta t}}=\frac{1}{u}$, which are the multiplicative factors if the stock price goes up or down, respectively. Note that the price multipliers $u$ and $d$ depend thus only on volatility of the underlying and time step $\Delta t$ and not on the drift.\footnote{This is the reason for which the probability of going up is usually higher in this model, to compensate for the missing account of the drift component.} Therefore, the value of the stock when it goes up or down depends also on its underlying volatility. Moreover, the condition $d = \frac{1}{u}$ ensures that the tree is recombinant, meaning that what matters is the total number of ups and downs, not their order. This means that if the stock price moves up and then down, the stock price will be the same as if it instead moved first down and then up. Indeed, as can be seen from figure \ref*{fig:bin_tree}, $S_0ud$ can be reached by either first going up and down, or first down and then up. This is convenient also because it allows the tree representation of the underlying stock price, ensuring that all the nodes are nicely connected, and it fastens the calculation of the option price (indeed, note that in this way the number of total nodes is reduced). 
 
 In the second step, we simply compute the option value at expiration, i.e., its intrinsic value, which in the case of our call option is $\max \{0, S_T - K \}$.
 
@@ -111,10 +112,10 @@ We compute the cost of the two options to the firm using the classical valuation
 Recall indeed that the theoretical value of an option at any time $t$ is given by (i) the intrinsic value ($S_t - K$) and (ii) the time premium, i.e., the remaining value forfeited at exercise, which basically accounts for the possibility that the option appreciates in the remaining lifetime.
 We employ the binomial tree approach from \cite{cox1979option}; however, we account for deterministic early exercise introducing a threshold above which the holder will exercise, i.e., always exercise if $S_t \ge K*m$ for some multiple $m$ (\cite{hull2004value}), which we set at $m = 2$.
 
-We now comment the relevant code used --- the full code can be found in the appendix.
+We now comment the relevant code used --- the full code can be found in the Online Appendix.
 
 \subsubsection{RN option}
-The function rn\_eso is defined as \verb|rn_eso(S0,K,T,v,r,N,sigma,m)| and takes the following parameters as input:
+The function \verb|rn_eso| is defined as \verb|rn_eso(S0,K,T,v,r,N,sigma,m)| and takes the following parameters as input:
 \begin{itemize}
     \item $S_0$: spot price of the underlying firm stock
     \item $K$: strike price of the option; we always set it equal to $S_0$ %\footnote{Some propose to set it slightly higher ...}
@@ -144,17 +145,17 @@ At each step, the relevant decision is the following: if the option is either no
 \end{figure}
 
 \subsubsection{R option}
-We define the function r\_eso as \verb|r_eso(S0,K,T,v,r,N,sigma,m,alpha,gamma)|.
+We define the function \verb|r_eso| as \verb|r_eso(S0,K,T,v,r,N,sigma,m,alpha,gamma)|.
     
 
 
 We use the same parameters as above, with the addition of:
 \begin{itemize}
     \item $alpha$: amount of option that gets converted to cash at exercise
-    \item $gamma$: \textit{risk premium} granted in terms of new RN option. 
+    \item $gamma$: risk premium granted in terms of new RN option at exercise. 
 \end{itemize}
 
-The valuation here is trickier because the payoff at exercise is not any more given only by the difference between the stock price and the strike price, but also by the time value that gets recouped with the issuance of the new option. It is hence clear that, holding the same parameters, the cost of rn\_eso is a lower bound for r\_eso. We follow the procedure proposed by \cite{huang2013dynamic} in snippet \ref*{fig:val_r_gamma0}. The difference from above is that, in the case of the option being vested and above the threshold for (early) exercise, the payoff is given by its intrinsic value plus a portion of its time value, computed as the Black-Scholes cost minus the intrinsic value, multiplied by the percentage that gets recouped. 
+The valuation here is trickier because the payoff at exercise is not anymore given only by the difference between the stock price and the strike price, but also by the time value that gets recouped with the issuance of the new option. It is hence clear that, holding the same parameters, the cost of \verb|rn_eso| is a lower bound for \verb|r_eso|. We follow the procedure proposed by \cite{huang2013dynamic} in snippet \ref*{fig:val_r_gamma0}. The difference from above is that, in the case of the option being vested and above the threshold for (early) exercise, the payoff is given by its intrinsic value plus a portion of its time value, computed as the Black-Scholes cost minus the intrinsic value, multiplied by the percentage that gets recouped. 
 
 \begin{figure}[H]
     \begin{lstlisting}[breaklines, basicstyle=\ttfamily\small]
@@ -177,9 +178,9 @@ The valuation here is trickier because the payoff at exercise is not any more gi
 
 However, this valuation is incomplete, because we are not considering the role played by $\gamma$. In their paper, \cite{huang2013dynamic} show only one example, where 75\% of the option gets exercised and another 25\% (i.e., 100\% - 75\%) gets reloaded. Therefore, it is unclear how they would consider a strictly positive risk premium $\gamma > 0$. 
 We therefore elaborate a novel approach which builds up on their original idea. Note that the value of adding $\gamma$ is two-fold: first, as a proper exercise compensation since the executive gets stock and options worth $(1+\gamma)$ the number of options she previously held, and second as time value recovered. Therefore, we propose the valuation methodology in snippet \ref*{fig:val_r} for our R option which embeds this double edge provided by $\gamma$: \verb|1+gamma*(S - K)| captures the first effect, \verb|(1-alpha+gamma)*(black_scholes(S,K,T,r,sigma)-(S-K))| the second.
-Clearly, this methodology equals the previous when $\gamma = 0$. Therefore, it can be seen as a proper extension of \ref*{fig:val_r_gamma0}.
+Clearly, this methodology equals the previous when $\gamma = 0$. Therefore, it can be seen as a proper extension of Snippet \ref*{fig:val_r_gamma0}.
 
-\begin{figure}
+\begin{figure}[h]
     \begin{lstlisting}[breaklines, basicstyle=\ttfamily\small] 
     if not vested:                         
         C[j] = disc * (q*C_up + (1-q)*C_down)
@@ -189,7 +190,7 @@ Clearly, this methodology equals the previous when $\gamma = 0$. Therefore, it c
     elif vested & (S < K*m):  
         C[j] = disc * (q*C_up + (1-q)*C_down)
     \end{lstlisting}
-    \caption{Valuation of a generic R option}
+    \caption{Valuation of a generic $R_{\alpha, \gamma}$ option}
     \label{fig:val_r}
 \end{figure}
 
@@ -224,7 +225,7 @@ Note that, at each time step $t$, the value of the non-firm related wealth $c_t$
 
 Therefore, we want to find $E_c$ such that 
 $$U_\rho(n_s, n_o, c) = U_\rho(, n_S, 0, c + E_c) $$ %%NOT CONSISTENT WITH UTILITY DEFINED BEFORE
-where we included only the most relevant parameters entering the executive's utility function. Therefore, the external wealth of the executive becomes relevant now, both in terms of absolute wealth and portfolio composition (i.e., percentage of total wealth held in firm stocks). As we will see later, it is relevant because the utility function is not separable, hence our results will be sensible to the initial values we will choose. In other words, $E_c$ is the adjustment to the executive's wealth required to keep her on the same utility level while not granting her any option.
+where we included only the most relevant parameters entering the executive's utility function. Therefore, the external wealth of the executive becomes relevant now, both in terms of absolute wealth and portfolio composition (i.e., percentage of total wealth held in firm stocks). This is because the utility function is not separable, hence our results will be sensible to the initial values we will choose. In other words, $E_c$ is the adjustment to the executive's wealth required to keep her on the same utility level while not granting her any option.
 
 Recall that we defined the executive's utility of wealth with the power utility function, that is, 
 $$\bar{u}_\rho(w) = \frac{w^{1-\rho}}{1-\rho}$$
@@ -232,12 +233,12 @@ with $\rho = 1 - \gamma $ being the (constant) coefficient of relative risk aver
 The inverse utility is thus given by:
 $$w(\bar{u}_\rho) = \Bigl( (1-\rho)\bar{u}_\rho \Bigr)^{\frac{1}{1-\rho}}$$
 We use these two formulas to define the functions \verb|u(w, rho)| and \\
-\verb|u_minus(u, rho)| that return $u$ and $w$, respectively. We will use them to compute the exercise value at each node and to derive then the certainty equivalent at the initial node. Clearly, the executive value is not unique -- as was the case with the firm cost -- but rather changes as the coefficient of risk aversion (and initial wealth) changes.
+\verb|u_minus(u, rho)| that return $u$ and $w$, respectively. We will use them to compute the exercise value at each node and to derive then the certainty equivalent at the initial node. Clearly, the executive value is not unique --- as was the case with the firm cost --- but changes as the coefficient of risk aversion (and initial wealth) changes.
 
 %The former is the utility function in every state. Note that the function is monotonically increasing in $W$, hence also its inverse is strictly increasing, and so is the certainty equivalent. In other words, 
 %The utility function is used for two purposes: deciding whether to exercise or not at each node, and deriving the certainty equivalent at time 0.
 
-Note that we follow the approach used in the literature and assume that only block exercise is possible  to keep our algorithm simple. A detailed analysis of separate exercises would be quite complex and computationally intensive. Moreover, we do not discount executive's utility from one time period to the following; in this sense, the estimates we are providing can be considered as an upper bound of the executive value.
+Note that we follow the approach used in the literature and assume that only block exercise is possible  to keep our algorithm simple. A detailed analysis of separate exercises would be quite complex and computationally intensive. 
 Finally, a possible modification of the algorithm would be to embed also here an exercise multiple mechanism, that we could make dependent on the risk aversion coefficient of the executive.\footnote{For example, we could set $\frac{m}{1+\rho}$ as the threshold for early exercise for some fixed $m$, so that it would be lower for more risk averse holders. In other words, more risk averse executives would exercise earlier, which is consistent with the empirical findings.} However, we do not explore this venue here.
 We will now outline briefly the main components of our algorithm, as done before.
 
@@ -247,7 +248,8 @@ We define the function \verb|CE_rn_trinomial(S0,K,T,v,r,N,sigma,rho, n_s,n_o,c)|
 \begin{figure}[H]
     \begin{lstlisting}[breaklines, basicstyle=\ttfamily\small]
         cont_value = q_u * U[j+1,i+1] + q_d*U[j,i+1] + q_m*U[j,i]
-        excs_value = util(c*((1+r/N)**n)+ n_s*S[j,n] + n_o*max(0, S[j,n]-K), rho)
+        excs_value = util(c*((1+r/N)**n)+ n_s*S[j,n] + 
+                     n_o*max(0, S[j,n]-K), rho)
         
         if vested:
             U[j,i] = max(cont_value, excs_value)
@@ -283,14 +285,14 @@ We follow a similar approach to the above and define the function\\
         else: 
             U[j,i] = cont_value
     \end{lstlisting}
-    \caption{Valuation of R option under utility maximization framework}
+    \caption{Valuation of a generic $R_{\alpha, \gamma}$ option in a utility maximization framework}
     \label{fig:ce_exec_r}
 \end{figure}
 
 
 
 Note that now the exercise value is more complicated than before. Indeed, the option value is now given by the immediate exercise payoff $S-K$, where $S$ is the stock price at a given node, multiplied by $\alpha$, plus the cash equivalent of the new $(1-\alpha+\gamma)$ options that the executive receives. Therefore, she may a priori decide also to exercise the option even if the stock price is below the strike price, as the time value that gets recouped may be higher than the intrinsic value. This could happen for example when $\alpha$ is quite low and $\gamma$ is sufficiently high. 
-After the backwards iteration, we compute the executive value $E_c$ in the same way of the RN option.
+After the backwards iteration, we compute the executive value $E_c$ as described before for the RN option.
 
 \subsection{Comparative statics}
 We now perform a series of numerical simulations to analyze how the objective (firm's) and subjective (agent's) valuations differ as we change some key parameters, and what this implies in terms of incentives. We start with the following parameters and change accordingly when needed: $S_0$ = 30, $K$ = 30, $T$ = 10, $v$ = 2, $r$ = 0.045, $N$ = 100, $sigma$ = 0.3, $m$ = 2, $rho$ = 2, $alpha$ = 0.75, $gamma$ = 0.25, $c$ = 1,700,000, $n_s$ = 110,000, and $n_o$ = 300 for a 67-33 portfolio, otherwise we set $c$ = 2,500,000 and $n_s$ = 87,333 for a 50-50 portfolio.
@@ -300,15 +302,15 @@ We first study the relationship between firm's and executive's valuation by exam
 
 \vspace{-2em}
 \begin{align*}
-    \text{Executive value ratio } (\alpha) &= \frac{\text{Executive value of R }(\alpha, 0)}{\text{Executive value of RN}} \\[1em]
-    \text{Firm cost ratio } (\alpha) & = \frac{\text{Firm cost of R }(\alpha, 0)}{\text{Firm cost of RN}} \\[1em]
-    \text{Deadweight ratio } (\alpha, \gamma) &= \frac{\text{Firm cost of R }(\alpha, \gamma) - \text{Executive value of R }(\alpha, \gamma)}{\text{Firm cost of R}(\alpha, \gamma)}
+    \text{Executive value ratio } (\alpha) &= \frac{\text{Executive value of } R_{\alpha,0}}{\text{Executive value of RN}} \\[1em]
+    \text{Firm cost ratio } (\alpha) & = \frac{\text{Firm cost of } R_{\alpha,0}}{\text{Firm cost of RN}} \\[1em]
+    \text{Deadweight cost } (\alpha, \gamma) &= \frac{\text{Firm cost of } R_{\alpha,\gamma} - \text{Executive value of } R_{\alpha,\gamma}}{\text{Firm cost of }R_{\alpha,\gamma}}
 \end{align*}
 \vspace{-2em}
 
-The first two ratios are useful to understand how the firm cost and executive value change with the introduction of the reload feature only, i.e., without any premium $\gamma$, while the third one allows to explore the difference between firm cost and executive value, now in the case of the R option. %WHEN was it mentioned before?
+The first two ratios are useful to understand how the firm cost and executive value change with the introduction of the reload feature only, i.e., without any premium $\gamma$, while the third one allows to explore the difference between firm cost and executive value, now in the case of the fully fledged $R_{\alpha,\gamma}$ option. %WHEN was it mentioned before?
 
-Table \ref*{tab:val_ratios} presents the results for the first two ratios with different values of $\alpha$. For the benchmark case of the 67-33 executive, we see that $\alpha = 1$, i.e., the RN option, provides the highest executive value, at all risk aversion levels. The same is true for the 50-50 executives with $\rho = 2, 2.5$, whereas the least risk-averse prefers slightly $R(0.75,0)$. But these differences are all quite small. The executive value is decreasing in the coefficient of risk aversion at all levels of $\alpha$, while the firm cost is increasing in $\alpha$, as expected. By comparing the ratios, it seems that the R option is more burdensome for the firm rather than for the agent.  
+Table \ref*{tab:val_ratios} presents the results for the first two ratios with different values of $\alpha$. For the benchmark case of the 67-33 executive, we see that $\alpha = 1$, i.e., the RN option, provides the highest executive value, at all risk aversion levels. The same is true for the 50-50 executives with $\rho = 2, 2.5$, whereas the least risk-averse prefers slightly $R_{0.75,0}$. But these differences are all quite small. The executive value is decreasing in the coefficient of risk aversion at all levels of $\alpha$, while the firm cost is increasing in $\alpha$, as expected. By comparing the ratios, it seems that the R option is more burdensome for the firm rather than for the agent.  
 \input{fig/values_ratios.tex}
 
 Finally, Table \ref*{tab:deadweight_ratio} shows the deadweight ratio for different values of $\alpha$ and $\gamma$. We see that it is increasing in the executive type for all combinations of $(\alpha, \gamma)$, as the firm cost is fixed whereas the executive value decreases. But the interesting part is that the deadweight ratio is increasing in $\gamma$ at all $\alpha$ levels, for both the 67-33 and 50-50 executives, with rare (and small) exceptions. This is due to the fact that most times the executive value goes down with the introduction of the risk premium, but even when this does not happen the firm cost is increasing faster, hence the deadweight ratio goes up. This may appear as counterintuitive because one could have expected that a positive $\gamma$ locks in part of the gains deriving from stock price appreciation, enough so to compensate for the higher firm cost. 
@@ -333,7 +335,7 @@ Therefore, it seems that also from a deadweight standpoint, it remains optimal f
 %WE MAY for simplicity assume that the option can be exercised only when in-the-money -> this simplifies analysis, but may not portray the reality.
 
 \subsubsection{Objective and subjective incentives}
-We now examine the effect on incentives implied by this difference in firm cost and executive value. Specifically, we analyze the incentives to exert effort and increase volatility, i.e., respectively the delta and vega of the two options. We refer to objective incentive when referring to the firm, as it is uniquely determined by firm's cost, and to subjective incentive when referring to the executive, since the value changes with her risk aversion. We limit ourselves to the case of 3 levels of risk aversion, namely $\rho \in \{1.5, 2, 2.5\}$ We study the following ratios: 
+We now examine the effect on incentives implied by this difference in firm cost and executive value. Specifically, we analyze the incentives to exert effort and increase volatility, i.e., respectively the delta and vega of the two options. We refer to objective incentive when referring to the firm, as it is uniquely determined by firm's cost, and to subjective incentive when referring to the executive, since the value changes with her risk aversion. We limit ourselves to the case of 3 levels of risk aversion, namely $\rho \in \{1.5, 2, 2.5\}$ We now explore the following ratios: 
 
 \vspace{-2em}
 
@@ -379,7 +381,7 @@ We first consider the RN option with the parameters from above. Figure \ref*{fig
 \end{figure}
 \vspace*{15pt}
 
-We now focus on the vega of the RN option. From the firm's perspective (Figure \ref*{fig:rn_vega_obj}), the executive has always a strong incentive to increase the volatility because e volatility increases the cost of the option by increasing the probability of it finishing ITM. But from the executive's perspective (Figure \ref*{fig:rn_vega_subj}), the incentive is always negative, which means that she would prefer to decrease rather than to increase volatility, the less so the less risk-averse she is. This is consistent with the idea that the executive is risk-averse and hence prefers a more stable stock price, and could imply that the firm's volatility is already too high for the executive, hence she does not want to increase if further. Therefore, we would expect the (risk-averse) executives to prefer projects with lower rather than higher volatility.
+We now focus on the vega of the RN option. From the firm's perspective (Figure \ref*{fig:rn_vega_obj}), the executive has always a strong incentive to increase the volatility because higher volatility increases the cost of the option as it increases the probability of it finishing ITM. But from the executive's perspective (Figure \ref*{fig:rn_vega_subj}), the incentive is always negative, which means that she would prefer to decrease rather than to increase volatility, the less so the less risk-averse she is. This is consistent with the idea that the executive is risk-averse and hence prefers a more stable stock price, and could imply that the firm's volatility is already too high for the executive, hence she does not want to increase if further. Therefore, we would expect the (risk-averse) executives to prefer projects with lower rather than higher volatility.
 
 \vspace*{15pt}
 \begin{figure}[H]
@@ -427,7 +429,7 @@ We now move to the R option. For computational reasons, we will only consider an
         \caption{Comparison}
         \label{fig:r_delta_comp}
     \end{subfigure}
-    \caption{Effort incentives of R(0.75, 0.1) option}
+    \caption{Effort incentives of $R_{0.75, 0.1}$ option for an executive with $\rho = 2$}
     \label{fig:r_delta_both}
 \end{figure}
 \vspace*{15pt}
@@ -450,7 +452,7 @@ To conclude, Figure \ref*{fig:r_vega_obj} and Figure \ref*{fig:r_vega_subj} show
         \caption{Subjective}
         \label{fig:r_vega_subj}
     \end{subfigure}
-    \caption{Volatility incentives of R(0.75, 0) option}
+    \caption{Volatility incentives of $R_{0.75, 0.1}$ option for an executive with $\rho = 2$}
     \label{fig:r_vega_both}
 \end{figure}
 \vspace*{15pt}

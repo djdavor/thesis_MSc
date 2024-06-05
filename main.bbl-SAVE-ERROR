@@ -50,7 +50,6 @@
       \field{title}{Executive stock options, differential risk-taking incentives, and firm value}
       \field{volume}{104}
       \field{year}{2012}
-      \true{nocite}
       \field{pages}{70\bibrangedash 88}
       \range{pages}{19}
     \endentry
@@ -85,7 +84,6 @@
       \field{title}{Computational principal--agent problems}
       \field{volume}{13}
       \field{year}{2018}
-      \true{nocite}
       \field{pages}{553\bibrangedash 578}
       \range{pages}{26}
     \endentry
@@ -145,7 +143,6 @@
       \field{title}{Infinite reload options: Pricing and analysis}
       \field{volume}{222}
       \field{year}{2008}
-      \true{nocite}
       \field{pages}{54\bibrangedash 81}
       \range{pages}{28}
     \endentry
@@ -190,7 +187,6 @@
       \field{title}{Can employee stock options contribute to less risk-taking?}
       \field{volume}{37}
       \field{year}{2020}
-      \true{nocite}
       \field{pages}{1658\bibrangedash 1686}
       \range{pages}{29}
     \endentry
@@ -279,7 +275,6 @@
       \field{title}{The risk preferences of US executives}
       \field{volume}{61}
       \field{year}{2015}
-      \true{nocite}
       \field{pages}{1344\bibrangedash 1361}
       \range{pages}{18}
     \endentry
@@ -314,7 +309,6 @@
       \field{journaltitle}{Journal of Financial Economics}
       \field{title}{Executive stock options with effort disutility and choice of volatility}
       \field{year}{2002}
-      \true{nocite}
     \endentry
     \entry{cadenillas2005executive}{article}{}
       \name{author}{3}{}{%
@@ -347,7 +341,6 @@
       \field{journaltitle}{Available at SSRN 676261}
       \field{title}{Executive stock options as a screening mechanism}
       \field{year}{2005}
-      \true{nocite}
     \endentry
     \entry{carpenter1998exercise}{article}{}
       \name{author}{1}{}{%
@@ -375,7 +368,6 @@
       \field{title}{The exercise and valuation of executive stock options}
       \field{volume}{48}
       \field{year}{1998}
-      \true{nocite}
       \field{pages}{127\bibrangedash 158}
       \range{pages}{32}
     \endentry
@@ -457,7 +449,6 @@
       \field{title}{Optimal exercise of executive stock options and implications for firm cost}
       \field{volume}{98}
       \field{year}{2010}
-      \true{nocite}
       \field{pages}{315\bibrangedash 337}
       \range{pages}{23}
     \endentry
@@ -497,7 +488,6 @@
       \field{title}{Executive gender pay gaps: The roles of female risk aversion and board representation}
       \field{volume}{34}
       \field{year}{2017}
-      \true{nocite}
       \field{pages}{1232\bibrangedash 1264}
       \range{pages}{33}
     \endentry
@@ -572,7 +562,6 @@
       \field{title}{Managerial incentives and risk-taking}
       \field{volume}{79}
       \field{year}{2006}
-      \true{nocite}
       \field{pages}{431\bibrangedash 468}
       \range{pages}{38}
     \endentry
@@ -651,7 +640,6 @@
       \field{title}{Dynamic programming approach to principal--agent problems}
       \field{volume}{22}
       \field{year}{2018}
-      \true{nocite}
       \field{pages}{1\bibrangedash 37}
       \range{pages}{37}
     \endentry
@@ -692,7 +680,6 @@
       \field{title}{Moral hazard in dynamic risk management}
       \field{volume}{63}
       \field{year}{2017}
-      \true{nocite}
       \field{pages}{3328\bibrangedash 3346}
       \range{pages}{19}
     \endentry
@@ -732,7 +719,6 @@
       \field{title}{Dynamics of contract design with screening}
       \field{volume}{59}
       \field{year}{2013}
-      \true{nocite}
       \field{pages}{1229\bibrangedash 1244}
       \range{pages}{16}
     \endentry
@@ -767,7 +753,6 @@
       \field{title}{Valuing employee reload options under the time vesting requirement}
       \field{volume}{5}
       \field{year}{2005}
-      \true{nocite}
       \field{pages}{61\bibrangedash 69}
       \range{pages}{9}
     \endentry
@@ -807,7 +792,6 @@
       \field{booktitle}{Proceedings of the 55th Annual ACM Symposium on Theory of Computing}
       \field{title}{Multi-agent contracts}
       \field{year}{2023}
-      \true{nocite}
       \field{pages}{1311\bibrangedash 1324}
       \range{pages}{14}
     \endentry
@@ -847,7 +831,6 @@
       \field{title}{The complexity of contracts}
       \field{volume}{50}
       \field{year}{2021}
-      \true{nocite}
       \field{pages}{211\bibrangedash 254}
       \range{pages}{44}
     \endentry
@@ -882,7 +865,6 @@
       \field{title}{Employee reload options: pricing, hedging, and optimal exercise}
       \field{volume}{16}
       \field{year}{2003}
-      \true{nocite}
       \field{pages}{145\bibrangedash 171}
       \range{pages}{27}
     \endentry
@@ -921,7 +903,6 @@
       \field{title}{Executive compensation: A survey of theory and evidence}
       \field{volume}{1}
       \field{year}{2017}
-      \true{nocite}
       \field{pages}{383\bibrangedash 539}
       \range{pages}{157}
     \endentry
@@ -968,7 +949,6 @@
       \field{type}{Standard}
       \field{volume}{1995}
       \field{year}{1995}
-      \true{nocite}
     \endentry
     \entry{fasb123_revised}{report}{}
       \list{institution}{1}{%
@@ -985,7 +965,6 @@
       \field{type}{Standard}
       \field{volume}{2004}
       \field{year}{2004}
-      \true{nocite}
     \endentry
     \entry{frydman2010ceo}{article}{}
       \name{author}{2}{}{%
@@ -1018,7 +997,6 @@
       \field{title}{CEO compensation}
       \field{volume}{2}
       \field{year}{2010}
-      \true{nocite}
       \field{pages}{75\bibrangedash 102}
       \range{pages}{28}
     \endentry
@@ -1046,7 +1024,6 @@
       \field{title}{Monte Carlo methods in financial engineering}
       \field{volume}{53}
       \field{year}{2004}
-      \true{nocite}
     \endentry
     \entry{gottlieb2014simultaneous}{article}{}
       \name{author}{2}{}{%
@@ -1107,7 +1084,6 @@
       \field{title}{Risk aversion and block exercise of executive stock options}
       \field{volume}{33}
       \field{year}{2009}
-      \true{nocite}
       \field{pages}{109\bibrangedash 127}
       \range{pages}{19}
     \endentry
@@ -1142,7 +1118,6 @@
       \field{title}{Adverse risk incentives and the design of performance-based contracts}
       \field{volume}{35}
       \field{year}{1989}
-      \true{nocite}
       \field{pages}{807\bibrangedash 822}
       \range{pages}{16}
     \endentry
@@ -1178,7 +1153,6 @@
       \field{title}{Stock options for undiversified executives}
       \field{volume}{33}
       \field{year}{2002}
-      \true{nocite}
       \field{pages}{3\bibrangedash 42}
       \range{pages}{40}
     \endentry
@@ -1214,7 +1188,6 @@
       \field{title}{The trouble with stock options}
       \field{volume}{17}
       \field{year}{2003}
-      \true{nocite}
       \field{pages}{49\bibrangedash 70}
       \range{pages}{22}
     \endentry
@@ -1254,7 +1227,6 @@
       \field{title}{Stock options and managerial incentives for risk taking: Evidence from FAS 123R}
       \field{volume}{105}
       \field{year}{2012}
-      \true{nocite}
       \field{pages}{174\bibrangedash 190}
       \range{pages}{17}
     \endentry
@@ -1295,7 +1267,6 @@
       \field{title}{Optimal exercise and the cost of granting employee stock options with a reload provision}
       \field{volume}{36}
       \field{year}{1998}
-      \true{nocite}
       \field{pages}{231\bibrangedash 255}
       \range{pages}{25}
     \endentry
@@ -1336,7 +1307,6 @@
       \field{title}{Reload employee stock option plans: incentive alignment or rent extraction}
       \field{volume}{15}
       \field{year}{2000}
-      \true{nocite}
       \field{pages}{393\bibrangedash 423}
       \range{pages}{31}
     \endentry
@@ -1401,7 +1371,6 @@
       \field{title}{Do stock options overcome managerial risk aversion? Evidence from exercises of executive stock options}
       \field{volume}{63}
       \field{year}{2017}
-      \true{nocite}
       \field{pages}{3057\bibrangedash 3071}
       \range{pages}{15}
     \endentry
@@ -1434,7 +1403,6 @@
       \field{journaltitle}{Econometrica: Journal of the Econometric Society}
       \field{title}{Aggregation and linearity in the provision of intertemporal incentives}
       \field{year}{1987}
-      \true{nocite}
       \field{pages}{303\bibrangedash 328}
       \range{pages}{26}
     \endentry
@@ -1515,7 +1483,6 @@
       \field{title}{Employee stock option exercises an empirical analysis}
       \field{volume}{21}
       \field{year}{1996}
-      \true{nocite}
       \field{pages}{5\bibrangedash 43}
       \range{pages}{39}
     \endentry
@@ -1612,7 +1579,6 @@
       \field{title}{The subjective and objective evaluation of incentive stock options}
       \field{volume}{79}
       \field{year}{2006}
-      \true{nocite}
       \field{pages}{453\bibrangedash 487}
       \range{pages}{35}
     \endentry
@@ -1644,7 +1610,6 @@
       \field{title}{Valuing reload options}
       \field{volume}{9}
       \field{year}{2006}
-      \true{nocite}
       \field{pages}{67\bibrangedash 105}
       \range{pages}{39}
     \endentry
@@ -1683,7 +1648,6 @@
       \field{title}{Are female executives more risk-averse than male executives?}
       \field{volume}{34}
       \field{year}{2006}
-      \true{nocite}
       \field{pages}{63\bibrangedash 74}
       \range{pages}{12}
     \endentry
@@ -1718,7 +1682,6 @@
       \field{title}{Risk, ambiguity, and the exercise of employee stock options}
       \field{volume}{124}
       \field{year}{2017}
-      \true{nocite}
       \field{pages}{65\bibrangedash 85}
       \range{pages}{21}
     \endentry
@@ -1827,7 +1790,6 @@
       \field{title}{Stocks or options? Moral hazard, firm viability, and the design of compensation contracts}
       \field{volume}{21}
       \field{year}{2008}
-      \true{nocite}
       \field{pages}{451\bibrangedash 482}
       \range{pages}{32}
     \endentry
@@ -1888,7 +1850,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Employee stock options: Exercise timing, hedging, and valuation}
       \field{year}{2021}
-      \true{nocite}
     \endentry
     \entry{marechal2018optimal}{article}{}
       \name{author}{2}{}{%
@@ -1951,7 +1912,6 @@
       \field{title}{The cost of employee stock option grants: An empirical analysis}
       \field{volume}{40}
       \field{year}{2002}
-      \true{nocite}
       \field{pages}{1191\bibrangedash 1217}
       \range{pages}{27}
     \endentry
@@ -1979,7 +1939,6 @@
       \field{journaltitle}{Financial management}
       \field{title}{The efficiency of equity-linked compensation: Understanding the full cost of awarding executive stock options}
       \field{year}{2001}
-      \true{nocite}
       \field{pages}{5\bibrangedash 44}
       \range{pages}{40}
     \endentry
@@ -2010,7 +1969,6 @@
       \field{title}{CEO pay and the top 1\%}
       \field{volume}{331}
       \field{year}{2012}
-      \true{nocite}
       \field{pages}{1\bibrangedash 7}
       \range{pages}{7}
     \endentry
@@ -2040,7 +1998,6 @@
       \field{journaltitle}{University of Southern California Working Paper}
       \field{title}{Why do employees exercise stock options early}
       \field{year}{2019}
-      \true{nocite}
     \endentry
     \entry{pasternack2002factors}{book}{}
       \true{moreauthor}
@@ -2067,7 +2024,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Factors driving stock option grants-empirical evidence from Finland}
       \field{year}{2002}
-      \true{nocite}
     \endentry
     \entry{plambeck2000performance}{article}{}
       \name{author}{2}{}{%
@@ -2100,7 +2056,6 @@
       \field{title}{Performance-based incentives in a dynamic principal-agent model}
       \field{volume}{2}
       \field{year}{2000}
-      \true{nocite}
       \field{pages}{240\bibrangedash 263}
       \range{pages}{24}
     \endentry
@@ -2122,7 +2077,6 @@
       \field{labeltitlesource}{title}
       \field{title}{Brownian Motion Simulation with Python}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://www.quantstart.com/articles/brownian-motion-simulation-with-python/
       \endverb
@@ -2156,7 +2110,6 @@
       \field{title}{Compensation, incentives, and the duality of risk aversion and riskiness}
       \field{volume}{59}
       \field{year}{2004}
-      \true{nocite}
       \field{pages}{207\bibrangedash 225}
       \range{pages}{19}
     \endentry
@@ -2186,7 +2139,6 @@
       \field{journaltitle}{Available at SSRN 110072}
       \field{title}{Ignoring Reload Features Can Substantially Understate the Value of Executive Stock Options}
       \field{year}{1998}
-      \true{nocite}
     \endentry
     \entry{saly1999valuing}{article}{}
       \name{author}{3}{}{%
@@ -2221,7 +2173,6 @@
       \field{title}{Valuing the reload features of executive stock options}
       \field{volume}{13}
       \field{year}{1999}
-      \true{nocite}
       \field{pages}{219\bibrangedash 240}
       \range{pages}{22}
     \endentry
@@ -2252,7 +2203,6 @@
       \field{title}{A continuous-time version of the principal-agent problem}
       \field{volume}{75}
       \field{year}{2008}
-      \true{nocite}
       \field{pages}{957\bibrangedash 984}
       \range{pages}{28}
     \endentry
@@ -2282,7 +2232,6 @@
       \field{title}{Contracts: The Theory of Dynamic Principal—Agent Relationships and the}
       \field{volume}{49}
       \field{year}{2013}
-      \true{nocite}
       \field{pages}{89}
       \range{pages}{1}
     \endentry
@@ -2317,7 +2266,6 @@
       \field{title}{The first-order approach to the continuous-time principal--agent problem with exponential utility}
       \field{volume}{61}
       \field{year}{1993}
-      \true{nocite}
       \field{pages}{331\bibrangedash 371}
       \range{pages}{41}
     \endentry
@@ -2427,7 +2375,6 @@
       \field{journaltitle}{The RAND Journal of Economics}
       \field{title}{Linearity with project selection and controllable diffusion rate in continuous-time principal-agent problems}
       \field{year}{1995}
-      \true{nocite}
       \field{pages}{720\bibrangedash 743}
       \range{pages}{24}
     \endentry
@@ -2561,7 +2508,6 @@
       \field{journaltitle}{University of Wisconsin, Madison}
       \field{title}{On dynamic principal-agent problems in continuous time}
       \field{year}{2009}
-      \true{nocite}
     \endentry
     \entry{ychartrfrate}{misc}{}
       \name{author}{1}{}{%
@@ -2581,7 +2527,6 @@
       \field{labeltitlesource}{title}
       \field{title}{10 Year Treasury Rate (I:10YTCMR)}
       \field{year}{2024}
-      \true{nocite}
       \verb{urlraw}
       \verb https://ycharts.com/indicators/10_year_treasury_rate
       \endverb
@@ -2624,7 +2569,6 @@
       \field{title}{Knightian Uncertainty and Dynamic Robust Pricing of Reload Stock Option}
       \field{volume}{2}
       \field{year}{2010}
-      \true{nocite}
       \field{pages}{564\bibrangedash 567}
       \range{pages}{4}
     \endentry

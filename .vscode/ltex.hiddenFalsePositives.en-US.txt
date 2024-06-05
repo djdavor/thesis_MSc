@@ -11,3 +11,5 @@
 {"rule":"COMP_THAN","sentence":"^\\QRecall that, in general, the value of a call option is higher as time to maturity increases\\E$"}
 {"rule":"THE_PUNCT","sentence":"^\\QDelicate choices of low and high values for rho, a, and sigma.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWe set Ninit \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q since the algorithm for the RN option is fast, and Ninitr = 50 for computational reasons; our tests show that this provides nevertheless a good approximation of the cost of the R option, as we still have a total of 500 steps over the lifetime of the option.\\E$"}
+{"rule":"IN_PRINCIPAL","sentence":"^\\QHowever, the difference in principal's utility between the two options is never very high, which leaves open the possibilities for future refinements of our model that could impact the results.\\E$"}
+{"rule":"SUBJECT_MATTER","sentence":"^\\QConsequently, numerous studies have explored this subject matter.\\E$"}
