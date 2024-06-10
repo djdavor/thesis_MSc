@@ -1,0 +1,44 @@
+\usepackage{xspace}
+
+%Here we define a marco: The \xspace ensures correct spacing, i.e. insert space before next word, but not before period or comma.
+\newcommand{\paxos}{\textsc{Paxos}\xspace}
+
+%These packages are needed for the plot in Figure 1. 
+%\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{lscape}
+\usepackage[
+backend=biber,
+style=authoryear,
+sorting=nyt,
+natbib=true,
+maxcitenames=2
+]{biblatex}
+\addbibresource{source.bib}
+\usepackage{csquotes}
+%\usepackage[page]{appendix}
+%\usepackage{pdfpages}
+\usepackage{graphicx}
+\pgfplotsset{compat=newest}
+
+\graphicspath{ {./images/} }
+
+
+
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{multicol,multirow}
+%\usepackage[table]{xcolor}
+\usepackage{flafter}
+\usepackage{float}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={20287 - Research Proposal},
+    }
+\usepackage[subsection]{placeins}
+

@@ -1,22 +1,32 @@
 \documentclass[12pt]{article}
 \usepackage{packages}
+%\usepackage{apacite}
+%\bibliographystyle{apacite}
 \addbibresource{references.bib}
 
-\title{To Reload or Not To Reload?\\ Employing Risk-Averse Executives Using Employee Stock Options With An Enhanced Reload Feature}
+
+\title{To Reload, or Not To Reload?\\ Motivating Risk-Averse Executives Using Employee Stock Options With An Enhanced Reload Feature}
 \author{Davor Djekic}
-\renewcommand*\contentsname{Summary}
+\renewcommand*\contentsname{Table of Contents}
 
 \begin{document}
-    \maketitle
+    %\maketitle
+    \pagestyle{empty}
+    \newpage \
+    \newpage \
+    \include{chaps/0_acknowledgements}
+    \newpage \
     \newpage
 
     %\include{chaps/0_abstract}
-    %\include{chaps/0bis_acknowledgements}
 
+    \pagestyle{plain}
+    \pagenumbering{Roman}
     \tableofcontents
+    \cleardoublepage
 
-
-    
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
     \include{chaps/1_intro}
     \include{chaps/2_litrev}
     \include{chaps/3_model}

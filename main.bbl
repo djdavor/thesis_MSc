@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,2563 +16,2546 @@
   {}
 \endgroup
 
+\datalist[entry]{nyt/global//global/global}
+  \entry{armstrong2012executive}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ACS}{%
+         family={Armstrong},
+         familyi={A\bibinitperiod},
+         given={Christopher\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=VR}{%
+         family={Vashishtha},
+         familyi={V\bibinitperiod},
+         given={Rahul},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{ACSVR1}
+    \strng{fullhash}{ACSVR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{1}
+    \field{pages}{70\bibrangedash 88}
+    \field{title}{Executive stock options, differential risk-taking incentives, and firm value}
+    \field{volume}{104}
+    \field{journaltitle}{Journal of Financial Economics}
+    \field{year}{2012}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{armstrong2012executive}{article}{}
-      \name{author}{2}{}{%
-        {{hash=8823d4a237f2b9babbd939a020540ff8}{%
-           family={Armstrong},
-           familyi={A\bibinitperiod},
-           given={Christopher\bibnamedelima S},
-           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=ffab60ba356df99462bdec221f520d18}{%
-           family={Vashishtha},
-           familyi={V\bibinitperiod},
-           given={Rahul},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{2cb2da17c189356fde96c3903bb1c068}
-      \strng{fullhash}{2cb2da17c189356fde96c3903bb1c068}
-      \strng{bibnamehash}{2cb2da17c189356fde96c3903bb1c068}
-      \strng{authorbibnamehash}{2cb2da17c189356fde96c3903bb1c068}
-      \strng{authornamehash}{2cb2da17c189356fde96c3903bb1c068}
-      \strng{authorfullhash}{2cb2da17c189356fde96c3903bb1c068}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Financial Economics}
-      \field{number}{1}
-      \field{title}{Executive stock options, differential risk-taking incentives, and firm value}
-      \field{volume}{104}
-      \field{year}{2012}
-      \field{pages}{70\bibrangedash 88}
-      \range{pages}{19}
-    \endentry
-    \entry{azar2018computational}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1d6f429f85850f2af2ff6dfe00e21c80}{%
-           family={Azar},
-           familyi={A\bibinitperiod},
-           given={Pablo\bibnamedelima D},
-           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=fb54c363f1b0d126e883c84df49e4790}{%
-           family={Micali},
-           familyi={M\bibinitperiod},
-           given={Silvio},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{a6076aaee9273c4e1917f5916435ea35}
-      \strng{fullhash}{a6076aaee9273c4e1917f5916435ea35}
-      \strng{bibnamehash}{a6076aaee9273c4e1917f5916435ea35}
-      \strng{authorbibnamehash}{a6076aaee9273c4e1917f5916435ea35}
-      \strng{authornamehash}{a6076aaee9273c4e1917f5916435ea35}
-      \strng{authorfullhash}{a6076aaee9273c4e1917f5916435ea35}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoretical Economics}
-      \field{number}{2}
-      \field{title}{Computational principal--agent problems}
-      \field{volume}{13}
-      \field{year}{2018}
-      \field{pages}{553\bibrangedash 578}
-      \range{pages}{26}
-    \endentry
-    \entry{battauzlecturenotes}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=8d4c093c182bf203e199f8f0ccc2ad84}{%
-           family={Battauz},
-           familyi={B\bibinitperiod},
-           given={Anna},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Department of Finance of Bocconi University}%
-      }
-      \strng{namehash}{8d4c093c182bf203e199f8f0ccc2ad84}
-      \strng{fullhash}{8d4c093c182bf203e199f8f0ccc2ad84}
-      \strng{bibnamehash}{8d4c093c182bf203e199f8f0ccc2ad84}
-      \strng{authorbibnamehash}{8d4c093c182bf203e199f8f0ccc2ad84}
-      \strng{authornamehash}{8d4c093c182bf203e199f8f0ccc2ad84}
-      \strng{authorfullhash}{8d4c093c182bf203e199f8f0ccc2ad84}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lecture Notes for the Graduate Course Applied Numerical Finance}
-      \field{year}{2023/24}
-      \true{nocite}
-    \endentry
-    \entry{belanger2008infinite}{article}{}
-      \name{author}{2}{}{%
-        {{hash=e3cfd30bfdccab00211bede8e55199cf}{%
-           family={Belanger},
-           familyi={B\bibinitperiod},
-           given={AC},
-           giveni={A\bibinitperiod}}}%
-        {{hash=3d63143583217b527e0fecb9f25b8b87}{%
-           family={Forsyth},
-           familyi={F\bibinitperiod},
-           given={PA},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{173c397187fc288e9421efc0446bfcc0}
-      \strng{fullhash}{173c397187fc288e9421efc0446bfcc0}
-      \strng{bibnamehash}{173c397187fc288e9421efc0446bfcc0}
-      \strng{authorbibnamehash}{173c397187fc288e9421efc0446bfcc0}
-      \strng{authornamehash}{173c397187fc288e9421efc0446bfcc0}
-      \strng{authorfullhash}{173c397187fc288e9421efc0446bfcc0}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of computational and applied mathematics}
-      \field{number}{1}
-      \field{title}{Infinite reload options: Pricing and analysis}
-      \field{volume}{222}
-      \field{year}{2008}
-      \field{pages}{54\bibrangedash 81}
-      \range{pages}{28}
-    \endentry
-    \entry{billings2020can}{article}{}
-      \name{author}{4}{}{%
-        {{hash=074c8101ec2c921a77427f8c04fc35f7}{%
-           family={Billings},
-           familyi={B\bibinitperiod},
-           given={Bruce\bibnamedelima K},
-           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=7d9ad6697a01c39b1d52828b8a855b0b}{%
-           family={Moon\bibnamedelima Jr},
-           familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           given={James\bibnamedelima R},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=a2a4d7f8ca5015f6ccd1be647617ce2b}{%
-           family={Morton},
-           familyi={M\bibinitperiod},
-           given={Richard\bibnamedelima M},
-           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=b930a481949c8a056ba1159a30985b78}{%
-           family={Wallace},
-           familyi={W\bibinitperiod},
-           given={Dana\bibnamedelima M},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{d16b25804878e36b26f04b2f21187500}
-      \strng{fullhash}{d16b25804878e36b26f04b2f21187500}
-      \strng{bibnamehash}{d16b25804878e36b26f04b2f21187500}
-      \strng{authorbibnamehash}{d16b25804878e36b26f04b2f21187500}
-      \strng{authornamehash}{d16b25804878e36b26f04b2f21187500}
-      \strng{authorfullhash}{d16b25804878e36b26f04b2f21187500}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Contemporary Accounting Research}
-      \field{number}{3}
-      \field{title}{Can employee stock options contribute to less risk-taking?}
-      \field{volume}{37}
-      \field{year}{2020}
-      \field{pages}{1658\bibrangedash 1686}
-      \range{pages}{29}
-    \endentry
-    \entry{black1973pricing}{article}{}
-      \name{author}{2}{}{%
-        {{hash=93277dfc1ebe8d44428e74799781e4d7}{%
-           family={Black},
-           familyi={B\bibinitperiod},
-           given={Fischer},
-           giveni={F\bibinitperiod}}}%
-        {{hash=301bb16d9f303a488dac1c73931c0eff}{%
-           family={Scholes},
-           familyi={S\bibinitperiod},
-           given={Myron},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The University of Chicago Press}%
-      }
-      \strng{namehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
-      \strng{fullhash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
-      \strng{bibnamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
-      \strng{authorbibnamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
-      \strng{authornamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
-      \strng{authorfullhash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of political economy}
-      \field{number}{3}
-      \field{title}{The pricing of options and corporate liabilities}
-      \field{volume}{81}
-      \field{year}{1973}
-      \field{pages}{637\bibrangedash 654}
-      \range{pages}{18}
-    \endentry
-    \entry{boyle1986option}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f64d6b17ec76cb04875f6c6830b0f144}{%
-           family={Boyle},
-           familyi={B\bibinitperiod},
-           given={Phelim\bibnamedelima P},
-           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-      }
-      \strng{namehash}{f64d6b17ec76cb04875f6c6830b0f144}
-      \strng{fullhash}{f64d6b17ec76cb04875f6c6830b0f144}
-      \strng{bibnamehash}{f64d6b17ec76cb04875f6c6830b0f144}
-      \strng{authorbibnamehash}{f64d6b17ec76cb04875f6c6830b0f144}
-      \strng{authornamehash}{f64d6b17ec76cb04875f6c6830b0f144}
-      \strng{authorfullhash}{f64d6b17ec76cb04875f6c6830b0f144}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International options journal}
-      \field{title}{Option valuation using a tree-jump process}
-      \field{volume}{3}
-      \field{year}{1986}
-      \field{pages}{7\bibrangedash 12}
-      \range{pages}{6}
-    \endentry
-    \entry{brenner2015risk}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e13f6d36572e0e3d3d317a377e9492a9}{%
-           family={Brenner},
-           familyi={B\bibinitperiod},
-           given={Steffen},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {INFORMS}%
-      }
-      \strng{namehash}{e13f6d36572e0e3d3d317a377e9492a9}
-      \strng{fullhash}{e13f6d36572e0e3d3d317a377e9492a9}
-      \strng{bibnamehash}{e13f6d36572e0e3d3d317a377e9492a9}
-      \strng{authorbibnamehash}{e13f6d36572e0e3d3d317a377e9492a9}
-      \strng{authornamehash}{e13f6d36572e0e3d3d317a377e9492a9}
-      \strng{authorfullhash}{e13f6d36572e0e3d3d317a377e9492a9}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Management Science}
-      \field{number}{6}
-      \field{title}{The risk preferences of US executives}
-      \field{volume}{61}
-      \field{year}{2015}
-      \field{pages}{1344\bibrangedash 1361}
-      \range{pages}{18}
-    \endentry
-    \entry{cadenillas2002executive}{article}{}
-      \name{author}{3}{}{%
-        {{hash=abdc7e8eb412fe2683512d405a7227b8}{%
-           family={Cadenillas},
-           familyi={C\bibinitperiod},
-           given={Abel},
-           giveni={A\bibinitperiod}}}%
-        {{hash=cf2b719972551bd3b23a58b5cca8c0fc}{%
-           family={Cvitanic},
-           familyi={C\bibinitperiod},
-           given={Jaksa},
-           giveni={J\bibinitperiod}}}%
-        {{hash=daa360342a94d38e746a76a467a6050f}{%
-           family={Zapatero},
-           familyi={Z\bibinitperiod},
-           given={Fernando},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{3788fa7cc96c0c973f78ea9e9c88476f}
-      \strng{fullhash}{3788fa7cc96c0c973f78ea9e9c88476f}
-      \strng{bibnamehash}{3788fa7cc96c0c973f78ea9e9c88476f}
-      \strng{authorbibnamehash}{3788fa7cc96c0c973f78ea9e9c88476f}
-      \strng{authornamehash}{3788fa7cc96c0c973f78ea9e9c88476f}
-      \strng{authorfullhash}{3788fa7cc96c0c973f78ea9e9c88476f}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Financial Economics}
-      \field{title}{Executive stock options with effort disutility and choice of volatility}
-      \field{year}{2002}
-    \endentry
-    \entry{cadenillas2005executive}{article}{}
-      \name{author}{3}{}{%
-        {{hash=abdc7e8eb412fe2683512d405a7227b8}{%
-           family={Cadenillas},
-           familyi={C\bibinitperiod},
-           given={Abel},
-           giveni={A\bibinitperiod}}}%
-        {{hash=daa360342a94d38e746a76a467a6050f}{%
-           family={Zapatero},
-           familyi={Z\bibinitperiod},
-           given={Fernando},
-           giveni={F\bibinitperiod}}}%
-        {{hash=cf2b719972551bd3b23a58b5cca8c0fc}{%
-           family={Cvitanic},
-           familyi={C\bibinitperiod},
-           given={Jaksa},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{13acfed3ac85613c1d26c92ee4eedac9}
-      \strng{fullhash}{13acfed3ac85613c1d26c92ee4eedac9}
-      \strng{bibnamehash}{13acfed3ac85613c1d26c92ee4eedac9}
-      \strng{authorbibnamehash}{13acfed3ac85613c1d26c92ee4eedac9}
-      \strng{authornamehash}{13acfed3ac85613c1d26c92ee4eedac9}
-      \strng{authorfullhash}{13acfed3ac85613c1d26c92ee4eedac9}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Available at SSRN 676261}
-      \field{title}{Executive stock options as a screening mechanism}
-      \field{year}{2005}
-    \endentry
-    \entry{carpenter1998exercise}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c357cf3726a9fe813a60b98ad5bcb862}{%
-           family={Carpenter},
-           familyi={C\bibinitperiod},
-           given={Jennifer\bibnamedelima N},
-           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{c357cf3726a9fe813a60b98ad5bcb862}
-      \strng{fullhash}{c357cf3726a9fe813a60b98ad5bcb862}
-      \strng{bibnamehash}{c357cf3726a9fe813a60b98ad5bcb862}
-      \strng{authorbibnamehash}{c357cf3726a9fe813a60b98ad5bcb862}
-      \strng{authornamehash}{c357cf3726a9fe813a60b98ad5bcb862}
-      \strng{authorfullhash}{c357cf3726a9fe813a60b98ad5bcb862}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Financial Economics}
-      \field{number}{2}
-      \field{title}{The exercise and valuation of executive stock options}
-      \field{volume}{48}
-      \field{year}{1998}
-      \field{pages}{127\bibrangedash 158}
-      \range{pages}{32}
-    \endentry
-    \entry{carpenter2019employee}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c357cf3726a9fe813a60b98ad5bcb862}{%
-           family={Carpenter},
-           familyi={C\bibinitperiod},
-           given={Jennifer\bibnamedelima N},
-           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=a8560be62a87c5b2f822eb32860b81c4}{%
-           family={Stanton},
-           familyi={S\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod}}}%
-        {{hash=ddba7887425d89af0f605a53aec80976}{%
-           family={Wallace},
-           familyi={W\bibinitperiod},
-           given={Nancy},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{fullhash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{bibnamehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{authorbibnamehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{authornamehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{authorfullhash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Finance}
-      \field{number}{3}
-      \field{title}{Employee stock option exercise and firm cost}
-      \field{volume}{74}
-      \field{year}{2019}
-      \true{nocite}
-      \field{pages}{1175\bibrangedash 1216}
-      \range{pages}{42}
-    \endentry
-    \entry{carpenter2010optimal}{article}{}
-      \name{author}{3}{}{%
-        {{hash=c357cf3726a9fe813a60b98ad5bcb862}{%
-           family={Carpenter},
-           familyi={C\bibinitperiod},
-           given={Jennifer\bibnamedelima N},
-           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=a8560be62a87c5b2f822eb32860b81c4}{%
-           family={Stanton},
-           familyi={S\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod}}}%
-        {{hash=ddba7887425d89af0f605a53aec80976}{%
-           family={Wallace},
-           familyi={W\bibinitperiod},
-           given={Nancy},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{fullhash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{bibnamehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{authorbibnamehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{authornamehash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \strng{authorfullhash}{7d20bac1720da41b6dc6c89f6a3c2fc5}
-      \field{extraname}{2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Financial Economics}
-      \field{number}{2}
-      \field{title}{Optimal exercise of executive stock options and implications for firm cost}
-      \field{volume}{98}
-      \field{year}{2010}
-      \field{pages}{315\bibrangedash 337}
-      \range{pages}{23}
-    \endentry
-    \entry{carter2017executive}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e5ea8c089009ec536e3be3710a6074b9}{%
-           family={Carter},
-           familyi={C\bibinitperiod},
-           given={Mary\bibnamedelima Ellen},
-           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=a425c391c4acd41b59c780211ccf5bbb}{%
-           family={Franco},
-           familyi={F\bibinitperiod},
-           given={Francesca},
-           giveni={F\bibinitperiod}}}%
-        {{hash=8341d6c97d2efc9e0a2cba3ba441b1c6}{%
-           family={Gine},
-           familyi={G\bibinitperiod},
-           given={Mireia},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{f8098211842537e298bbb353340793c8}
-      \strng{fullhash}{f8098211842537e298bbb353340793c8}
-      \strng{bibnamehash}{f8098211842537e298bbb353340793c8}
-      \strng{authorbibnamehash}{f8098211842537e298bbb353340793c8}
-      \strng{authornamehash}{f8098211842537e298bbb353340793c8}
-      \strng{authorfullhash}{f8098211842537e298bbb353340793c8}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Contemporary Accounting Research}
-      \field{number}{2}
-      \field{title}{Executive gender pay gaps: The roles of female risk aversion and board representation}
-      \field{volume}{34}
-      \field{year}{2017}
-      \field{pages}{1232\bibrangedash 1264}
-      \range{pages}{33}
-    \endentry
-    \entry{marinaccilecturenotes}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=f7734707728e3ae3e2ca4dde063b800a}{%
-           family={Cerreia-Vioglio},
-           familyi={C\bibinithyphendelim V\bibinitperiod},
-           given={Simone},
-           giveni={S\bibinitperiod}}}%
-        {{hash=363ce3da6ce74f2c8ac8fa330daa4208}{%
-           family={Maccheroni},
-           familyi={M\bibinitperiod},
-           given={Fabio},
-           giveni={F\bibinitperiod}}}%
-        {{hash=afe7ab37ddb98e9245692a9cd398b777}{%
-           family={Marinacci},
-           familyi={M\bibinitperiod},
-           given={Massimo},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Department of Decision Sciences of Bocconi University}%
-      }
-      \strng{namehash}{1acc1c180e686ced6175fcc434f37dfb}
-      \strng{fullhash}{1acc1c180e686ced6175fcc434f37dfb}
-      \strng{bibnamehash}{1acc1c180e686ced6175fcc434f37dfb}
-      \strng{authorbibnamehash}{1acc1c180e686ced6175fcc434f37dfb}
-      \strng{authornamehash}{1acc1c180e686ced6175fcc434f37dfb}
-      \strng{authorfullhash}{1acc1c180e686ced6175fcc434f37dfb}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Lectures on Rational Choice Theory}
-      \field{year}{2023/24}
-      \true{nocite}
-    \endentry
-    \entry{coles2006managerial}{article}{}
-      \name{author}{3}{}{%
-        {{hash=dc62e772c04028b3e987e87027d6d1de}{%
-           family={Coles},
-           familyi={C\bibinitperiod},
-           given={Jeffrey\bibnamedelima L},
-           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=b29ee8e0a1ace195ca8dcbdee7270d26}{%
-           family={Daniel},
-           familyi={D\bibinitperiod},
-           given={Naveen\bibnamedelima D},
-           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=7dab4e880f7d6e3d16a96af6a3b0dc78}{%
-           family={Naveen},
-           familyi={N\bibinitperiod},
-           given={Lalitha},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{a4d4efaccddbca8b78f989959004e946}
-      \strng{fullhash}{a4d4efaccddbca8b78f989959004e946}
-      \strng{bibnamehash}{a4d4efaccddbca8b78f989959004e946}
-      \strng{authorbibnamehash}{a4d4efaccddbca8b78f989959004e946}
-      \strng{authornamehash}{a4d4efaccddbca8b78f989959004e946}
-      \strng{authorfullhash}{a4d4efaccddbca8b78f989959004e946}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of financial Economics}
-      \field{number}{2}
-      \field{title}{Managerial incentives and risk-taking}
-      \field{volume}{79}
-      \field{year}{2006}
-      \field{pages}{431\bibrangedash 468}
-      \range{pages}{38}
-    \endentry
-    \entry{cox1979option}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0d88b4a591c5402d328fe670bc33bf1b}{%
-           family={Cox},
-           familyi={C\bibinitperiod},
-           given={John\bibnamedelima C},
-           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=98b2227c5a8dba76158ffb9a20138b89}{%
-           family={Ross},
-           familyi={R\bibinitperiod},
-           given={Stephen\bibnamedelima A},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=bbe9515d147f6af78ee48885af3e91ad}{%
-           family={Rubinstein},
-           familyi={R\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{ff637c6bea3a121fae297b7931e23274}
-      \strng{fullhash}{ff637c6bea3a121fae297b7931e23274}
-      \strng{bibnamehash}{ff637c6bea3a121fae297b7931e23274}
-      \strng{authorbibnamehash}{ff637c6bea3a121fae297b7931e23274}
-      \strng{authornamehash}{ff637c6bea3a121fae297b7931e23274}
-      \strng{authorfullhash}{ff637c6bea3a121fae297b7931e23274}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of financial Economics}
-      \field{number}{3}
-      \field{title}{Option pricing: A simplified approach}
-      \field{volume}{7}
-      \field{year}{1979}
-      \field{pages}{229\bibrangedash 263}
-      \range{pages}{35}
-    \endentry
-    \entry{cvitanic2018dynamic}{article}{}
-      \name{author}{3}{}{%
-        {{hash=cf2b719972551bd3b23a58b5cca8c0fc}{%
-           family={Cvitanic},
-           familyi={C\bibinitperiod},
-           given={Jaksa},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5d801d81119a1c067f2c5ae63daeaef4}{%
-           family={Possamai},
-           familyi={P\bibinitperiod},
-           given={Dylan},
-           giveni={D\bibinitperiod}}}%
-        {{hash=701a2d95e8b3a75c89608e9b91902077}{%
-           family={Touzi},
-           familyi={T\bibinitperiod},
-           given={Nizar},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{fullhash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{bibnamehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{authorbibnamehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{authornamehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{authorfullhash}{31c56983a558a7f885ebc41722bfaf9a}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Finance and Stochastics}
-      \field{title}{Dynamic programming approach to principal--agent problems}
-      \field{volume}{22}
-      \field{year}{2018}
-      \field{pages}{1\bibrangedash 37}
-      \range{pages}{37}
-    \endentry
-    \entry{cvitanic2017moral}{article}{}
-      \name{author}{3}{}{%
-        {{hash=cf2b719972551bd3b23a58b5cca8c0fc}{%
-           family={Cvitanic},
-           familyi={C\bibinitperiod},
-           given={Jaksa},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5d801d81119a1c067f2c5ae63daeaef4}{%
-           family={Possamai},
-           familyi={P\bibinitperiod},
-           given={Dylan},
-           giveni={D\bibinitperiod}}}%
-        {{hash=701a2d95e8b3a75c89608e9b91902077}{%
-           family={Touzi},
-           familyi={T\bibinitperiod},
-           given={Nizar},
-           giveni={N\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {INFORMS}%
-      }
-      \strng{namehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{fullhash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{bibnamehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{authorbibnamehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{authornamehash}{31c56983a558a7f885ebc41722bfaf9a}
-      \strng{authorfullhash}{31c56983a558a7f885ebc41722bfaf9a}
-      \field{extraname}{2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Management Science}
-      \field{number}{10}
-      \field{title}{Moral hazard in dynamic risk management}
-      \field{volume}{63}
-      \field{year}{2017}
-      \field{pages}{3328\bibrangedash 3346}
-      \range{pages}{19}
-    \endentry
-    \entry{cvitanic2013dynamics}{article}{}
-      \name{author}{3}{}{%
-        {{hash=cf2b719972551bd3b23a58b5cca8c0fc}{%
-           family={Cvitanic},
-           familyi={C\bibinitperiod},
-           given={Jaksa},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8744fe1437fb0851632a483887fd06ca}{%
-           family={Wan},
-           familyi={W\bibinitperiod},
-           given={Xuhu},
-           giveni={X\bibinitperiod}}}%
-        {{hash=05cb79d321d2204abbd58e48b2333ea0}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Huali},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {INFORMS}%
-      }
-      \strng{namehash}{ad7a78454ac33360f8e1f2e8b332a137}
-      \strng{fullhash}{ad7a78454ac33360f8e1f2e8b332a137}
-      \strng{bibnamehash}{ad7a78454ac33360f8e1f2e8b332a137}
-      \strng{authorbibnamehash}{ad7a78454ac33360f8e1f2e8b332a137}
-      \strng{authornamehash}{ad7a78454ac33360f8e1f2e8b332a137}
-      \strng{authorfullhash}{ad7a78454ac33360f8e1f2e8b332a137}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Management science}
-      \field{number}{5}
-      \field{title}{Dynamics of contract design with screening}
-      \field{volume}{59}
-      \field{year}{2013}
-      \field{pages}{1229\bibrangedash 1244}
-      \range{pages}{16}
-    \endentry
-    \entry{dai2005valuing}{article}{}
-      \name{author}{2}{}{%
-        {{hash=052098813b962350628f142f9b3ca3be}{%
-           family={Dai},
-           familyi={D\bibinitperiod},
-           given={Min},
-           giveni={M\bibinitperiod}}}%
-        {{hash=3a666a048a1f88a4aeca69c99c25da97}{%
-           family={Kwok},
-           familyi={K\bibinitperiod},
-           given={Yue\bibnamedelima Kuen},
-           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{b6d283cd173fdc2def7e32aada28c55e}
-      \strng{fullhash}{b6d283cd173fdc2def7e32aada28c55e}
-      \strng{bibnamehash}{b6d283cd173fdc2def7e32aada28c55e}
-      \strng{authorbibnamehash}{b6d283cd173fdc2def7e32aada28c55e}
-      \strng{authornamehash}{b6d283cd173fdc2def7e32aada28c55e}
-      \strng{authorfullhash}{b6d283cd173fdc2def7e32aada28c55e}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Quantitative Finance}
-      \field{number}{1}
-      \field{title}{Valuing employee reload options under the time vesting requirement}
-      \field{volume}{5}
-      \field{year}{2005}
-      \field{pages}{61\bibrangedash 69}
-      \range{pages}{9}
-    \endentry
-    \entry{dutting2023multi}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=e4b497dfb0a28092560e11b1e21941d3}{%
-           family={Dutting},
-           familyi={D\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-        {{hash=8184393b7b65a4d9594214ce090c5fc4}{%
-           family={Ezra},
-           familyi={E\bibinitperiod},
-           given={Tomer},
-           giveni={T\bibinitperiod}}}%
-        {{hash=0b8b9b8017b14503ad3fe7998d139fd0}{%
-           family={Feldman},
-           familyi={F\bibinitperiod},
-           given={Michal},
-           giveni={M\bibinitperiod}}}%
-        {{hash=52c1f180bc2e9039ac1556aead903a33}{%
-           family={Kesselheim},
-           familyi={K\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{312198438b094f5078906c108fb8d8ed}
-      \strng{fullhash}{312198438b094f5078906c108fb8d8ed}
-      \strng{bibnamehash}{312198438b094f5078906c108fb8d8ed}
-      \strng{authorbibnamehash}{312198438b094f5078906c108fb8d8ed}
-      \strng{authornamehash}{312198438b094f5078906c108fb8d8ed}
-      \strng{authorfullhash}{312198438b094f5078906c108fb8d8ed}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 55th Annual ACM Symposium on Theory of Computing}
-      \field{title}{Multi-agent contracts}
-      \field{year}{2023}
-      \field{pages}{1311\bibrangedash 1324}
-      \range{pages}{14}
-    \endentry
-    \entry{dutting2021complexity}{article}{}
-      \name{author}{3}{}{%
-        {{hash=e4b497dfb0a28092560e11b1e21941d3}{%
-           family={Dutting},
-           familyi={D\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-        {{hash=efce6f6d496cdcc1bb07fb47dfecb3aa}{%
-           family={Roughgarden},
-           familyi={R\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-        {{hash=2f1dff3aaa7999e892bab8a6b35f8f98}{%
-           family={Talgam-Cohen},
-           familyi={T\bibinithyphendelim C\bibinitperiod},
-           given={Inbal},
-           giveni={I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {SIAM}%
-      }
-      \strng{namehash}{19d69dd5fd2abae6ffd06ec3aebd24ea}
-      \strng{fullhash}{19d69dd5fd2abae6ffd06ec3aebd24ea}
-      \strng{bibnamehash}{19d69dd5fd2abae6ffd06ec3aebd24ea}
-      \strng{authorbibnamehash}{19d69dd5fd2abae6ffd06ec3aebd24ea}
-      \strng{authornamehash}{19d69dd5fd2abae6ffd06ec3aebd24ea}
-      \strng{authorfullhash}{19d69dd5fd2abae6ffd06ec3aebd24ea}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{SIAM Journal on Computing}
-      \field{number}{1}
-      \field{title}{The complexity of contracts}
-      \field{volume}{50}
-      \field{year}{2021}
-      \field{pages}{211\bibrangedash 254}
-      \range{pages}{44}
-    \endentry
-    \entry{dybvig2003employee}{article}{}
-      \name{author}{2}{}{%
-        {{hash=12e3bc776e121d70263b47b06443578f}{%
-           family={Dybvig},
-           familyi={D\bibinitperiod},
-           given={Philip\bibnamedelima H},
-           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=ccf2fd7cf9dd759909d38a27f9b54a72}{%
-           family={Loewenstein},
-           familyi={L\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{0de77c54e7a295e92a249a4a42287b53}
-      \strng{fullhash}{0de77c54e7a295e92a249a4a42287b53}
-      \strng{bibnamehash}{0de77c54e7a295e92a249a4a42287b53}
-      \strng{authorbibnamehash}{0de77c54e7a295e92a249a4a42287b53}
-      \strng{authornamehash}{0de77c54e7a295e92a249a4a42287b53}
-      \strng{authorfullhash}{0de77c54e7a295e92a249a4a42287b53}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Review of Financial Studies}
-      \field{number}{1}
-      \field{title}{Employee reload options: pricing, hedging, and optimal exercise}
-      \field{volume}{16}
-      \field{year}{2003}
-      \field{pages}{145\bibrangedash 171}
-      \range{pages}{27}
-    \endentry
-    \entry{edmans2017executive}{article}{}
-      \name{author}{3}{}{%
-        {{hash=2f305382852db47747c271e625bfa8f7}{%
-           family={Edmans},
-           familyi={E\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b53634e8226ff6b3b6e290047a5cb42c}{%
-           family={Gabaix},
-           familyi={G\bibinitperiod},
-           given={Xavier},
-           giveni={X\bibinitperiod}}}%
-        {{hash=116f2e07517074da019162601bcb6816}{%
-           family={Jenter},
-           familyi={J\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{695284438c8c36c17331a86a496196a4}
-      \strng{fullhash}{695284438c8c36c17331a86a496196a4}
-      \strng{bibnamehash}{695284438c8c36c17331a86a496196a4}
-      \strng{authorbibnamehash}{695284438c8c36c17331a86a496196a4}
-      \strng{authornamehash}{695284438c8c36c17331a86a496196a4}
-      \strng{authorfullhash}{695284438c8c36c17331a86a496196a4}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The handbook of the economics of corporate governance}
-      \field{title}{Executive compensation: A survey of theory and evidence}
-      \field{volume}{1}
-      \field{year}{2017}
-      \field{pages}{383\bibrangedash 539}
-      \range{pages}{157}
-    \endentry
-    \entry{gitbinomialval}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=978a7f0dc6b12654e83c89b6e7c1713c}{%
-           family={Emerick},
-           familyi={E\bibinitperiod},
-           given={Jonathon},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{978a7f0dc6b12654e83c89b6e7c1713c}
-      \strng{fullhash}{978a7f0dc6b12654e83c89b6e7c1713c}
-      \strng{bibnamehash}{978a7f0dc6b12654e83c89b6e7c1713c}
-      \strng{authorbibnamehash}{978a7f0dc6b12654e83c89b6e7c1713c}
-      \strng{authornamehash}{978a7f0dc6b12654e83c89b6e7c1713c}
-      \strng{authorfullhash}{978a7f0dc6b12654e83c89b6e7c1713c}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{American Option Pricing with Binomial Trees}
-      \field{year}{2021}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://github.com/TheQuantPy/youtube-tutorials/blob/8e64e19629cee840928b51baf4660e5c777e87e7/2021/003%20Jul-Sep/2021-07-13%20American%20Option%20Pricing%20with%20Binomial%20Trees%20_%20Theory%20_%20Implementation%20in%20Python.ipynb
-      \endverb
-      \verb{url}
-      \verb https://github.com/TheQuantPy/youtube-tutorials/blob/8e64e19629cee840928b51baf4660e5c777e87e7/2021/003%20Jul-Sep/2021-07-13%20American%20Option%20Pricing%20with%20Binomial%20Trees%20_%20Theory%20_%20Implementation%20in%20Python.ipynb
-      \endverb
-    \endentry
-    \entry{fasb123}{report}{}
-      \list{institution}{1}{%
-        {Financial Accounting Standards Board}%
-      }
-      \list{location}{1}{%
-        {Norwalk, CT}%
-      }
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labeltitlesource}{title}
-      \field{month}{12}
-      \field{title}{Statement of Financial Accounting Standards No. 123}
-      \field{type}{Standard}
-      \field{volume}{1995}
-      \field{year}{1995}
-    \endentry
-    \entry{fasb123_revised}{report}{}
-      \list{institution}{1}{%
-        {Financial Accounting Standards Board}%
-      }
-      \list{location}{1}{%
-        {Norwalk, CT}%
-      }
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labeltitlesource}{title}
-      \field{month}{10}
-      \field{title}{Statement of Financial Accounting Standards No. 123 (revised 2004)}
-      \field{type}{Standard}
-      \field{volume}{2004}
-      \field{year}{2004}
-    \endentry
-    \entry{frydman2010ceo}{article}{}
-      \name{author}{2}{}{%
-        {{hash=5f2ec3b8f5661362c49f59f5e6c5bbe1}{%
-           family={Frydman},
-           familyi={F\bibinitperiod},
-           given={Carola},
-           giveni={C\bibinitperiod}}}%
-        {{hash=116f2e07517074da019162601bcb6816}{%
-           family={Jenter},
-           familyi={J\bibinitperiod},
-           given={Dirk},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Annual Reviews}%
-      }
-      \strng{namehash}{7bc09af9d14efdcff2bd8ae3659d3ac4}
-      \strng{fullhash}{7bc09af9d14efdcff2bd8ae3659d3ac4}
-      \strng{bibnamehash}{7bc09af9d14efdcff2bd8ae3659d3ac4}
-      \strng{authorbibnamehash}{7bc09af9d14efdcff2bd8ae3659d3ac4}
-      \strng{authornamehash}{7bc09af9d14efdcff2bd8ae3659d3ac4}
-      \strng{authorfullhash}{7bc09af9d14efdcff2bd8ae3659d3ac4}
-      \field{sortinit}{F}
-      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annu. Rev. Financ. Econ.}
-      \field{number}{1}
-      \field{title}{CEO compensation}
-      \field{volume}{2}
-      \field{year}{2010}
-      \field{pages}{75\bibrangedash 102}
-      \range{pages}{28}
-    \endentry
-    \entry{glasserman2004monte}{book}{}
-      \name{author}{1}{}{%
-        {{hash=ad8512135fae00796ff8f92716d977c9}{%
-           family={Glasserman},
-           familyi={G\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{ad8512135fae00796ff8f92716d977c9}
-      \strng{fullhash}{ad8512135fae00796ff8f92716d977c9}
-      \strng{bibnamehash}{ad8512135fae00796ff8f92716d977c9}
-      \strng{authorbibnamehash}{ad8512135fae00796ff8f92716d977c9}
-      \strng{authornamehash}{ad8512135fae00796ff8f92716d977c9}
-      \strng{authorfullhash}{ad8512135fae00796ff8f92716d977c9}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Monte Carlo methods in financial engineering}
-      \field{volume}{53}
-      \field{year}{2004}
-    \endentry
-    \entry{gottlieb2014simultaneous}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1244bfcf75841e21e45bb27679b9d7b6}{%
-           family={Gottlieb},
-           familyi={G\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9480b1791f67625e17c1915e7eb3aa98}{%
-           family={Moreira},
-           familyi={M\bibinitperiod},
-           given={Humberto},
-           giveni={H\bibinitperiod}}}%
-      }
-      \strng{namehash}{171a8fe14b5cdf13a9f3bb0c1d9e66c8}
-      \strng{fullhash}{171a8fe14b5cdf13a9f3bb0c1d9e66c8}
-      \strng{bibnamehash}{171a8fe14b5cdf13a9f3bb0c1d9e66c8}
-      \strng{authorbibnamehash}{171a8fe14b5cdf13a9f3bb0c1d9e66c8}
-      \strng{authornamehash}{171a8fe14b5cdf13a9f3bb0c1d9e66c8}
-      \strng{authorfullhash}{171a8fe14b5cdf13a9f3bb0c1d9e66c8}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Wharton School and EPGE/FGV Working Paper}
-      \field{title}{Simultaneous adverse selection and moral hazard}
-      \field{year}{2014}
-      \true{nocite}
-    \endentry
-    \entry{grasselli2009risk}{article}{}
-      \name{author}{2}{}{%
-        {{hash=89aa6caf640110e63a27ef62f37e29fe}{%
-           family={Grasselli},
-           familyi={G\bibinitperiod},
-           given={Matheus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9c5043365909c0c401a370cd98817d04}{%
-           family={Henderson},
-           familyi={H\bibinitperiod},
-           given={Vicky},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{e7b029a3685204f6c10ea3a1255bad9e}
-      \strng{fullhash}{e7b029a3685204f6c10ea3a1255bad9e}
-      \strng{bibnamehash}{e7b029a3685204f6c10ea3a1255bad9e}
-      \strng{authorbibnamehash}{e7b029a3685204f6c10ea3a1255bad9e}
-      \strng{authornamehash}{e7b029a3685204f6c10ea3a1255bad9e}
-      \strng{authorfullhash}{e7b029a3685204f6c10ea3a1255bad9e}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Economic Dynamics and Control}
-      \field{number}{1}
-      \field{title}{Risk aversion and block exercise of executive stock options}
-      \field{volume}{33}
-      \field{year}{2009}
-      \field{pages}{109\bibrangedash 127}
-      \range{pages}{19}
-    \endentry
-    \entry{grinblatt1989adverse}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2840514c5e5c25aee9e051607249f9e2}{%
-           family={Grinblatt},
-           familyi={G\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b04b73173bde12f6affb3df7b9d475c1}{%
-           family={Titman},
-           familyi={T\bibinitperiod},
-           given={Sheridan},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {INFORMS}%
-      }
-      \strng{namehash}{099d524553cc75550deec9f33a7ad72a}
-      \strng{fullhash}{099d524553cc75550deec9f33a7ad72a}
-      \strng{bibnamehash}{099d524553cc75550deec9f33a7ad72a}
-      \strng{authorbibnamehash}{099d524553cc75550deec9f33a7ad72a}
-      \strng{authornamehash}{099d524553cc75550deec9f33a7ad72a}
-      \strng{authorfullhash}{099d524553cc75550deec9f33a7ad72a}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Management science}
-      \field{number}{7}
-      \field{title}{Adverse risk incentives and the design of performance-based contracts}
-      \field{volume}{35}
-      \field{year}{1989}
-      \field{pages}{807\bibrangedash 822}
-      \range{pages}{16}
-    \endentry
-    \entry{hall2002stock}{article}{}
-      \name{author}{2}{}{%
-        {{hash=69285b4989af99bfe5deafc798254ddc}{%
-           family={Hall},
-           familyi={H\bibinitperiod},
-           given={Brian\bibnamedelima J},
-           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=bccac7f258b8ab86b6e81052bfa24cb4}{%
-           family={Murphy},
-           familyi={M\bibinitperiod},
-           given={Kevin\bibnamedelima J},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{fullhash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{bibnamehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{authorbibnamehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{authornamehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{authorfullhash}{cf9ba211b8accbc86153874bb7eca20d}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of accounting and economics}
-      \field{number}{1}
-      \field{title}{Stock options for undiversified executives}
-      \field{volume}{33}
-      \field{year}{2002}
-      \field{pages}{3\bibrangedash 42}
-      \range{pages}{40}
-    \endentry
-    \entry{hall2003trouble}{article}{}
-      \name{author}{2}{}{%
-        {{hash=69285b4989af99bfe5deafc798254ddc}{%
-           family={Hall},
-           familyi={H\bibinitperiod},
-           given={Brian\bibnamedelima J},
-           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=bccac7f258b8ab86b6e81052bfa24cb4}{%
-           family={Murphy},
-           familyi={M\bibinitperiod},
-           given={Kevin\bibnamedelima J},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Economic Association}%
-      }
-      \strng{namehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{fullhash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{bibnamehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{authorbibnamehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{authornamehash}{cf9ba211b8accbc86153874bb7eca20d}
-      \strng{authorfullhash}{cf9ba211b8accbc86153874bb7eca20d}
-      \field{extraname}{2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of economic perspectives}
-      \field{number}{3}
-      \field{title}{The trouble with stock options}
-      \field{volume}{17}
-      \field{year}{2003}
-      \field{pages}{49\bibrangedash 70}
-      \range{pages}{22}
-    \endentry
-    \entry{hayes2012stock}{article}{}
-      \name{author}{3}{}{%
-        {{hash=81057b0d17f6d8b347e8d491b786c29d}{%
-           family={Hayes},
-           familyi={H\bibinitperiod},
-           given={Rachel\bibnamedelima M},
-           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d0e42fd6d75a7d1f08b43f28a22d8d3f}{%
-           family={Lemmon},
-           familyi={L\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=0d14a425b978a9ee77f765a1c56ede51}{%
-           family={Qiu},
-           familyi={Q\bibinitperiod},
-           given={Mingming},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{42a200a0507446dddf2c2982be593d4d}
-      \strng{fullhash}{42a200a0507446dddf2c2982be593d4d}
-      \strng{bibnamehash}{42a200a0507446dddf2c2982be593d4d}
-      \strng{authorbibnamehash}{42a200a0507446dddf2c2982be593d4d}
-      \strng{authornamehash}{42a200a0507446dddf2c2982be593d4d}
-      \strng{authorfullhash}{42a200a0507446dddf2c2982be593d4d}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of financial economics}
-      \field{number}{1}
-      \field{title}{Stock options and managerial incentives for risk taking: Evidence from FAS 123R}
-      \field{volume}{105}
-      \field{year}{2012}
-      \field{pages}{174\bibrangedash 190}
-      \range{pages}{17}
-    \endentry
-    \entry{hemmer1998optimal}{article}{}
-      \name{author}{3}{}{%
-        {{hash=06b173e1325e4dd8be588e811383ab7c}{%
-           family={Hemmer},
-           familyi={H\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=6d23eee14a929086e49ed007d21a68d6}{%
-           family={Matsunaga},
-           familyi={M\bibinitperiod},
-           given={Steve},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e628b3f44059900971c63a40d081da2d}{%
-           family={Shevlin},
-           familyi={S\bibinitperiod},
-           given={Terry},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{fullhash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{bibnamehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{authorbibnamehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{authornamehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{authorfullhash}{d7992ed4d54ff61e59db3eb89d701179}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Accounting Research}
-      \field{number}{2}
-      \field{title}{Optimal exercise and the cost of granting employee stock options with a reload provision}
-      \field{volume}{36}
-      \field{year}{1998}
-      \field{pages}{231\bibrangedash 255}
-      \range{pages}{25}
-    \endentry
-    \entry{hemmer2000reload}{article}{}
-      \name{author}{3}{}{%
-        {{hash=06b173e1325e4dd8be588e811383ab7c}{%
-           family={Hemmer},
-           familyi={H\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=6d23eee14a929086e49ed007d21a68d6}{%
-           family={Matsunaga},
-           familyi={M\bibinitperiod},
-           given={Steve},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e628b3f44059900971c63a40d081da2d}{%
-           family={Shevlin},
-           familyi={S\bibinitperiod},
-           given={Terry},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Sage Publications Sage CA: Los Angeles, CA}%
-      }
-      \strng{namehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{fullhash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{bibnamehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{authorbibnamehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{authornamehash}{d7992ed4d54ff61e59db3eb89d701179}
-      \strng{authorfullhash}{d7992ed4d54ff61e59db3eb89d701179}
-      \field{extraname}{2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Accounting, Auditing \& Finance}
-      \field{number}{4}
-      \field{title}{Reload employee stock option plans: incentive alignment or rent extraction}
-      \field{volume}{15}
-      \field{year}{2000}
-      \field{pages}{393\bibrangedash 423}
-      \range{pages}{31}
-    \endentry
-    \entry{henderson2005impact}{article}{}
-      \name{author}{1}{}{%
-        {{hash=9c5043365909c0c401a370cd98817d04}{%
-           family={Henderson},
-           familyi={H\bibinitperiod},
-           given={Vicky},
-           giveni={V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{9c5043365909c0c401a370cd98817d04}
-      \strng{fullhash}{9c5043365909c0c401a370cd98817d04}
-      \strng{bibnamehash}{9c5043365909c0c401a370cd98817d04}
-      \strng{authorbibnamehash}{9c5043365909c0c401a370cd98817d04}
-      \strng{authornamehash}{9c5043365909c0c401a370cd98817d04}
-      \strng{authorfullhash}{9c5043365909c0c401a370cd98817d04}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Quantitative Finance}
-      \field{number}{1}
-      \field{title}{The impact of the market portfolio on the valuation, incentives and optimality of executive stock options}
-      \field{volume}{5}
-      \field{year}{2005}
-      \true{nocite}
-      \field{pages}{35\bibrangedash 47}
-      \range{pages}{13}
-    \endentry
-    \entry{heron2017stock}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d40aa8f727da9b18800ce8947ff93024}{%
-           family={Heron},
-           familyi={H\bibinitperiod},
-           given={Randall\bibnamedelima A},
-           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=5e12c1f229d7b933845621f466d9ce6b}{%
-           family={Lie},
-           familyi={L\bibinitperiod},
-           given={Erik},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Informs}%
-      }
-      \strng{namehash}{c18901d5bc30c37c393848271a7c86f3}
-      \strng{fullhash}{c18901d5bc30c37c393848271a7c86f3}
-      \strng{bibnamehash}{c18901d5bc30c37c393848271a7c86f3}
-      \strng{authorbibnamehash}{c18901d5bc30c37c393848271a7c86f3}
-      \strng{authornamehash}{c18901d5bc30c37c393848271a7c86f3}
-      \strng{authorfullhash}{c18901d5bc30c37c393848271a7c86f3}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Management Science}
-      \field{number}{9}
-      \field{title}{Do stock options overcome managerial risk aversion? Evidence from exercises of executive stock options}
-      \field{volume}{63}
-      \field{year}{2017}
-      \field{pages}{3057\bibrangedash 3071}
-      \range{pages}{15}
-    \endentry
-    \entry{holmstrom1987aggregation}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4ec3c67b648805ee3da894057f3f18b6}{%
-           family={Holmstrom},
-           familyi={H\bibinitperiod},
-           given={Bengt},
-           giveni={B\bibinitperiod}}}%
-        {{hash=4a72201f09391b2eccac2ca94d4a921b}{%
-           family={Milgrom},
-           familyi={M\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{928a5caa0f1adac2913439180e8b39d4}
-      \strng{fullhash}{928a5caa0f1adac2913439180e8b39d4}
-      \strng{bibnamehash}{928a5caa0f1adac2913439180e8b39d4}
-      \strng{authorbibnamehash}{928a5caa0f1adac2913439180e8b39d4}
-      \strng{authornamehash}{928a5caa0f1adac2913439180e8b39d4}
-      \strng{authorfullhash}{928a5caa0f1adac2913439180e8b39d4}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Econometrica: Journal of the Econometric Society}
-      \field{title}{Aggregation and linearity in the provision of intertemporal incentives}
-      \field{year}{1987}
-      \field{pages}{303\bibrangedash 328}
-      \range{pages}{26}
-    \endentry
-    \entry{huang2013dynamic}{article}{}
-      \name{author}{5}{}{%
-        {{hash=4540dd31229195425bc3f01796d63f2b}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Yingping},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=38f3efe34cb29092007fe04331b383a3}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Tao},
-           giveni={T\bibinitperiod}}}%
-        {{hash=96c2c37ee8b27a7cc65d8469beffa2b8}{%
-           family={Xiao},
-           familyi={X\bibinitperiod},
-           given={Xisheng},
-           giveni={X\bibinitperiod}}}%
-        {{hash=c30cdda62b8b513129d37b27b4a9ec3e}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xihui},
-           giveni={X\bibinitperiod}}}%
-        {{hash=147169cc9ecec243a3376e95fb8c5f3d}{%
-           family={Olagues},
-           familyi={O\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{45380098221595d74c0aa06b9e3f79e2}
-      \strng{fullhash}{45380098221595d74c0aa06b9e3f79e2}
-      \strng{bibnamehash}{45380098221595d74c0aa06b9e3f79e2}
-      \strng{authorbibnamehash}{45380098221595d74c0aa06b9e3f79e2}
-      \strng{authornamehash}{45380098221595d74c0aa06b9e3f79e2}
-      \strng{authorfullhash}{45380098221595d74c0aa06b9e3f79e2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annals of Management Science}
-      \field{number}{1}
-      \field{title}{Dynamic Employee Stock Options}
-      \field{volume}{2}
-      \field{year}{2013}
-      \field{pages}{1}
-      \range{pages}{1}
-    \endentry
-    \entry{huddart1996employee}{article}{}
-      \name{author}{2}{}{%
-        {{hash=19e628aa0252a5180afe76d9dc21ba2b}{%
-           family={Huddart},
-           familyi={H\bibinitperiod},
-           given={Steven},
-           giveni={S\bibinitperiod}}}%
-        {{hash=9a39afababc5469869eb13304950b247}{%
-           family={Lang},
-           familyi={L\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{0e843c4d34ae875e27f25ffdcf0f7774}
-      \strng{fullhash}{0e843c4d34ae875e27f25ffdcf0f7774}
-      \strng{bibnamehash}{0e843c4d34ae875e27f25ffdcf0f7774}
-      \strng{authorbibnamehash}{0e843c4d34ae875e27f25ffdcf0f7774}
-      \strng{authornamehash}{0e843c4d34ae875e27f25ffdcf0f7774}
-      \strng{authorfullhash}{0e843c4d34ae875e27f25ffdcf0f7774}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Accounting and Economics}
-      \field{number}{1}
-      \field{title}{Employee stock option exercises an empirical analysis}
-      \field{volume}{21}
-      \field{year}{1996}
-      \field{pages}{5\bibrangedash 43}
-      \range{pages}{39}
-    \endentry
-    \entry{hull2002determining}{article}{}
-      \name{author}{2}{}{%
-        {{hash=8eb46e2417b472d17c974e4c3bc21987}{%
-           family={Hull},
-           familyi={H\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=46972b2421a0750ab7f87316d6355570}{%
-           family={White},
-           familyi={W\bibinitperiod},
-           given={Alan},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{fullhash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{bibnamehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{authorbibnamehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{authornamehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{authorfullhash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \field{extraname}{1}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Report produced for the Ontario teachers pension plan}
-      \field{title}{Determining the value of employee stock options}
-      \field{year}{2002}
-      \true{nocite}
-    \endentry
-    \entry{hull2004value}{article}{}
-      \name{author}{2}{}{%
-        {{hash=8eb46e2417b472d17c974e4c3bc21987}{%
-           family={Hull},
-           familyi={H\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=46972b2421a0750ab7f87316d6355570}{%
-           family={White},
-           familyi={W\bibinitperiod},
-           given={Alan},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{fullhash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{bibnamehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{authorbibnamehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{authornamehash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \strng{authorfullhash}{6cf2f2c1f3183acd87195d7dc5af9158}
-      \field{extraname}{2}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Financial Analysts Journal}
-      \field{number}{1}
-      \field{title}{How to value employee stock options}
-      \field{volume}{60}
-      \field{year}{2004}
-      \field{pages}{114\bibrangedash 119}
-      \range{pages}{6}
-    \endentry
-    \entry{ingersoll2006subjective}{article}{}
-      \name{author}{1}{}{%
-        {{hash=74e64dfaf49cbac2a7c6850c1c6c80b7}{%
-           family={Ingersoll},
-           familyi={I\bibinitperiod},
-           given={Jonathan\bibnamedelima E},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-           suffix={Jr},
-           suffixi={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{fullhash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{bibnamehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{authorbibnamehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{authornamehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{authorfullhash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \field{extraname}{1}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Business}
-      \field{number}{2}
-      \field{title}{The subjective and objective evaluation of incentive stock options}
-      \field{volume}{79}
-      \field{year}{2006}
-      \field{pages}{453\bibrangedash 487}
-      \range{pages}{35}
-    \endentry
-    \entry{ingersoll2006valuing}{article}{}
-      \name{author}{1}{}{%
-        {{hash=74e64dfaf49cbac2a7c6850c1c6c80b7}{%
-           family={Ingersoll},
-           familyi={I\bibinitperiod},
-           given={Jonathan\bibnamedelima E},
-           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
-           suffix={Jr},
-           suffixi={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{fullhash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{bibnamehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{authorbibnamehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{authornamehash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \strng{authorfullhash}{74e64dfaf49cbac2a7c6850c1c6c80b7}
-      \field{extraname}{2}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Review of Derivatives Research}
-      \field{title}{Valuing reload options}
-      \field{volume}{9}
-      \field{year}{2006}
-      \field{pages}{67\bibrangedash 105}
-      \range{pages}{39}
-    \endentry
-    \entry{iqbal2006female}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b5820445b643b637c3a7dad2ce9bb279}{%
-           family={Iqbal},
-           familyi={I\bibinitperiod},
-           given={Zahid},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=3c093d8ed7afd6d8456f3e4928f2558f}{%
-           family={O},
-           familyi={O\bibinitperiod},
-           given={Sewon},
-           giveni={S\bibinitperiod}}}%
-        {{hash=98a816a6c19e3de5777b2a4b97c354b9}{%
-           family={Baek},
-           familyi={B\bibinitperiod},
-           given={H\bibnamedelima Young},
-           giveni={H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{2c7102d1c8c5e7c0766e9a28abd284d1}
-      \strng{fullhash}{2c7102d1c8c5e7c0766e9a28abd284d1}
-      \strng{bibnamehash}{2c7102d1c8c5e7c0766e9a28abd284d1}
-      \strng{authorbibnamehash}{2c7102d1c8c5e7c0766e9a28abd284d1}
-      \strng{authornamehash}{2c7102d1c8c5e7c0766e9a28abd284d1}
-      \strng{authorfullhash}{2c7102d1c8c5e7c0766e9a28abd284d1}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Atlantic Economic Journal}
-      \field{title}{Are female executives more risk-averse than male executives?}
-      \field{volume}{34}
-      \field{year}{2006}
-      \field{pages}{63\bibrangedash 74}
-      \range{pages}{12}
-    \endentry
-    \entry{izhakian2017risk}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1ac5ecd624aa9c24a77f2121f222a1d8}{%
-           family={Izhakian},
-           familyi={I\bibinitperiod},
-           given={Yehuda},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=127b4e5be2c6f700126175dd187e1d64}{%
-           family={Yermack},
-           familyi={Y\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{116e30aa84b713fbb837f858c4fe2a3a}
-      \strng{fullhash}{116e30aa84b713fbb837f858c4fe2a3a}
-      \strng{bibnamehash}{116e30aa84b713fbb837f858c4fe2a3a}
-      \strng{authorbibnamehash}{116e30aa84b713fbb837f858c4fe2a3a}
-      \strng{authornamehash}{116e30aa84b713fbb837f858c4fe2a3a}
-      \strng{authorfullhash}{116e30aa84b713fbb837f858c4fe2a3a}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Financial Economics}
-      \field{number}{1}
-      \field{title}{Risk, ambiguity, and the exercise of employee stock options}
-      \field{volume}{124}
-      \field{year}{2017}
-      \field{pages}{65\bibrangedash 85}
-      \range{pages}{21}
-    \endentry
-    \entry{jensen1990performance}{article}{}
-      \name{author}{2}{}{%
-        {{hash=db9155adcca41b20795e0ca0bbbc007c}{%
-           family={Jensen},
-           familyi={J\bibinitperiod},
-           given={Michael\bibnamedelima C},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=bccac7f258b8ab86b6e81052bfa24cb4}{%
-           family={Murphy},
-           familyi={M\bibinitperiod},
-           given={Kevin\bibnamedelima J},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The University of Chicago Press}%
-      }
-      \strng{namehash}{e869236d01cf91826c8fed2f98749035}
-      \strng{fullhash}{e869236d01cf91826c8fed2f98749035}
-      \strng{bibnamehash}{e869236d01cf91826c8fed2f98749035}
-      \strng{authorbibnamehash}{e869236d01cf91826c8fed2f98749035}
-      \strng{authornamehash}{e869236d01cf91826c8fed2f98749035}
-      \strng{authorfullhash}{e869236d01cf91826c8fed2f98749035}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of political economy}
-      \field{number}{2}
-      \field{title}{Performance pay and top-management incentives}
-      \field{volume}{98}
-      \field{year}{1990}
-      \true{nocite}
-      \field{pages}{225\bibrangedash 264}
-      \range{pages}{40}
-    \endentry
-    \entry{jullien2007screening}{article}{}
-      \name{author}{3}{}{%
-        {{hash=87795c52871c3960a3458857421f7727}{%
-           family={Jullien},
-           familyi={J\bibinitperiod},
-           given={Bruno},
-           giveni={B\bibinitperiod}}}%
-        {{hash=3a515ca5113cf64972a3886e4c66fb0f}{%
-           family={Salanie},
-           familyi={S\bibinitperiod},
-           given={Bernard},
-           giveni={B\bibinitperiod}}}%
-        {{hash=8bafc0cecd463031e72b05ee1070d236}{%
-           family={Salanie},
-           familyi={S\bibinitperiod},
-           given={Francois},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{77aef20d7749c19e0469ab28eecc00dc}
-      \strng{fullhash}{77aef20d7749c19e0469ab28eecc00dc}
-      \strng{bibnamehash}{77aef20d7749c19e0469ab28eecc00dc}
-      \strng{authorbibnamehash}{77aef20d7749c19e0469ab28eecc00dc}
-      \strng{authornamehash}{77aef20d7749c19e0469ab28eecc00dc}
-      \strng{authorfullhash}{77aef20d7749c19e0469ab28eecc00dc}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Economic Theory}
-      \field{title}{Screening risk-averse agents under moral hazard: single-crossing and the CARA case}
-      \field{volume}{30}
-      \field{year}{2007}
-      \true{nocite}
-      \field{pages}{151\bibrangedash 169}
-      \range{pages}{19}
-    \endentry
-    \entry{kadan2008stocks}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d628bd10be438397517eedb8277649e5}{%
-           family={Kadan},
-           familyi={K\bibinitperiod},
-           given={Ohad},
-           giveni={O\bibinitperiod}}}%
-        {{hash=343188dcb2b72423e6ae1176774d470f}{%
-           family={Swinkels},
-           familyi={S\bibinitperiod},
-           given={Jeroen\bibnamedelima M},
-           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Society for Financial Studies}%
-      }
-      \strng{namehash}{6635c6e548b4c27aa623aee252cd93f4}
-      \strng{fullhash}{6635c6e548b4c27aa623aee252cd93f4}
-      \strng{bibnamehash}{6635c6e548b4c27aa623aee252cd93f4}
-      \strng{authorbibnamehash}{6635c6e548b4c27aa623aee252cd93f4}
-      \strng{authornamehash}{6635c6e548b4c27aa623aee252cd93f4}
-      \strng{authorfullhash}{6635c6e548b4c27aa623aee252cd93f4}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Review of Financial Studies}
-      \field{number}{1}
-      \field{title}{Stocks or options? Moral hazard, firm viability, and the design of compensation contracts}
-      \field{volume}{21}
-      \field{year}{2008}
-      \field{pages}{451\bibrangedash 482}
-      \range{pages}{32}
-    \endentry
-    \entry{lau2005valuation}{article}{}
-      \name{author}{2}{}{%
-        {{hash=079cfc6552f189c16506adac3b50f053}{%
-           family={Lau},
-           familyi={L\bibinitperiod},
-           given={Ka\bibnamedelima Wo},
-           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=3a666a048a1f88a4aeca69c99c25da97}{%
-           family={Kwok},
-           familyi={K\bibinitperiod},
-           given={Yue\bibnamedelima Kuen},
-           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {World Scientific}%
-      }
-      \strng{namehash}{830d02f6cde4fd2b5bd97cd54792ea39}
-      \strng{fullhash}{830d02f6cde4fd2b5bd97cd54792ea39}
-      \strng{bibnamehash}{830d02f6cde4fd2b5bd97cd54792ea39}
-      \strng{authorbibnamehash}{830d02f6cde4fd2b5bd97cd54792ea39}
-      \strng{authornamehash}{830d02f6cde4fd2b5bd97cd54792ea39}
-      \strng{authorfullhash}{830d02f6cde4fd2b5bd97cd54792ea39}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Theoretical and Applied Finance}
-      \field{number}{05}
-      \field{title}{Valuation of Employee Reload Options Using Utility Maximization Approach}
-      \field{volume}{8}
-      \field{year}{2005}
-      \field{pages}{659\bibrangedash 674}
-      \range{pages}{16}
-    \endentry
-    \entry{leung2021employee}{book}{}
-      \name{author}{1}{}{%
-        {{hash=08a9fe605c3df09cbee1bef6978b5cf1}{%
-           family={Leung},
-           familyi={L\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {World Scientific}%
-      }
-      \strng{namehash}{08a9fe605c3df09cbee1bef6978b5cf1}
-      \strng{fullhash}{08a9fe605c3df09cbee1bef6978b5cf1}
-      \strng{bibnamehash}{08a9fe605c3df09cbee1bef6978b5cf1}
-      \strng{authorbibnamehash}{08a9fe605c3df09cbee1bef6978b5cf1}
-      \strng{authornamehash}{08a9fe605c3df09cbee1bef6978b5cf1}
-      \strng{authorfullhash}{08a9fe605c3df09cbee1bef6978b5cf1}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Employee stock options: Exercise timing, hedging, and valuation}
-      \field{year}{2021}
-    \endentry
-    \entry{marechal2018optimal}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d72e1d9a78d9cdddb9ea83f4d4596cb4}{%
-           family={Marechal},
-           familyi={M\bibinitperiod},
-           given={Francois},
-           giveni={F\bibinitperiod}}}%
-        {{hash=1303c263ac8e3918139c8357179af0f8}{%
-           family={Thomas},
-           familyi={T\bibinitperiod},
-           given={Lionel},
-           giveni={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {MDPI}%
-      }
-      \strng{namehash}{f3c7e251ed2f06f1fd0c02fcf98a581c}
-      \strng{fullhash}{f3c7e251ed2f06f1fd0c02fcf98a581c}
-      \strng{bibnamehash}{f3c7e251ed2f06f1fd0c02fcf98a581c}
-      \strng{authorbibnamehash}{f3c7e251ed2f06f1fd0c02fcf98a581c}
-      \strng{authornamehash}{f3c7e251ed2f06f1fd0c02fcf98a581c}
-      \strng{authorfullhash}{f3c7e251ed2f06f1fd0c02fcf98a581c}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Games}
-      \field{number}{1}
-      \field{title}{The optimal contract under adverse selection in a moral-hazard model with a risk-averse agent}
-      \field{volume}{9}
-      \field{year}{2018}
-      \true{nocite}
-      \field{pages}{12}
-      \range{pages}{1}
-    \endentry
-    \entry{marquardt2002cost}{article}{}
-      \name{author}{1}{}{%
-        {{hash=35fa197526293858ac68d07d46065574}{%
-           family={Marquardt},
-           familyi={M\bibinitperiod},
-           given={Carol\bibnamedelima A},
-           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{35fa197526293858ac68d07d46065574}
-      \strng{fullhash}{35fa197526293858ac68d07d46065574}
-      \strng{bibnamehash}{35fa197526293858ac68d07d46065574}
-      \strng{authorbibnamehash}{35fa197526293858ac68d07d46065574}
-      \strng{authornamehash}{35fa197526293858ac68d07d46065574}
-      \strng{authorfullhash}{35fa197526293858ac68d07d46065574}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Accounting Research}
-      \field{number}{4}
-      \field{title}{The cost of employee stock option grants: An empirical analysis}
-      \field{volume}{40}
-      \field{year}{2002}
-      \field{pages}{1191\bibrangedash 1217}
-      \range{pages}{27}
-    \endentry
-    \entry{meulbroek2001efficiency}{article}{}
-      \name{author}{1}{}{%
-        {{hash=f14cdf92298d20b50a5c17715e9a80db}{%
-           family={Meulbroek},
-           familyi={M\bibinitperiod},
-           given={Lisa\bibnamedelima K},
-           giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{f14cdf92298d20b50a5c17715e9a80db}
-      \strng{fullhash}{f14cdf92298d20b50a5c17715e9a80db}
-      \strng{bibnamehash}{f14cdf92298d20b50a5c17715e9a80db}
-      \strng{authorbibnamehash}{f14cdf92298d20b50a5c17715e9a80db}
-      \strng{authornamehash}{f14cdf92298d20b50a5c17715e9a80db}
-      \strng{authorfullhash}{f14cdf92298d20b50a5c17715e9a80db}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Financial management}
-      \field{title}{The efficiency of equity-linked compensation: Understanding the full cost of awarding executive stock options}
-      \field{year}{2001}
-      \field{pages}{5\bibrangedash 44}
-      \range{pages}{40}
-    \endentry
-    \entry{mishel2012ceo}{article}{}
-      \name{author}{2}{}{%
-        {{hash=a712221051e4674f47c036bc70b9d45c}{%
-           family={Mishel},
-           familyi={M\bibinitperiod},
-           given={Lawrence},
-           giveni={L\bibinitperiod}}}%
-        {{hash=2f616141d4bdad34cc37b44e1bb03eb6}{%
-           family={Sabadish},
-           familyi={S\bibinitperiod},
-           given={Natalie},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{f85bc9f9cef3d653fb5d23dbc5840803}
-      \strng{fullhash}{f85bc9f9cef3d653fb5d23dbc5840803}
-      \strng{bibnamehash}{f85bc9f9cef3d653fb5d23dbc5840803}
-      \strng{authorbibnamehash}{f85bc9f9cef3d653fb5d23dbc5840803}
-      \strng{authornamehash}{f85bc9f9cef3d653fb5d23dbc5840803}
-      \strng{authorfullhash}{f85bc9f9cef3d653fb5d23dbc5840803}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Economic Policy Institute Issue Brief}
-      \field{title}{CEO pay and the top 1\%}
-      \field{volume}{331}
-      \field{year}{2012}
-      \field{pages}{1\bibrangedash 7}
-      \range{pages}{7}
-    \endentry
-    \entry{murphy2019employees}{article}{}
-      \name{author}{2}{}{%
-        {{hash=bccac7f258b8ab86b6e81052bfa24cb4}{%
-           family={Murphy},
-           familyi={M\bibinitperiod},
-           given={Kevin\bibnamedelima J},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=61d25a01b40cf620e4e10baa2d66f832}{%
-           family={Vance},
-           familyi={V\bibinitperiod},
-           given={Marshall},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{a6eeb4fde1c33a19fa7174defcf65d36}
-      \strng{fullhash}{a6eeb4fde1c33a19fa7174defcf65d36}
-      \strng{bibnamehash}{a6eeb4fde1c33a19fa7174defcf65d36}
-      \strng{authorbibnamehash}{a6eeb4fde1c33a19fa7174defcf65d36}
-      \strng{authornamehash}{a6eeb4fde1c33a19fa7174defcf65d36}
-      \strng{authorfullhash}{a6eeb4fde1c33a19fa7174defcf65d36}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{University of Southern California Working Paper}
-      \field{title}{Why do employees exercise stock options early}
-      \field{year}{2019}
-    \endentry
-    \entry{pasternack2002factors}{book}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{hash=7abadb8aac0d47e810f76dc081a6a2da}{%
-           family={Pasternack},
-           familyi={P\bibinitperiod},
-           given={Daniel},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Svenska handelshogskolan}%
-      }
-      \strng{namehash}{4603acbd52c54cc4036d63fc0ec39b1e}
-      \strng{fullhash}{4603acbd52c54cc4036d63fc0ec39b1e}
-      \strng{bibnamehash}{4603acbd52c54cc4036d63fc0ec39b1e}
-      \strng{authorbibnamehash}{4603acbd52c54cc4036d63fc0ec39b1e}
-      \strng{authornamehash}{4603acbd52c54cc4036d63fc0ec39b1e}
-      \strng{authorfullhash}{4603acbd52c54cc4036d63fc0ec39b1e}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Factors driving stock option grants-empirical evidence from Finland}
-      \field{year}{2002}
-    \endentry
-    \entry{plambeck2000performance}{article}{}
-      \name{author}{2}{}{%
-        {{hash=bcfadbc31aed83cc56e344355e7cfa68}{%
-           family={Plambeck},
-           familyi={P\bibinitperiod},
-           given={Erica\bibnamedelima L},
-           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=1d66dbd5cd491577f1eaa074ecd99dba}{%
-           family={Zenios},
-           familyi={Z\bibinitperiod},
-           given={Stefanos\bibnamedelima A},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {INFORMS}%
-      }
-      \strng{namehash}{f6420d9d79abf314c0470b9bda38bafe}
-      \strng{fullhash}{f6420d9d79abf314c0470b9bda38bafe}
-      \strng{bibnamehash}{f6420d9d79abf314c0470b9bda38bafe}
-      \strng{authorbibnamehash}{f6420d9d79abf314c0470b9bda38bafe}
-      \strng{authornamehash}{f6420d9d79abf314c0470b9bda38bafe}
-      \strng{authorfullhash}{f6420d9d79abf314c0470b9bda38bafe}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Manufacturing \& service operations management}
-      \field{number}{3}
-      \field{title}{Performance-based incentives in a dynamic principal-agent model}
-      \field{volume}{2}
-      \field{year}{2000}
-      \field{pages}{240\bibrangedash 263}
-      \range{pages}{24}
-    \endentry
-    \entry{qsbrownianpy}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=39bb1133959f924be521971260411467}{%
-           family={QuantStart},
-           familyi={Q\bibinitperiod}}}%
-      }
-      \strng{namehash}{39bb1133959f924be521971260411467}
-      \strng{fullhash}{39bb1133959f924be521971260411467}
-      \strng{bibnamehash}{39bb1133959f924be521971260411467}
-      \strng{authorbibnamehash}{39bb1133959f924be521971260411467}
-      \strng{authornamehash}{39bb1133959f924be521971260411467}
-      \strng{authorfullhash}{39bb1133959f924be521971260411467}
-      \field{sortinit}{Q}
-      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Brownian Motion Simulation with Python}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://www.quantstart.com/articles/brownian-motion-simulation-with-python/
-      \endverb
-      \verb{url}
-      \verb https://www.quantstart.com/articles/brownian-motion-simulation-with-python/
-      \endverb
-    \endentry
-    \entry{ross2004compensation}{article}{}
-      \name{author}{1}{}{%
-        {{hash=98b2227c5a8dba76158ffb9a20138b89}{%
-           family={Ross},
-           familyi={R\bibinitperiod},
-           given={Stephen\bibnamedelima A},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{98b2227c5a8dba76158ffb9a20138b89}
-      \strng{fullhash}{98b2227c5a8dba76158ffb9a20138b89}
-      \strng{bibnamehash}{98b2227c5a8dba76158ffb9a20138b89}
-      \strng{authorbibnamehash}{98b2227c5a8dba76158ffb9a20138b89}
-      \strng{authornamehash}{98b2227c5a8dba76158ffb9a20138b89}
-      \strng{authorfullhash}{98b2227c5a8dba76158ffb9a20138b89}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Finance}
-      \field{number}{1}
-      \field{title}{Compensation, incentives, and the duality of risk aversion and riskiness}
-      \field{volume}{59}
-      \field{year}{2004}
-      \field{pages}{207\bibrangedash 225}
-      \range{pages}{19}
-    \endentry
-    \entry{saly1998ignoring}{article}{}
-      \name{author}{2}{}{%
-        {{hash=85fc0db2c038385465ad300cd18b3ac0}{%
-           family={Saly},
-           familyi={S\bibinitperiod},
-           given={P\bibnamedelima Jane},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=40c358e3088c318c285107caccc9bfb2}{%
-           family={Jagannathan},
-           familyi={J\bibinitperiod},
-           given={Ravi},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{37dabcbd43bcb79a9560bf254fdcf863}
-      \strng{fullhash}{37dabcbd43bcb79a9560bf254fdcf863}
-      \strng{bibnamehash}{37dabcbd43bcb79a9560bf254fdcf863}
-      \strng{authorbibnamehash}{37dabcbd43bcb79a9560bf254fdcf863}
-      \strng{authornamehash}{37dabcbd43bcb79a9560bf254fdcf863}
-      \strng{authorfullhash}{37dabcbd43bcb79a9560bf254fdcf863}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Available at SSRN 110072}
-      \field{title}{Ignoring Reload Features Can Substantially Understate the Value of Executive Stock Options}
-      \field{year}{1998}
-    \endentry
-    \entry{saly1999valuing}{article}{}
-      \name{author}{3}{}{%
-        {{hash=85fc0db2c038385465ad300cd18b3ac0}{%
-           family={Saly},
-           familyi={S\bibinitperiod},
-           given={P\bibnamedelima Jane},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=40c358e3088c318c285107caccc9bfb2}{%
-           family={Jagannathan},
-           familyi={J\bibinitperiod},
-           given={Ravi},
-           giveni={R\bibinitperiod}}}%
-        {{hash=c7fdcaea95ee78607288976dd44a7471}{%
-           family={Huddart},
-           familyi={H\bibinitperiod},
-           given={Steven\bibnamedelima J},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{f82d669047f594ddd7160e856058f145}
-      \strng{fullhash}{f82d669047f594ddd7160e856058f145}
-      \strng{bibnamehash}{f82d669047f594ddd7160e856058f145}
-      \strng{authorbibnamehash}{f82d669047f594ddd7160e856058f145}
-      \strng{authornamehash}{f82d669047f594ddd7160e856058f145}
-      \strng{authorfullhash}{f82d669047f594ddd7160e856058f145}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Accounting Horizons}
-      \field{number}{3}
-      \field{title}{Valuing the reload features of executive stock options}
-      \field{volume}{13}
-      \field{year}{1999}
-      \field{pages}{219\bibrangedash 240}
-      \range{pages}{22}
-    \endentry
-    \entry{sannikov2008continuous}{article}{}
-      \name{author}{1}{}{%
-        {{hash=4836cdd5a028185bb6221b0777c4c2f3}{%
-           family={Sannikov},
-           familyi={S\bibinitperiod},
-           given={Yuliy},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley-Blackwell}%
-      }
-      \strng{namehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{fullhash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{bibnamehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{authorbibnamehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{authornamehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{authorfullhash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \field{extraname}{1}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The Review of Economic Studies}
-      \field{number}{3}
-      \field{title}{A continuous-time version of the principal-agent problem}
-      \field{volume}{75}
-      \field{year}{2008}
-      \field{pages}{957\bibrangedash 984}
-      \range{pages}{28}
-    \endentry
-    \entry{sannikov2013contracts}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=4836cdd5a028185bb6221b0777c4c2f3}{%
-           family={Sannikov},
-           familyi={S\bibinitperiod},
-           given={Yuliy},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{fullhash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{bibnamehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{authorbibnamehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{authornamehash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \strng{authorfullhash}{4836cdd5a028185bb6221b0777c4c2f3}
-      \field{extraname}{2}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Economics and Econometrics: Volume 1, Economic Theory: Tenth World Congress}
-      \field{title}{Contracts: The Theory of Dynamic Principal—Agent Relationships and the}
-      \field{volume}{49}
-      \field{year}{2013}
-      \field{pages}{89}
-      \range{pages}{1}
-    \endentry
-    \entry{schattler1993first}{article}{}
-      \name{author}{2}{}{%
-        {{hash=68a309ac05783b36d839133607c15f46}{%
-           family={Schattler},
-           familyi={S\bibinitperiod},
-           given={Heinz},
-           giveni={H\bibinitperiod}}}%
-        {{hash=a9b3402805af3dedad809830cdd81991}{%
-           family={Sung},
-           familyi={S\bibinitperiod},
-           given={Jaeyoung},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{70025640b9b1ec3ca411b6dbcb885789}
-      \strng{fullhash}{70025640b9b1ec3ca411b6dbcb885789}
-      \strng{bibnamehash}{70025640b9b1ec3ca411b6dbcb885789}
-      \strng{authorbibnamehash}{70025640b9b1ec3ca411b6dbcb885789}
-      \strng{authornamehash}{70025640b9b1ec3ca411b6dbcb885789}
-      \strng{authorfullhash}{70025640b9b1ec3ca411b6dbcb885789}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Economic Theory}
-      \field{number}{2}
-      \field{title}{The first-order approach to the continuous-time principal--agent problem with exponential utility}
-      \field{volume}{61}
-      \field{year}{1993}
-      \field{pages}{331\bibrangedash 371}
-      \range{pages}{41}
-    \endentry
-    \entry{sharpe1978investments}{book}{}
-      \name{author}{1}{}{%
-        {{hash=6559ccd49c32a46965902e80aea4be82}{%
-           family={Sharpe},
-           familyi={S\bibinitperiod},
-           given={W.F.},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Prentice-Hall}%
-      }
-      \strng{namehash}{6559ccd49c32a46965902e80aea4be82}
-      \strng{fullhash}{6559ccd49c32a46965902e80aea4be82}
-      \strng{bibnamehash}{6559ccd49c32a46965902e80aea4be82}
-      \strng{authorbibnamehash}{6559ccd49c32a46965902e80aea4be82}
-      \strng{authornamehash}{6559ccd49c32a46965902e80aea4be82}
-      \strng{authorfullhash}{6559ccd49c32a46965902e80aea4be82}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780135046050}
-      \field{series}{Prentice-Hall International editions}
-      \field{title}{Investments}
-      \field{year}{1978}
-      \verb{urlraw}
-      \verb https://books.google.it/books?id=4UgWAQAAMAAJ
-      \endverb
-      \verb{url}
-      \verb https://books.google.it/books?id=4UgWAQAAMAAJ
-      \endverb
-    \endentry
-    \entry{shropshire2021female}{article}{}
-      \name{author}{5}{}{%
-        {{hash=1030c35c1f41966257b9d0926e818c6f}{%
-           family={Shropshire},
-           familyi={S\bibinitperiod},
-           given={Christine},
-           giveni={C\bibinitperiod}}}%
-        {{hash=1b9746cbf458f56c237999d9bf544b89}{%
-           family={Peterson},
-           familyi={P\bibinitperiod},
-           given={Suzanne},
-           giveni={S\bibinitperiod}}}%
-        {{hash=80457eeff147ddd8737b55a19d73fbab}{%
-           family={Bartels},
-           familyi={B\bibinitperiod},
-           given={Amy\bibnamedelima L},
-           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=fd9b5713e9bf9504641d6d26085a2491}{%
-           family={Amanatullah},
-           familyi={A\bibinitperiod},
-           given={Emily\bibnamedelima T},
-           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=1f309ec6a2907468df08fc1989605bf6}{%
-           family={Lee},
-           familyi={L\bibinitperiod},
-           given={Peggy\bibnamedelima M},
-           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Sage Publications Sage CA: Los Angeles, CA}%
-      }
-      \strng{namehash}{1f8cf1d88bc6fa9dca595dc093cfe43b}
-      \strng{fullhash}{1f8cf1d88bc6fa9dca595dc093cfe43b}
-      \strng{bibnamehash}{1f8cf1d88bc6fa9dca595dc093cfe43b}
-      \strng{authorbibnamehash}{1f8cf1d88bc6fa9dca595dc093cfe43b}
-      \strng{authornamehash}{1f8cf1d88bc6fa9dca595dc093cfe43b}
-      \strng{authorfullhash}{1f8cf1d88bc6fa9dca595dc093cfe43b}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Leadership \& Organizational Studies}
-      \field{number}{2}
-      \field{title}{Are female CEOs really more risk averse? Examining economic downturn and other-orientation}
-      \field{volume}{28}
-      \field{year}{2021}
-      \true{nocite}
-      \field{pages}{185\bibrangedash 206}
-      \range{pages}{22}
-    \endentry
-    \entry{sung1995linearity}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a9b3402805af3dedad809830cdd81991}{%
-           family={Sung},
-           familyi={S\bibinitperiod},
-           given={Jaeyoung},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {JSTOR}%
-      }
-      \strng{namehash}{a9b3402805af3dedad809830cdd81991}
-      \strng{fullhash}{a9b3402805af3dedad809830cdd81991}
-      \strng{bibnamehash}{a9b3402805af3dedad809830cdd81991}
-      \strng{authorbibnamehash}{a9b3402805af3dedad809830cdd81991}
-      \strng{authornamehash}{a9b3402805af3dedad809830cdd81991}
-      \strng{authorfullhash}{a9b3402805af3dedad809830cdd81991}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The RAND Journal of Economics}
-      \field{title}{Linearity with project selection and controllable diffusion rate in continuous-time principal-agent problems}
-      \field{year}{1995}
-      \field{pages}{720\bibrangedash 743}
-      \range{pages}{24}
-    \endentry
-    \entry{tolonen2020}{thesis}{}
-      \name{author}{1}{}{%
-        {{hash=ead32724ece23e66e2ec6cc776c9208e}{%
-           family={Tolonen},
-           familyi={T\bibinitperiod},
-           given={Topias},
-           giveni={T\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {University of Helsinki}%
-      }
-      \strng{namehash}{ead32724ece23e66e2ec6cc776c9208e}
-      \strng{fullhash}{ead32724ece23e66e2ec6cc776c9208e}
-      \strng{bibnamehash}{ead32724ece23e66e2ec6cc776c9208e}
-      \strng{authorbibnamehash}{ead32724ece23e66e2ec6cc776c9208e}
-      \strng{authornamehash}{ead32724ece23e66e2ec6cc776c9208e}
-      \strng{authorfullhash}{ead32724ece23e66e2ec6cc776c9208e}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Dynamic Programming Approach in Continuous-Compensation, Infinite-Horizon Principal-Agent}
-      \field{type}{Master's Thesis}
-      \field{year}{2020}
-      \true{nocite}
-    \endentry
-    \entry{wiki:binomialmodel}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
-           family={{Wikipedia contributors}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{extraname}{1}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{[Online; accessed 06-Apr-2024]}
-      \field{title}{Binomial options pricing model --- {W}ikipedia{,} The Free Encyclopedia}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Binomial_options_pricing_model
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Binomial_options_pricing_model
-      \endverb
-    \endentry
-    \entry{wiki:blackscholes}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
-           family={{Wikipedia contributors}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{extraname}{2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{[Online; accessed 06-Apr-2024]}
-      \field{title}{Black–Scholes model --- {W}ikipedia{,} The Free Encyclopedia}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model
-      \endverb
-    \endentry
-    \entry{wiki:trinomialmodel}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
-           family={{Wikipedia contributors}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{extraname}{3}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{[Online; accessed 06-Apr-2024]}
-      \field{title}{Trinomial tree --- {W}ikipedia{,} The Free Encyclopedia}
-      \field{year}{2024}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Trinomial_tree
-      \endverb
-      \verb{url}
-      \verb https://en.wikipedia.org/wiki/Trinomial_tree
-      \endverb
-    \endentry
-    \entry{williams2009dynamic}{article}{}
-      \name{author}{1}{}{%
-        {{hash=89968a07509ef3c51b1273ab8f66d12b}{%
-           family={Williams},
-           familyi={W\bibinitperiod},
-           given={Noah},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{89968a07509ef3c51b1273ab8f66d12b}
-      \strng{fullhash}{89968a07509ef3c51b1273ab8f66d12b}
-      \strng{bibnamehash}{89968a07509ef3c51b1273ab8f66d12b}
-      \strng{authorbibnamehash}{89968a07509ef3c51b1273ab8f66d12b}
-      \strng{authornamehash}{89968a07509ef3c51b1273ab8f66d12b}
-      \strng{authorfullhash}{89968a07509ef3c51b1273ab8f66d12b}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{University of Wisconsin, Madison}
-      \field{title}{On dynamic principal-agent problems in continuous time}
-      \field{year}{2009}
-    \endentry
-    \entry{ychartrfrate}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=a0d464844d9b1d700b5c667c801a6c24}{%
-           family={YCharts},
-           familyi={Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{a0d464844d9b1d700b5c667c801a6c24}
-      \strng{fullhash}{a0d464844d9b1d700b5c667c801a6c24}
-      \strng{bibnamehash}{a0d464844d9b1d700b5c667c801a6c24}
-      \strng{authorbibnamehash}{a0d464844d9b1d700b5c667c801a6c24}
-      \strng{authornamehash}{a0d464844d9b1d700b5c667c801a6c24}
-      \strng{authorfullhash}{a0d464844d9b1d700b5c667c801a6c24}
-      \field{sortinit}{Y}
-      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{10 Year Treasury Rate (I:10YTCMR)}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://ycharts.com/indicators/10_year_treasury_rate
-      \endverb
-      \verb{url}
-      \verb https://ycharts.com/indicators/10_year_treasury_rate
-      \endverb
-    \endentry
-    \entry{zhang2010knightian}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=0f5b8b674eea6432492c32e093925682}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Hui},
-           giveni={H\bibinitperiod}}}%
-        {{hash=e95041c57668767f94cd85f360f8bd18}{%
-           family={Meng},
-           familyi={M\bibinitperiod},
-           given={Wenyu},
-           giveni={W\bibinitperiod}}}%
-        {{hash=be6a80e922bacc236c3042a31b9349ca}{%
-           family={Lai},
-           familyi={L\bibinitperiod},
-           given={Xiang},
-           giveni={X\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{4f5a6c20628302a43d5388d52ff01565}
-      \strng{fullhash}{4f5a6c20628302a43d5388d52ff01565}
-      \strng{bibnamehash}{4f5a6c20628302a43d5388d52ff01565}
-      \strng{authorbibnamehash}{4f5a6c20628302a43d5388d52ff01565}
-      \strng{authornamehash}{4f5a6c20628302a43d5388d52ff01565}
-      \strng{authorfullhash}{4f5a6c20628302a43d5388d52ff01565}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2010 International Conference on Measuring Technology and Mechatronics Automation}
-      \field{title}{Knightian Uncertainty and Dynamic Robust Pricing of Reload Stock Option}
-      \field{volume}{2}
-      \field{year}{2010}
-      \field{pages}{564\bibrangedash 567}
-      \range{pages}{4}
-    \endentry
-  \enddatalist
-\endrefsection
+  \entry{azar2018computational}{article}{}
+    \name{author}{2}{}{%
+      {{hash=APD}{%
+         family={Azar},
+         familyi={A\bibinitperiod},
+         given={Pablo\bibnamedelima D},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Micali},
+         familyi={M\bibinitperiod},
+         given={Silvio},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{APDMS1}
+    \strng{fullhash}{APDMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{2}
+    \field{pages}{553\bibrangedash 578}
+    \field{title}{Computational principal--agent problems}
+    \field{volume}{13}
+    \field{journaltitle}{Theoretical Economics}
+    \field{year}{2018}
+  \endentry
+
+  \entry{battauzlecturenotes}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BA}{%
+         family={Battauz},
+         familyi={B\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Department of Finance of Bocconi University}%
+    }
+    \strng{namehash}{BA1}
+    \strng{fullhash}{BA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023/24}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Lecture Notes for the Graduate Course Applied Numerical Finance}
+    \field{year}{2023/24}
+  \endentry
+
+  \entry{belanger2008infinite}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BA}{%
+         family={Belanger},
+         familyi={B\bibinitperiod},
+         given={AC},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Forsyth},
+         familyi={F\bibinitperiod},
+         given={PA},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BAFP1}
+    \strng{fullhash}{BAFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{1}
+    \field{pages}{54\bibrangedash 81}
+    \field{title}{Infinite reload options: Pricing and analysis}
+    \field{volume}{222}
+    \field{journaltitle}{Journal of computational and applied mathematics}
+    \field{year}{2008}
+  \endentry
+
+  \entry{billings2020can}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BBK}{%
+         family={Billings},
+         familyi={B\bibinitperiod},
+         given={Bruce\bibnamedelima K},
+         giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=MJJR}{%
+         family={Moon\bibnamedelima Jr},
+         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={James\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MRM}{%
+         family={Morton},
+         familyi={M\bibinitperiod},
+         given={Richard\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wallace},
+         familyi={W\bibinitperiod},
+         given={Dana\bibnamedelima M},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BBK+1}
+    \strng{fullhash}{BBKMJJRMRMWDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{1658\bibrangedash 1686}
+    \field{title}{Can employee stock options contribute to less risk-taking?}
+    \field{volume}{37}
+    \field{journaltitle}{Contemporary Accounting Research}
+    \field{year}{2020}
+  \endentry
+
+  \entry{black1973pricing}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BF}{%
+         family={Black},
+         familyi={B\bibinitperiod},
+         given={Fischer},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Scholes},
+         familyi={S\bibinitperiod},
+         given={Myron},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The University of Chicago Press}%
+    }
+    \strng{namehash}{BFSM1}
+    \strng{fullhash}{BFSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{637\bibrangedash 654}
+    \field{title}{The pricing of options and corporate liabilities}
+    \field{volume}{81}
+    \field{journaltitle}{Journal of political economy}
+    \field{year}{1973}
+  \endentry
+
+  \entry{boyle1986option}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BPP}{%
+         family={Boyle},
+         familyi={B\bibinitperiod},
+         given={Phelim\bibnamedelima P},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BPP1}
+    \strng{fullhash}{BPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{7\bibrangedash 12}
+    \field{title}{Option valuation using a tree-jump process}
+    \field{volume}{3}
+    \field{journaltitle}{International options journal}
+    \field{year}{1986}
+  \endentry
+
+  \entry{brenner2015risk}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BS}{%
+         family={Brenner},
+         familyi={B\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {INFORMS}%
+    }
+    \strng{namehash}{BS1}
+    \strng{fullhash}{BS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{6}
+    \field{pages}{1344\bibrangedash 1361}
+    \field{title}{The risk preferences of US executives}
+    \field{volume}{61}
+    \field{journaltitle}{Management Science}
+    \field{year}{2015}
+  \endentry
+
+  \entry{cadenillas2002executive}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Cadenillas},
+         familyi={C\bibinitperiod},
+         given={Abel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cvitanic},
+         familyi={C\bibinitperiod},
+         given={Jaksa},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zapatero},
+         familyi={Z\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CACJZF1}
+    \strng{fullhash}{CACJZF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Executive stock options with effort disutility and choice of volatility}
+    \field{journaltitle}{Journal of Financial Economics}
+    \field{year}{2002}
+  \endentry
+
+  \entry{cadenillas2005executive}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Cadenillas},
+         familyi={C\bibinitperiod},
+         given={Abel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zapatero},
+         familyi={Z\bibinitperiod},
+         given={Fernando},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cvitanic},
+         familyi={C\bibinitperiod},
+         given={Jaksa},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CAZFCJ1}
+    \strng{fullhash}{CAZFCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Executive stock options as a screening mechanism}
+    \field{journaltitle}{Available at SSRN 676261}
+    \field{year}{2005}
+  \endentry
+
+  \entry{carpenter1998exercise}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CJN}{%
+         family={Carpenter},
+         familyi={C\bibinitperiod},
+         given={Jennifer\bibnamedelima N},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CJN1}
+    \strng{fullhash}{CJN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{127\bibrangedash 158}
+    \field{title}{The exercise and valuation of executive stock options}
+    \field{volume}{48}
+    \field{journaltitle}{Journal of Financial Economics}
+    \field{year}{1998}
+  \endentry
+
+  \entry{carpenter2010optimal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJN}{%
+         family={Carpenter},
+         familyi={C\bibinitperiod},
+         given={Jennifer\bibnamedelima N},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Stanton},
+         familyi={S\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Wallace},
+         familyi={W\bibinitperiod},
+         given={Nancy},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CJNSRWN1}
+    \strng{fullhash}{CJNSRWN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{315\bibrangedash 337}
+    \field{title}{Optimal exercise of executive stock options and implications for firm cost}
+    \field{volume}{98}
+    \field{journaltitle}{Journal of Financial Economics}
+    \field{year}{2010}
+  \endentry
+
+  \entry{carpenter2019employee}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJN}{%
+         family={Carpenter},
+         familyi={C\bibinitperiod},
+         given={Jennifer\bibnamedelima N},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Stanton},
+         familyi={S\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Wallace},
+         familyi={W\bibinitperiod},
+         given={Nancy},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CJNSRWN1}
+    \strng{fullhash}{CJNSRWN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{1175\bibrangedash 1216}
+    \field{title}{Employee stock option exercise and firm cost}
+    \field{volume}{74}
+    \field{journaltitle}{The Journal of Finance}
+    \field{year}{2019}
+  \endentry
+
+  \entry{carter2017executive}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CME}{%
+         family={Carter},
+         familyi={C\bibinitperiod},
+         given={Mary\bibnamedelima Ellen},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={Franco},
+         familyi={F\bibinitperiod},
+         given={Francesca},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gine},
+         familyi={G\bibinitperiod},
+         given={Mireia},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CMEFFGM1}
+    \strng{fullhash}{CMEFFGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{1232\bibrangedash 1264}
+    \field{title}{Executive gender pay gaps: The roles of female risk aversion and board representation}
+    \field{volume}{34}
+    \field{journaltitle}{Contemporary Accounting Research}
+    \field{year}{2017}
+  \endentry
+
+  \entry{marinaccilecturenotes}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=CVS}{%
+         family={Cerreia-Vioglio},
+         familyi={C\bibinithyphendelim V\bibinitperiod},
+         given={Simone},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Maccheroni},
+         familyi={M\bibinitperiod},
+         given={Fabio},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Marinacci},
+         familyi={M\bibinitperiod},
+         given={Massimo},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Department of Decision Sciences of Bocconi University}%
+    }
+    \strng{namehash}{CVSMFMM1}
+    \strng{fullhash}{CVSMFMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023/24}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Lectures on Rational Choice Theory}
+    \field{year}{2023/24}
+  \endentry
+
+  \entry{coles2006managerial}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJL}{%
+         family={Coles},
+         familyi={C\bibinitperiod},
+         given={Jeffrey\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=DND}{%
+         family={Daniel},
+         familyi={D\bibinitperiod},
+         given={Naveen\bibnamedelima D},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=NL}{%
+         family={Naveen},
+         familyi={N\bibinitperiod},
+         given={Lalitha},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CJLDNDNL1}
+    \strng{fullhash}{CJLDNDNL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{2}
+    \field{pages}{431\bibrangedash 468}
+    \field{title}{Managerial incentives and risk-taking}
+    \field{volume}{79}
+    \field{journaltitle}{Journal of financial Economics}
+    \field{year}{2006}
+  \endentry
+
+  \entry{cox1979option}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJC}{%
+         family={Cox},
+         familyi={C\bibinitperiod},
+         given={John\bibnamedelima C},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=RSA}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={Stephen\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Rubinstein},
+         familyi={R\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{CJCRSARM1}
+    \strng{fullhash}{CJCRSARM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1979}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{229\bibrangedash 263}
+    \field{title}{Option pricing: A simplified approach}
+    \field{volume}{7}
+    \field{journaltitle}{Journal of financial Economics}
+    \field{year}{1979}
+  \endentry
+
+  \entry{cvitanic2017moral}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJ}{%
+         family={Cvitanic},
+         familyi={C\bibinitperiod},
+         given={Jaksa},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Possamai},
+         familyi={P\bibinitperiod},
+         given={Dylan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Touzi},
+         familyi={T\bibinitperiod},
+         given={Nizar},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {INFORMS}%
+    }
+    \strng{namehash}{CJPDTN1}
+    \strng{fullhash}{CJPDTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{10}
+    \field{pages}{3328\bibrangedash 3346}
+    \field{title}{Moral hazard in dynamic risk management}
+    \field{volume}{63}
+    \field{journaltitle}{Management Science}
+    \field{year}{2017}
+  \endentry
+
+  \entry{cvitanic2018dynamic}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJ}{%
+         family={Cvitanic},
+         familyi={C\bibinitperiod},
+         given={Jaksa},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Possamai},
+         familyi={P\bibinitperiod},
+         given={Dylan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Touzi},
+         familyi={T\bibinitperiod},
+         given={Nizar},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{CJPDTN1}
+    \strng{fullhash}{CJPDTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{1\bibrangedash 37}
+    \field{title}{Dynamic programming approach to principal--agent problems}
+    \field{volume}{22}
+    \field{journaltitle}{Finance and Stochastics}
+    \field{year}{2018}
+  \endentry
+
+  \entry{cvitanic2013dynamics}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJ}{%
+         family={Cvitanic},
+         familyi={C\bibinitperiod},
+         given={Jaksa},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={Wan},
+         familyi={W\bibinitperiod},
+         given={Xuhu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Huali},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {INFORMS}%
+    }
+    \strng{namehash}{CJWXYH1}
+    \strng{fullhash}{CJWXYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{5}
+    \field{pages}{1229\bibrangedash 1244}
+    \field{title}{Dynamics of contract design with screening}
+    \field{volume}{59}
+    \field{journaltitle}{Management science}
+    \field{year}{2013}
+  \endentry
+
+  \entry{dai2005valuing}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DM}{%
+         family={Dai},
+         familyi={D\bibinitperiod},
+         given={Min},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KYK}{%
+         family={Kwok},
+         familyi={K\bibinitperiod},
+         given={Yue\bibnamedelima Kuen},
+         giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{DMKYK1}
+    \strng{fullhash}{DMKYK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{61\bibrangedash 69}
+    \field{title}{Valuing employee reload options under the time vesting requirement}
+    \field{volume}{5}
+    \field{journaltitle}{Quantitative Finance}
+    \field{year}{2005}
+  \endentry
+
+  \entry{dutting2023multi}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=DP}{%
+         family={Dutting},
+         familyi={D\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Ezra},
+         familyi={E\bibinitperiod},
+         given={Tomer},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Feldman},
+         familyi={F\bibinitperiod},
+         given={Michal},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kesselheim},
+         familyi={K\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DP+1}
+    \strng{fullhash}{DPETFMKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{Proceedings of the 55th Annual ACM Symposium on Theory of Computing}
+    \field{pages}{1311\bibrangedash 1324}
+    \field{title}{Multi-agent contracts}
+    \field{year}{2023}
+  \endentry
+
+  \entry{dutting2021complexity}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DP}{%
+         family={Dutting},
+         familyi={D\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RT}{%
+         family={Roughgarden},
+         familyi={R\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TCI}{%
+         family={Talgam-Cohen},
+         familyi={T\bibinithyphendelim C\bibinitperiod},
+         given={Inbal},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{DPRTTCI1}
+    \strng{fullhash}{DPRTTCI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{211\bibrangedash 254}
+    \field{title}{The complexity of contracts}
+    \field{volume}{50}
+    \field{journaltitle}{SIAM Journal on Computing}
+    \field{year}{2021}
+  \endentry
+
+  \entry{dybvig2003employee}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DPH}{%
+         family={Dybvig},
+         familyi={D\bibinitperiod},
+         given={Philip\bibnamedelima H},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Loewenstein},
+         familyi={L\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{DPHLM1}
+    \strng{fullhash}{DPHLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{1}
+    \field{pages}{145\bibrangedash 171}
+    \field{title}{Employee reload options: pricing, hedging, and optimal exercise}
+    \field{volume}{16}
+    \field{journaltitle}{The Review of Financial Studies}
+    \field{year}{2003}
+  \endentry
+
+  \entry{edmans2017executive}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EA}{%
+         family={Edmans},
+         familyi={E\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GX}{%
+         family={Gabaix},
+         familyi={G\bibinitperiod},
+         given={Xavier},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jenter},
+         familyi={J\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{EAGXJD1}
+    \strng{fullhash}{EAGXJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{pages}{383\bibrangedash 539}
+    \field{title}{Executive compensation: A survey of theory and evidence}
+    \field{volume}{1}
+    \field{journaltitle}{The handbook of the economics of corporate governance}
+    \field{year}{2017}
+  \endentry
+
+  \entry{gitbinomialval}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=EJ}{%
+         family={Emerick},
+         familyi={E\bibinitperiod},
+         given={Jonathon},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJ1}
+    \strng{fullhash}{EJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{American Option Pricing with Binomial Trees}
+    \verb{url}
+    \verb https://github.com/TheQuantPy/youtube-tutorials/blob/8e64e19629cee840
+    \verb 928b51baf4660e5c777e87e7/2021/003%20Jul-Sep/2021-07-13%20American%20O
+    \verb ption%20Pricing%20with%20Binomial%20Trees%20_%20Theory%20_%20Implemen
+    \verb tation%20in%20Python.ipynb
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{frydman2010ceo}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FC}{%
+         family={Frydman},
+         familyi={F\bibinitperiod},
+         given={Carola},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=JD}{%
+         family={Jenter},
+         familyi={J\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \strng{namehash}{FCJD1}
+    \strng{fullhash}{FCJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{1}
+    \field{pages}{75\bibrangedash 102}
+    \field{title}{CEO compensation}
+    \field{volume}{2}
+    \field{journaltitle}{Annu. Rev. Financ. Econ.}
+    \field{year}{2010}
+  \endentry
+
+  \entry{glasserman2004monte}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GP}{%
+         family={Glasserman},
+         familyi={G\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GP1}
+    \strng{fullhash}{GP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Monte Carlo methods in financial engineering}
+    \field{volume}{53}
+    \field{year}{2004}
+  \endentry
+
+  \entry{gottlieb2014simultaneous}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GD}{%
+         family={Gottlieb},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Moreira},
+         familyi={M\bibinitperiod},
+         given={Humberto},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GDMH1}
+    \strng{fullhash}{GDMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Simultaneous adverse selection and moral hazard}
+    \field{journaltitle}{Wharton School and EPGE/FGV Working Paper}
+    \field{year}{2014}
+  \endentry
+
+  \entry{grasselli2009risk}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GM}{%
+         family={Grasselli},
+         familyi={G\bibinitperiod},
+         given={Matheus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HV}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={Vicky},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{GMHV1}
+    \strng{fullhash}{GMHV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{109\bibrangedash 127}
+    \field{title}{Risk aversion and block exercise of executive stock options}
+    \field{volume}{33}
+    \field{journaltitle}{Journal of Economic Dynamics and Control}
+    \field{year}{2009}
+  \endentry
+
+  \entry{grinblatt1989adverse}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GM}{%
+         family={Grinblatt},
+         familyi={G\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Titman},
+         familyi={T\bibinitperiod},
+         given={Sheridan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {INFORMS}%
+    }
+    \strng{namehash}{GMTS1}
+    \strng{fullhash}{GMTS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1989}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{7}
+    \field{pages}{807\bibrangedash 822}
+    \field{title}{Adverse risk incentives and the design of performance-based contracts}
+    \field{volume}{35}
+    \field{journaltitle}{Management science}
+    \field{year}{1989}
+  \endentry
+
+  \entry{hall2002stock}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HBJ}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Brian\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MKJ}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin\bibnamedelima J},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HBJMKJ1}
+    \strng{fullhash}{HBJMKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 42}
+    \field{title}{Stock options for undiversified executives}
+    \field{volume}{33}
+    \field{journaltitle}{Journal of accounting and economics}
+    \field{year}{2002}
+  \endentry
+
+  \entry{hall2003trouble}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HBJ}{%
+         family={Hall},
+         familyi={H\bibinitperiod},
+         given={Brian\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MKJ}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin\bibnamedelima J},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Economic Association}%
+    }
+    \strng{namehash}{HBJMKJ1}
+    \strng{fullhash}{HBJMKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{3}
+    \field{pages}{49\bibrangedash 70}
+    \field{title}{The trouble with stock options}
+    \field{volume}{17}
+    \field{journaltitle}{Journal of economic perspectives}
+    \field{year}{2003}
+  \endentry
+
+  \entry{hayes2012stock}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HRM}{%
+         family={Hayes},
+         familyi={H\bibinitperiod},
+         given={Rachel\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lemmon},
+         familyi={L\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=QM}{%
+         family={Qiu},
+         familyi={Q\bibinitperiod},
+         given={Mingming},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HRMLMQM1}
+    \strng{fullhash}{HRMLMQM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{174\bibrangedash 190}
+    \field{title}{Stock options and managerial incentives for risk taking: Evidence from FAS 123R}
+    \field{volume}{105}
+    \field{journaltitle}{Journal of financial economics}
+    \field{year}{2012}
+  \endentry
+
+  \entry{hemmer1998optimal}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HT}{%
+         family={Hemmer},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matsunaga},
+         familyi={M\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Shevlin},
+         familyi={S\bibinitperiod},
+         given={Terry},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{HTMSST1}
+    \strng{fullhash}{HTMSST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{2}
+    \field{pages}{231\bibrangedash 255}
+    \field{title}{Optimal exercise and the cost of granting employee stock options with a reload provision}
+    \field{volume}{36}
+    \field{journaltitle}{Journal of Accounting Research}
+    \field{year}{1998}
+  \endentry
+
+  \entry{hemmer2000reload}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HT}{%
+         family={Hemmer},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Matsunaga},
+         familyi={M\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Shevlin},
+         familyi={S\bibinitperiod},
+         given={Terry},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{HTMSST1}
+    \strng{fullhash}{HTMSST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{4}
+    \field{pages}{393\bibrangedash 423}
+    \field{title}{Reload employee stock option plans: incentive alignment or rent extraction}
+    \field{volume}{15}
+    \field{journaltitle}{Journal of Accounting, Auditing \& Finance}
+    \field{year}{2000}
+  \endentry
+
+  \entry{henderson2005impact}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HV}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={Vicky},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{HV1}
+    \strng{fullhash}{HV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{35\bibrangedash 47}
+    \field{title}{The impact of the market portfolio on the valuation, incentives and optimality of executive stock options}
+    \field{volume}{5}
+    \field{journaltitle}{Quantitative Finance}
+    \field{year}{2005}
+  \endentry
+
+  \entry{heron2017stock}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HRA}{%
+         family={Heron},
+         familyi={H\bibinitperiod},
+         given={Randall\bibnamedelima A},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Lie},
+         familyi={L\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Informs}%
+    }
+    \strng{namehash}{HRALE1}
+    \strng{fullhash}{HRALE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{9}
+    \field{pages}{3057\bibrangedash 3071}
+    \field{title}{Do stock options overcome managerial risk aversion? Evidence from exercises of executive stock options}
+    \field{volume}{63}
+    \field{journaltitle}{Management Science}
+    \field{year}{2017}
+  \endentry
+
+  \entry{holmstrom1987aggregation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HB}{%
+         family={Holmstrom},
+         familyi={H\bibinitperiod},
+         given={Bengt},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Milgrom},
+         familyi={M\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{HBMP1}
+    \strng{fullhash}{HBMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1987}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{303\bibrangedash 328}
+    \field{title}{Aggregation and linearity in the provision of intertemporal incentives}
+    \field{journaltitle}{Econometrica: Journal of the Econometric Society}
+    \field{year}{1987}
+  \endentry
+
+  \entry{huang2013dynamic}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HY}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Yingping},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Xisheng},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xihui},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=OJ}{%
+         family={Olagues},
+         familyi={O\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HY+1}
+    \strng{fullhash}{HYLTXXZXOJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{1}
+    \field{title}{Dynamic Employee Stock Options}
+    \field{volume}{2}
+    \field{journaltitle}{Annals of Management Science}
+    \field{year}{2013}
+  \endentry
+
+  \entry{huddart1996employee}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HS}{%
+         family={Huddart},
+         familyi={H\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lang},
+         familyi={L\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HSLM1}
+    \strng{fullhash}{HSLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{5\bibrangedash 43}
+    \field{title}{Employee stock option exercises an empirical analysis}
+    \field{volume}{21}
+    \field{journaltitle}{Journal of Accounting and Economics}
+    \field{year}{1996}
+  \endentry
+
+  \entry{hull2002determining}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Hull},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJWA1}
+    \strng{fullhash}{HJWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Determining the value of employee stock options}
+    \field{journaltitle}{Report produced for the Ontario teachers pension plan}
+    \field{year}{2002}
+  \endentry
+
+  \entry{hull2004value}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Hull},
+         familyi={H\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{HJWA1}
+    \strng{fullhash}{HJWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{114\bibrangedash 119}
+    \field{title}{How to value employee stock options}
+    \field{volume}{60}
+    \field{journaltitle}{Financial Analysts Journal}
+    \field{year}{2004}
+  \endentry
+
+  \entry{ingersoll2006subjective}{article}{}
+    \name{author}{1}{}{%
+      {{hash=IJEJ}{%
+         family={Ingersoll},
+         familyi={I\bibinitperiod},
+         suffix={Jr},
+         suffixi={J\bibinitperiod},
+         given={Jonathan\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{IJJE1}
+    \strng{fullhash}{IJJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{number}{2}
+    \field{pages}{453\bibrangedash 487}
+    \field{title}{The subjective and objective evaluation of incentive stock options}
+    \field{volume}{79}
+    \field{journaltitle}{The Journal of Business}
+    \field{year}{2006}
+  \endentry
+
+  \entry{ingersoll2006valuing}{article}{}
+    \name{author}{1}{}{%
+      {{hash=IJEJ}{%
+         family={Ingersoll},
+         familyi={I\bibinitperiod},
+         suffix={Jr},
+         suffixi={J\bibinitperiod},
+         given={Jonathan\bibnamedelima E},
+         giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{IJJE1}
+    \strng{fullhash}{IJJE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{pages}{67\bibrangedash 105}
+    \field{title}{Valuing reload options}
+    \field{volume}{9}
+    \field{journaltitle}{Review of Derivatives Research}
+    \field{year}{2006}
+  \endentry
+
+  \entry{iqbal2006female}{article}{}
+    \name{author}{3}{}{%
+      {{hash=IZ}{%
+         family={Iqbal},
+         familyi={I\bibinitperiod},
+         given={Zahid},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SO}{%
+         family={Sewon},
+         familyi={S\bibinitperiod},
+         given={O},
+         giveni={O},
+      }}%
+      {{hash=BHY}{%
+         family={Baek},
+         familyi={B\bibinitperiod},
+         given={H\bibnamedelima Young},
+         giveni={H\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{IZSOBHY1}
+    \strng{fullhash}{IZSOBHY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{pages}{63\bibrangedash 74}
+    \field{title}{Are female executives more risk-averse than male executives?}
+    \field{volume}{34}
+    \field{journaltitle}{Atlantic Economic Journal}
+    \field{year}{2006}
+  \endentry
+
+  \entry{izhakian2017risk}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IY}{%
+         family={Izhakian},
+         familyi={I\bibinitperiod},
+         given={Yehuda},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YD}{%
+         family={Yermack},
+         familyi={Y\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{IYYD1}
+    \strng{fullhash}{IYYD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{number}{1}
+    \field{pages}{65\bibrangedash 85}
+    \field{title}{Risk, ambiguity, and the exercise of employee stock options}
+    \field{volume}{124}
+    \field{journaltitle}{Journal of Financial Economics}
+    \field{year}{2017}
+  \endentry
+
+  \entry{jensen1990performance}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JMC}{%
+         family={Jensen},
+         familyi={J\bibinitperiod},
+         given={Michael\bibnamedelima C},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MKJ}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin\bibnamedelima J},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The University of Chicago Press}%
+    }
+    \strng{namehash}{JMCMKJ1}
+    \strng{fullhash}{JMCMKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{labeldatesource}{}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{number}{2}
+    \field{pages}{225\bibrangedash 264}
+    \field{title}{Performance pay and top-management incentives}
+    \field{volume}{98}
+    \field{journaltitle}{Journal of political economy}
+    \field{year}{1990}
+  \endentry
+
+  \entry{jullien2007screening}{article}{}
+    \name{author}{3}{}{%
+      {{hash=JB}{%
+         family={Jullien},
+         familyi={J\bibinitperiod},
+         given={Bruno},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Salanie},
+         familyi={S\bibinitperiod},
+         given={Bernard},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Salanie},
+         familyi={S\bibinitperiod},
+         given={Francois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{JBSBSF1}
+    \strng{fullhash}{JBSBSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{labeldatesource}{}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{pages}{151\bibrangedash 169}
+    \field{title}{Screening risk-averse agents under moral hazard: single-crossing and the CARA case}
+    \field{volume}{30}
+    \field{journaltitle}{Economic Theory}
+    \field{year}{2007}
+  \endentry
+
+  \entry{kadan2008stocks}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KO}{%
+         family={Kadan},
+         familyi={K\bibinitperiod},
+         given={Ohad},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SJM}{%
+         family={Swinkels},
+         familyi={S\bibinitperiod},
+         given={Jeroen\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Society for Financial Studies}%
+    }
+    \strng{namehash}{KOSJM1}
+    \strng{fullhash}{KOSJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{number}{1}
+    \field{pages}{451\bibrangedash 482}
+    \field{title}{Stocks or options? Moral hazard, firm viability, and the design of compensation contracts}
+    \field{volume}{21}
+    \field{journaltitle}{The Review of Financial Studies}
+    \field{year}{2008}
+  \endentry
+
+  \entry{lau2005valuation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LKW}{%
+         family={Lau},
+         familyi={L\bibinitperiod},
+         given={Ka\bibnamedelima Wo},
+         giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=KYK}{%
+         family={Kwok},
+         familyi={K\bibinitperiod},
+         given={Yue\bibnamedelima Kuen},
+         giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {World Scientific}%
+    }
+    \strng{namehash}{LKWKYK1}
+    \strng{fullhash}{LKWKYK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{05}
+    \field{pages}{659\bibrangedash 674}
+    \field{title}{Valuation of Employee Reload Options Using Utility Maximization Approach}
+    \field{volume}{8}
+    \field{journaltitle}{International Journal of Theoretical and Applied Finance}
+    \field{year}{2005}
+  \endentry
+
+  \entry{leung2021employee}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LT}{%
+         family={Leung},
+         familyi={L\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {World Scientific}%
+    }
+    \strng{namehash}{LT1}
+    \strng{fullhash}{LT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Employee stock options: Exercise timing, hedging, and valuation}
+    \field{year}{2021}
+  \endentry
+
+  \entry{marechal2018optimal}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MF}{%
+         family={Marechal},
+         familyi={M\bibinitperiod},
+         given={Francois},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Thomas},
+         familyi={T\bibinitperiod},
+         given={Lionel},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MDPI}%
+    }
+    \strng{namehash}{MFTL1}
+    \strng{fullhash}{MFTL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2018}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{1}
+    \field{pages}{12}
+    \field{title}{The optimal contract under adverse selection in a moral-hazard model with a risk-averse agent}
+    \field{volume}{9}
+    \field{journaltitle}{Games}
+    \field{year}{2018}
+  \endentry
+
+  \entry{marquardt2002cost}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MCA}{%
+         family={Marquardt},
+         familyi={M\bibinitperiod},
+         given={Carol\bibnamedelima A},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{MCA1}
+    \strng{fullhash}{MCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{number}{4}
+    \field{pages}{1191\bibrangedash 1217}
+    \field{title}{The cost of employee stock option grants: An empirical analysis}
+    \field{volume}{40}
+    \field{journaltitle}{Journal of Accounting Research}
+    \field{year}{2002}
+  \endentry
+
+  \entry{meulbroek2001efficiency}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MLK}{%
+         family={Meulbroek},
+         familyi={M\bibinitperiod},
+         given={Lisa\bibnamedelima K},
+         giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{MLK1}
+    \strng{fullhash}{MLK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{5\bibrangedash 44}
+    \field{title}{The efficiency of equity-linked compensation: Understanding the full cost of awarding executive stock options}
+    \field{journaltitle}{Financial management}
+    \field{year}{2001}
+  \endentry
+
+  \entry{mishel2012ceo}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ML}{%
+         family={Mishel},
+         familyi={M\bibinitperiod},
+         given={Lawrence},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sabadish},
+         familyi={S\bibinitperiod},
+         given={Natalie},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MLSN1}
+    \strng{fullhash}{MLSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{1\bibrangedash 7}
+    \field{title}{CEO pay and the top 1\%}
+    \field{volume}{331}
+    \field{journaltitle}{Economic Policy Institute Issue Brief}
+    \field{year}{2012}
+  \endentry
+
+  \entry{murphy2019employees}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MKJ}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin\bibnamedelima J},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vance},
+         familyi={V\bibinitperiod},
+         given={Marshall},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MKJVM1}
+    \strng{fullhash}{MKJVM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Why do employees exercise stock options early}
+    \field{journaltitle}{University of Southern California Working Paper}
+    \field{year}{2019}
+  \endentry
+
+  \entry{pasternack2002factors}{book}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{1}{}{%
+      {{hash=PD}{%
+         family={Pasternack},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Svenska handelshogskolan}%
+    }
+    \strng{namehash}{PD+1}
+    \strng{fullhash}{PD+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Factors driving stock option grants-empirical evidence from Finland}
+    \field{year}{2002}
+  \endentry
+
+  \entry{plambeck2000performance}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PEL}{%
+         family={Plambeck},
+         familyi={P\bibinitperiod},
+         given={Erica\bibnamedelima L},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZSA}{%
+         family={Zenios},
+         familyi={Z\bibinitperiod},
+         given={Stefanos\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {INFORMS}%
+    }
+    \strng{namehash}{PELZSA1}
+    \strng{fullhash}{PELZSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{3}
+    \field{pages}{240\bibrangedash 263}
+    \field{title}{Performance-based incentives in a dynamic principal-agent model}
+    \field{volume}{2}
+    \field{journaltitle}{Manufacturing \& service operations management}
+    \field{year}{2000}
+  \endentry
+
+  \entry{qsbrownianpy}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Q}{%
+         family={QuantStart},
+         familyi={Q\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Q1}
+    \strng{fullhash}{Q1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \field{title}{Brownian Motion Simulation with Python}
+    \verb{url}
+    \verb https://www.quantstart.com/articles/brownian-motion-simulation-with-p
+    \verb ython/
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{ross2004compensation}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RSA}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={Stephen\bibnamedelima A},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{RSA1}
+    \strng{fullhash}{RSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{1}
+    \field{pages}{207\bibrangedash 225}
+    \field{title}{Compensation, incentives, and the duality of risk aversion and riskiness}
+    \field{volume}{59}
+    \field{journaltitle}{The Journal of Finance}
+    \field{year}{2004}
+  \endentry
+
+  \entry{saly1998ignoring}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SPJ}{%
+         family={Saly},
+         familyi={S\bibinitperiod},
+         given={P\bibnamedelima Jane},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jagannathan},
+         familyi={J\bibinitperiod},
+         given={Ravi},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPJJR1}
+    \strng{fullhash}{SPJJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Ignoring Reload Features Can Substantially Understate the Value of Executive Stock Options}
+    \field{journaltitle}{Available at SSRN 110072}
+    \field{year}{1998}
+  \endentry
+
+  \entry{saly1999valuing}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SPJ}{%
+         family={Saly},
+         familyi={S\bibinitperiod},
+         given={P\bibnamedelima Jane},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jagannathan},
+         familyi={J\bibinitperiod},
+         given={Ravi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HSJ}{%
+         family={Huddart},
+         familyi={H\bibinitperiod},
+         given={Steven\bibnamedelima J},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPJJRHSJ1}
+    \strng{fullhash}{SPJJRHSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{219\bibrangedash 240}
+    \field{title}{Valuing the reload features of executive stock options}
+    \field{volume}{13}
+    \field{journaltitle}{Accounting Horizons}
+    \field{year}{1999}
+  \endentry
+
+  \entry{sannikov2008continuous}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SY}{%
+         family={Sannikov},
+         familyi={S\bibinitperiod},
+         given={Yuliy},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley-Blackwell}%
+    }
+    \strng{namehash}{SY1}
+    \strng{fullhash}{SY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{957\bibrangedash 984}
+    \field{title}{A continuous-time version of the principal-agent problem}
+    \field{volume}{75}
+    \field{journaltitle}{The Review of Economic Studies}
+    \field{year}{2008}
+  \endentry
+
+  \entry{sannikov2013contracts}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SY}{%
+         family={Sannikov},
+         familyi={S\bibinitperiod},
+         given={Yuliy},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{SY1}
+    \strng{fullhash}{SY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Advances in Economics and Econometrics: Volume 1, Economic Theory: Tenth World Congress}
+    \field{pages}{89}
+    \field{title}{Contracts: The Theory of Dynamic Principal—Agent Relationships and the}
+    \field{volume}{49}
+    \field{year}{2013}
+  \endentry
+
+  \entry{schattler1993first}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SH}{%
+         family={Schattler},
+         familyi={S\bibinitperiod},
+         given={Heinz},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sung},
+         familyi={S\bibinitperiod},
+         given={Jaeyoung},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SHSJ1}
+    \strng{fullhash}{SHSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{2}
+    \field{pages}{331\bibrangedash 371}
+    \field{title}{The first-order approach to the continuous-time principal--agent problem with exponential utility}
+    \field{volume}{61}
+    \field{journaltitle}{Journal of Economic Theory}
+    \field{year}{1993}
+  \endentry
+
+  \entry{sharpe1978investments}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SW}{%
+         family={Sharpe},
+         familyi={S\bibinitperiod},
+         given={W.F.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice-Hall}%
+    }
+    \strng{namehash}{SW1}
+    \strng{fullhash}{SW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1978}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{isbn}{9780135046050}
+    \field{series}{Prentice-Hall International editions}
+    \field{title}{Investments}
+    \verb{url}
+    \verb https://books.google.it/books?id=4UgWAQAAMAAJ
+    \endverb
+    \field{year}{1978}
+  \endentry
+
+  \entry{shropshire2021female}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SC}{%
+         family={Shropshire},
+         familyi={S\bibinitperiod},
+         given={Christine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Peterson},
+         familyi={P\bibinitperiod},
+         given={Suzanne},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BAL}{%
+         family={Bartels},
+         familyi={B\bibinitperiod},
+         given={Amy\bibnamedelima L},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=AET}{%
+         family={Amanatullah},
+         familyi={A\bibinitperiod},
+         given={Emily\bibnamedelima T},
+         giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=LPM}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Peggy\bibnamedelima M},
+         giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Los Angeles, CA}%
+    }
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCPSBALAETLPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{2}
+    \field{pages}{185\bibrangedash 206}
+    \field{title}{Are female CEOs really more risk averse? Examining economic downturn and other-orientation}
+    \field{volume}{28}
+    \field{journaltitle}{Journal of Leadership \& Organizational Studies}
+    \field{year}{2021}
+  \endentry
+
+  \entry{fasb123}{report}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Statement of Financial Accounting Standards No. 123}
+    \field{volume}{1995}
+    \list{location}{1}{%
+      {Norwalk, CT}%
+    }
+    \list{institution}{1}{%
+      {Financial Accounting Standards Board}%
+    }
+    \field{type}{Standard}
+    \field{month}{12}
+    \field{year}{1995}
+  \endentry
+
+  \entry{fasb123_revised}{report}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Statement of Financial Accounting Standards No. 123 (revised 2004)}
+    \field{volume}{2004}
+    \list{location}{1}{%
+      {Norwalk, CT}%
+    }
+    \list{institution}{1}{%
+      {Financial Accounting Standards Board}%
+    }
+    \field{type}{Standard}
+    \field{month}{10}
+    \field{year}{2004}
+  \endentry
+
+  \entry{sung1995linearity}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Sung},
+         familyi={S\bibinitperiod},
+         given={Jaeyoung},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{pages}{720\bibrangedash 743}
+    \field{title}{Linearity with project selection and controllable diffusion rate in continuous-time principal-agent problems}
+    \field{journaltitle}{The RAND Journal of Economics}
+    \field{year}{1995}
+  \endentry
+
+  \entry{tolonen2020}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=TT}{%
+         family={Tolonen},
+         familyi={T\bibinitperiod},
+         given={Topias},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TT1}
+    \strng{fullhash}{TT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Dynamic Programming Approach in Continuous-Compensation, Infinite-Horizon Principal-Agent}
+    \list{institution}{1}{%
+      {University of Helsinki}%
+    }
+    \field{type}{Master's Thesis}
+    \field{year}{2020}
+  \endentry
+
+  \entry{wiki:binomialmodel}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={{Wikipedia contributors}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{[Online; accessed 06-Apr-2024]}
+    \field{title}{Binomial options pricing model --- {W}ikipedia{,} The Free Encyclopedia}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Binomial_options_pricing_model
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{wiki:blackscholes}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={{Wikipedia contributors}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{[Online; accessed 06-Apr-2024]}
+    \field{title}{Black–Scholes model --- {W}ikipedia{,} The Free Encyclopedia}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{wiki:trinomialmodel}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=W}{%
+         family={{Wikipedia contributors}},
+         familyi={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{W1}
+    \strng{fullhash}{W1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{3}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{[Online; accessed 06-Apr-2024]}
+    \field{title}{Trinomial tree --- {W}ikipedia{,} The Free Encyclopedia}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Trinomial_tree
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{williams2009dynamic}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WN}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Noah},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WN1}
+    \strng{fullhash}{WN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{On dynamic principal-agent problems in continuous time}
+    \field{journaltitle}{University of Wisconsin, Madison}
+    \field{year}{2009}
+  \endentry
+
+  \entry{ychartrfrate}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=Y}{%
+         family={YCharts},
+         familyi={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Y1}
+    \strng{fullhash}{Y1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{title}{10 Year Treasury Rate (I:10YTCMR)}
+    \verb{url}
+    \verb https://ycharts.com/indicators/10_year_treasury_rate
+    \endverb
+    \field{year}{2024}
+  \endentry
+
+  \entry{zhang2010knightian}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ZH}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Hui},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MW}{%
+         family={Meng},
+         familyi={M\bibinitperiod},
+         given={Wenyu},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Xiang},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZHMWLX1}
+    \strng{fullhash}{ZHMWLX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{labeldatesource}{}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{2010 International Conference on Measuring Technology and Mechatronics Automation}
+    \field{pages}{564\bibrangedash 567}
+    \field{title}{Knightian Uncertainty and Dynamic Robust Pricing of Reload Stock Option}
+    \field{volume}{2}
+    \field{year}{2010}
+  \endentry
+\enddatalist
 \endinput
-
