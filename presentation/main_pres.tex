@@ -3,6 +3,8 @@
 \usepackage{xspace}
 \usepackage{xurl}
 \usepackage{caption}
+\usepackage{listings}
+\usepackage{makecell}
 \usepackage{appendixnumberbeamer}
 \usepackage{amsmath,amssymb}
 \usepackage{bm}
@@ -88,9 +90,10 @@
 \section{Employee Stock Options (ESOs)}
 \begin{frame}{Employee Stock Options (ESOs)}
     \begin{itemize}
-        \item \textbf{ESOs are call options on firm’s stock} $\rightarrow$ $\pi \uparrow$ when stock appreciates
+        \item \textbf{ESOs are call options on firm’s stock} %$\rightarrow$ $\pi \uparrow$ when stock appreciates
         \item Features: strike price, maturity, vesting, OTM/ATM/ITM  +  non-transferability, limited hedging
         \item Why? Incentive alignment, talent attraction, deferred cash expenditure, \dots
+        \pause
         \item \textbf{ESO Value = Intrinsic value + Time value} 
     \end{itemize}
 
@@ -142,7 +145,7 @@
         \item Risk aversion (+ non-transferability) drives the difference between executive valuation and market value of ESOs
     \end{enumerate}
     \vspace*{10pt}
-
+    \pause
     \begin{block}{Research Question}
         Can we re-align values and incentives by offering an additional ESO, that at exercise reloads and offers a risk premium, to heterogeneous executives?
     \end{block}  
@@ -173,7 +176,8 @@
         \vspace*{5pt}
         \item Stock price follows: $dS_t = \mu S_t dt + \bar{\sigma} S_t dW_t$
         \vspace*{5pt}
-        \item When managed by the executive: $\boldsymbol{dS_t = \alpha a_t dt + \delta \sigma_t S_t dt + \bar{\sigma} S_t dW_t}$
+        \pause
+        \item When managed by executive: $\boldsymbol{dS_t = \alpha a_t dt + \delta \sigma_t S_t dt + \bar{\sigma} S_t dW_t}$
         \begin{itemize}
             \item $a = \{a_t\}_{t \ge 0}$ is effort and $\sigma = \{\sigma_t\}_{t \ge 0}$ is volatility
             \item $\delta \in [0,1]$: impact of project on firm's volatility
@@ -193,18 +197,11 @@
             \item $\gamma > 0$: risk premium
             \item $R_{1,0}$ = $RN$
         \end{itemize}
-        \vspace*{2pt}
-        \begin{comment}
-        \item Contract space is $\Theta = \Bigl( \mathds{1}_{RN}, \bigl\{ \mathds{1}_{R_{\alpha, \gamma}} \bigr\}_{\alpha \in (0,1), \gamma \in [0, 1)} \Bigr) \times \mathbb{Z}^+ $
-        \begin{itemize}
-            \item $\Rightarrow \theta_{RN} = (\mathds{1}_{RN}, n)$ and $\theta_{R} = (\mathds{1}_{R_{\alpha, \gamma}}, n)$, with $n$ fixed
-        \end{itemize}
-        \end{comment}
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Theoretical Model}
-    \framesubtitle{Example of $R_{0.7, 0.1}$}
+    \framesubtitle{Example of $R_{0.75, 0.1}$}
 
     %Role of vesting period + why it is risky
     Assume $K=30$ and constant $S_t = 31$ for $t \in [0, 2T]$
@@ -232,7 +229,7 @@
 \end{frame}
 
 \begin{frame}{Theoretical Model}
-    \framesubtitle{Example of $R_{0.7, 0.1}$}
+    \framesubtitle{Example of $R_{0.75, 0.1}$}
     Assume $K=30$ and constant $S_t = 31$ for $t \in [0, 2T]$
     \vspace*{40pt}
 
@@ -250,8 +247,8 @@
             \node at (0,-0.3) {0};
             \node at (1,-0.3) {$t_v$};
             \node at (3,-0.3) {\textcolor{blue}{$\tau_1$}};
-            \node at (3, 1) {$\$ 0.7$ +};
-            \node at (3, 0.5) {\textcolor{blue}{$0.4$ RN}};
+            \node at (3, 1) {$\$ 0.75$ +};
+            \node at (3, 0.5) {\textcolor{blue}{$0.35$ RN}};
             \node at (5,-0.3) {$T$};
             
             % Draw colored lines and labels
@@ -264,7 +261,7 @@
 \end{frame}
 
 \begin{frame}{Theoretical Model}
-    \framesubtitle{Example of $R_{0.7, 0.1}$}
+    \framesubtitle{Example of $R_{0.75, 0.1}$}
     Assume $K=30$ and constant $S_t = 31$ for $t \in [0, 2T]$
     \vspace*{40pt}
 
@@ -285,11 +282,11 @@
             \node at (0,-0.3) {0};
             \node at (1,-0.3) {$t_v$};
             \node at (3,-0.3) {\textcolor{blue}{$\tau_1$}};
-            \node at (3, 1) {$\$ 0.7$ +};
-            \node at (3, 0.5) {\textcolor{blue}{$0.4$ RN}};
+            \node at (3, 1) {$\$ 0.75$ +};
+            \node at (3, 0.5) {\textcolor{blue}{$0.35$ RN}};
             \node at (4,-0.3) {\textcolor{blue}{$\tau_1 + t_v$}};
             \node at (5,-0.3) {$T$};
-            \node at (6, 0.5) {\textcolor{blue}{$\$ 0.4$}};
+            \node at (6, 0.5) {\textcolor{blue}{$\$ 0.35$}};
             \node at (6,-0.3) {\textcolor{blue}{$\tau_2$}};
             \node at (8,-0.3) {\textcolor{blue}{$\tau_1 + T$}};
             \node at (10,-0.3) {$2T$};
@@ -300,6 +297,50 @@
             \draw[blue, decorate, decoration={zigzag,segment length=1mm, amplitude=.5mm}] (3,0) -- (4,0);
             \draw[blue] (4,0) -- (6,0);
             \draw[blue, dotted] (6,0) -- (10,0);
+        \end{tikzpicture}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Theoretical Model}
+    \framesubtitle{Example of $R_{0.75, 0.1}$}
+    Assume $K=30$ and $S_t = 31$ for $t \in [0, \tau_1]$, \textcolor{red}{$S_t = 29$ for $t \in [\tau_1, 2T]$}
+    \vspace*{40pt}
+
+    \begin{figure}[!h]
+        \begin{tikzpicture}
+            
+            % Draw ticks
+            \draw (0,-0.1) -- (0,0.1) node[anchor=south] {};
+            \draw (1,-0.1) -- (1,0.1) node[anchor=south] {};
+            \draw (3,-0.1) -- (3,0.1) node[anchor=south] {};
+            \draw (4,-0.1) -- (4,0.1) node[anchor=south] {};
+            \draw (5,-0.1) -- (5,0.1) node[anchor=south] {};
+            %\draw (6,-0.1) -- (6,0.1) node[anchor=south] {};
+            \draw (8,-0.1) -- (8,0.1) node[anchor=south] {};
+            \draw (10, -0.1) -- (10, 0.1) node[anchor=south] {};
+            
+            % Add labels
+            \node at (0,-0.3) {0};
+            \node at (1,-0.3) {$t_v$};
+            \node at (3,-0.3) {\textcolor{blue}{$\tau_1$}};
+            \node at (3, 1) {$\$ 0.75$ +};
+            \node at (3, 0.5) {\textcolor{blue}{$0.35$ RN}};
+            \node at (4,-0.3) {\textcolor{blue}{$\tau_1 + t_v$}};
+            \node at (5,-0.3) {$T$};
+            %\node at (6, 0.5) {\textcolor{blue}{$\$ 0.35$}};
+            %\node at (6,-0.3) {\textcolor{blue}{$\tau_2$}};
+            \node at (8, 0.5) {\textcolor{blue}{$\$ 0$}};
+            \node at (8,-0.3) {\textcolor{blue}{$\tau_1 + T$}};
+            \node at (10,-0.3) {$2T$};
+            
+            % Draw colored lines and labels
+            \draw[black, decorate, decoration={zigzag,segment length=1mm, amplitude=.5mm}] (0,0) -- (1,0);
+            \draw[black] (1,0) -- (3,0);
+            \draw[blue, decorate, decoration={zigzag,segment length=1mm, amplitude=.5mm}] (3,0) -- (4,0);
+            \draw[blue] (4,0) -- (8,0);
+            \draw[blue, dotted] (8,0) -- (10,0);
         \end{tikzpicture}
     \end{figure}
 
@@ -324,6 +365,7 @@
         \item $ u_\rho (W_t, a_t) = \frac{W_t^{1-\rho}}{1-\rho} - \frac{1}{2}a_t^2 $
         \item $ U_\rho (a, \sigma) = \EX \Biggl[r \int_{0}^{T} e^{-rt} u_\rho (W_t, a_t) dt \Biggr]$
         \vspace*{10pt}
+        \pause
         \item \textbf{Chooses $ \boldsymbol{(a, \sigma, \theta) \in \{a_L, a_H\} \times \{\sigma_L, \sigma_H\} \times \{\theta_{RN}, \theta_{R_{\alpha, \gamma}} \} } $}
     \end{itemize}
     \note[item]{Coles, Daniel, and Naveen (2006) argues this effect may not be linear, as the inclusion of more and more performance-based and equity- based compensation in the executive’s pay package has led to a higher sensitivity of the executive’s wealth to the stock price, which in turn has led to a higher risk-taking behavior by the executive.}
@@ -341,6 +383,7 @@
             \item In principle, $\mu \ne \lambda$
         \end{itemize}
         \vspace*{10pt}
+        \pause
         \item \textbf{Chooses} $\boldsymbol{(\alpha, \gamma)}$ \textbf{for} $\boldsymbol{R_{\alpha, \gamma}}$
     \end{itemize}
     \note[item]{$\beta$ measures how relevant it is for the firm to maximize the stock price at time T --- e.g., firms with large capitalization may have higher betas}
@@ -355,7 +398,7 @@
         \textrm{s.t.}       \quad & a \in \{ a_L, a_H \} \\
                             \quad & \sigma \in \{ \sigma_L, \sigma_H \} \\
                             \quad & \theta \in \{\theta_{RN}, \theta_{R_{\alpha, \gamma}} \} \\
-                            \quad & U_\rho(a, \sigma, \theta) \ge \hat{U}  \\
+                            %\quad & U_\rho(a, \sigma, \theta) \ge \hat{U}  \\
         \end{aligned}
     \end{equation*}
 \end{frame}
@@ -449,7 +492,9 @@
             \item $E_c$ such that $U_\rho(n_s, n_o, c) = U_\rho(n_S, 0, c + E_c)$
         \end{itemize} 
         \vspace*{5pt}
-        \item \textbf{ $\Rightarrow$ $\boldsymbol{R_{\alpha, \gamma}}$ is always more expensive than RN for the firm, increasingly in $\boldsymbol{\alpha}$ and $\boldsymbol{\gamma}$ }
+        \pause
+        \item \textbf{ $\Rightarrow$ $\boldsymbol{R_{\alpha, \gamma}}$ is always more expensive than RN for the firm, decreasingly in $\boldsymbol{\alpha}$ and increasingly in $\boldsymbol{\gamma}$ }
+        \pause
         \item \textbf{ $\Rightarrow$ Executive value is always lower than firm value, but more stable for 50-50 agent}
         \begin{itemize}
             \item May be slightly under-estimated because utility-based method does not predict early exercise \citep{grasselli2009risk}
@@ -458,45 +503,6 @@
     \note[item]{rn_eso is lower bound for r_eso, bc the latter has also non-negative time value.}
     \note[item]{Note that the value of adding $\gamma$ is two-fold: first, as a proper exercise compensation since the executive gets stock and options worth $(1+\gamma)$ the number of options she previously held, and second as time value recovered. Therefore, we propose the valuation methodology in snippet \ref*{fig:val_r} for our R option which embeds this double edge provided by $\gamma$: \verb|1+gamma*(S - K)| captures the first effect, \verb|(1-alpha+gamma)*(black_scholes(S,K,T,r,sigma)-(S-K))| the second.}
 \end{frame}
-
-\begin{comment}
-\begin{frame}{1. Qualitative Analysis}
-    \framesubtitle{Binomial tree with $n=2$}
-    \begin{figure}[!h]
-        \vspace*{10pt}
-        \centering
-        \begin{tikzpicture}[
-            roundnode/.style={circle, draw=black, thick, minimum size=6mm},
-            squarednode/.style={rectangle, draw=black, thick, minimum size=6mm},
-            scale=1.2
-          ]
-          
-          %Nodes
-          \node[roundnode] at (0,0) (A) {$S_0$};
-          \node[squarednode] at (-1.5,-1.5) (B) {$S_0 u$};
-          \node[squarednode] at (1.5,-1.5) (C) {$S_0 d$};
-          \node[squarednode] at (-3,-3) (D) {$S_0 u^2$};
-          \node[squarednode] at (0,-3) (E) {$S_0 ud$};
-          \node[squarednode] at (3,-3) (F) {$S_0 d^2$};  
-          
-          %Lines
-          \draw[->] (A) -- (B) node[midway,above left] {$q$};
-          \draw[->] (A) -- (C) node[midway,above right] {$1-q$};
-          \draw[->] (B) -- (D) node[midway,above left] {$q$};
-          \draw[->] (B) -- (E) node[midway,above right] {$1-q$};
-          \draw[->] (C) -- (E) node[midway,above left] {$q$};
-          \draw[->] (C) -- (F) node[midway,above right] {$1-q$};
-          
-          %Labels
-          \node[right] at (4,0) {$n=0$};
-          \node[right] at (4,-1.5) {$n=1$};
-          \node[right] at (4,-3) {$n=2$};
-        
-        \end{tikzpicture}
-        %\caption{Representation of the binomial tree with n=2} 
-    \end{figure}
-\end{frame}
-\end{comment}
 
 \begin{frame}{1. Qualitative Analysis}
     \framesubtitle{Incentives}
@@ -592,7 +598,7 @@
             \rowcolor{gray!30} & & & \multicolumn{4}{c|}{$\rho_L$} & \multicolumn{4}{c|}{$\rho_H$} & & \\
             \rowcolor{gray!30} \multirow{-2}{*}{Best} & \multirow{-2}{*}{$\alpha^*$} & \multirow{-2}{*}{$\gamma^*$} & $\theta^*$ & $a^*$ & $\sigma^*$ & $U$ & $\theta^*$ & $a^*$ & $\sigma^*$ & $U$ & \multirow{-2}{*}{$\EX[S_T]$} & \multirow{-2}{*}{$\Pi$} \\
             \hline &&&&&&&&&&&& \\
-            1 & A & $\Gamma$ & RN & 1 & 0/0.01 & 222.42 & RN & 1 & 0/0.01 & 24.73 & 222 & 209.39 \\ &&&&&&&&&&&& \\
+            1 & A & $\Gamma$ & RN & 1 & 0.01 & 222.42 & RN & 1 & 0.01 & 24.73 & 222 & 209.39 \\ &&&&&&&&&&&& \\
             \hline &&&&&&&&&&&& \\
             2 & A & $\Gamma$ & RN & 0 & 0.01 & 296.61 & RN & 0 & 0.01 & 98.91 & 30 & 17.71 \\ &&&&&&&&&&&& \\
             \hline &&&&&&&&&&&& \\
@@ -625,12 +631,17 @@
 \begin{frame}{Discussion of Results}
     \begin{itemize}
         \item Both approaches suffer from \textbf{limited computational capacity}
+        \pause
         \item Contrasting results on incentives 
         \begin{itemize}
+            \pause
             \item Qualitative analysis does \textbf{not} account for cost of effort
+            \pause
             \item But, cost of volatility is accounted for (maybe overestimated)
         \end{itemize}
+        \pause
         \item \textbf{$\boldsymbol{R_{\alpha, \gamma}}$ is never chosen in equilibrium}, which is (surprising and) robust
+        \pause
         \item But, in numerical simulations, firm's profit difference is never too high
     \end{itemize}
 \end{frame}
@@ -638,12 +649,15 @@
 \begin{frame}{Future Research}
     \begin{itemize}
         \item Limitations of our analysis: block exercise, employee cannot leave firm, no stopping time, no firm preference on volatility
+        \pause
         \item $\Rightarrow$ \textbf{Solve algebraically}: requires complex stochastic machinery + no guarantee that closed-form solution exists
         \item $\Rightarrow$ \textbf{Different utility function for firm (and agent)}: allows to account for private firms
         \begin{itemize}
             \item Of the 6,322 companies with an ESOP, 5,866 are private while only 456 are publicly traded \citep{nceoNCEOHome}
         \end{itemize}
         %\item $\rightarrow$ Explore role of ambiguity aversion
+        \pause
+        \item Some (older) \textbf{literature relies on strong assumptions on parameters, and small changes change significantly the results}
     \end{itemize}
     \note[item]{For example, Sannikov(2008) solves by means of a system of coupled forward-backward stochastic differential equations, which are then solved numerically}
 \end{frame}
@@ -651,12 +665,13 @@
 \begin{frame}{Take-home}
     \begin{itemize}
         \item We proposed a new type of option ($R_{\alpha, \gamma}$) for which we developed a novel valuation methodology
-        \item Some (older) \textbf{literature relies on strong assumptions on parameters, and small changes change significantly the results}
+        \pause
         \item  \textbf{RN is always chosen in equilibrium}
+        \pause
         \item There is \textbf{difference between objective and subjective valuations} (\citet{meulbroek2001efficiency}, \citet{ingersoll2006valuing}) \textbf{and incentives}
         \begin{itemize}
             \item But, subjective incentive is not always lower than the predicted objective incentives
-            \item $\Rightarrow$ Grant options slightly OTM for highest incentive
+            \item $\Rightarrow$ Grant/reset ESOs slightly ITM/OTM for highest incentive
         \end{itemize}        
         %\item But firm's profit difference is never too high, which leaves some possibility for further research
     \end{itemize}
@@ -672,6 +687,7 @@
 
 
 \appendix
+%\section*{Bibliography}
 \begin{frame}[allowframebreaks]{Bibliography}
     %\nocite{*}
     \printbibliography
@@ -680,7 +696,101 @@
 
 
 %%%ADDITIONAL SLIDES
+\section*{Appendix}
+\begin{frame}[fragile]{Valuation of RN option}
+    \begin{figure}[H]
+        \begin{lstlisting}[breaklines, basicstyle=\ttfamily\scriptsize]
+        if not vested: 
+            C[j] = disc * (q*C_up + (1-q)*C_down)
+        elif vested & (S>=K*m):            
+            C[j] = S - K
+        elif vested & (S<K*m):
+            C[j] = disc * (q*C_up + (1-q)*C_down)
+        \end{lstlisting}
+        %\caption{Valuation of RN option}
+     \label{fig:val_rn}
+    \end{figure}
+\end{frame}
 
+
+\begin{frame}[fragile]{Valuation of $R_{\alpha, \gamma}$ option}
+    \begin{figure}[h]
+        \begin{lstlisting}[breaklines, basicstyle=\ttfamily\scriptsize] 
+        if not vested:                         
+            C[j] = disc * (q*C_up + (1-q)*C_down)
+        elif vested & (S >= K*m):                
+            C[j] =  (1+gamma)*(S - K) + 
+                    (1-alpha+gamma)*(black_scholes(S,K,T,r,sigma)-(S-K))
+        elif vested & (S < K*m):  
+            C[j] = disc * (q*C_up + (1-q)*C_down)
+        \end{lstlisting}
+        %\caption{Valuation of a generic $R_{\alpha, \gamma}$ option}
+        \label{fig:val_r}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Valuation of RN option in a utility maximization setting}
+    \begin{figure}[H]
+        \begin{lstlisting}[breaklines, basicstyle=\ttfamily\scriptsize]
+        cont_value = q_u * U[j+1,i+1] + q_d*U[j,i+1] + q_m*U[j,i]
+        excs_value = util(c*((1+r/N)**n)+ n_s*S[j,n] + 
+                        n_o*max(0, S[j,n]-K), rho)
+        
+        if vested:
+            U[j,i] = max(cont_value, excs_value)
+        else: 
+            U[j,i] = cont_value
+        \end{lstlisting}
+        %\caption{Valuation of RN option in a utility maximization framework}
+        \label{fig:ce_exec_rn}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{Valuation of $R_{\alpha, \gamma}$ option in a utility maximization setting}
+    \begin{figure}[H]
+        \begin{lstlisting}[breaklines, basicstyle=\ttfamily\scriptsize]
+        cont_value = q_u * U[j+1,i+1] + q_d*U[j,i+1] + q_m*U[j,i]
+        excs_value = util(  c*((1+r/N)**n) +              
+                            n_s*S[j,n] + 
+                            max(0, 
+                                n_o*(alpha*(S[j,n]-K)) + 
+                                CE_rn_trinomial(S[j,n],S[j,n],T,v,r,N,sigma,rho,n_s,n_o*(1-alpha+gamma),c*((1+r/N)**n))), rho)
+
+        if vested:
+            U[j,i] = max(cont_value, excs_value)
+        else: 
+            U[j,i] = cont_value
+        \end{lstlisting}
+        \label{fig:ce_exec_r}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Firm Cost and Executive Value for different values of $\alpha$}
+
+    \begin{table}[H]
+        \centering
+        \resizebox{\textwidth}{!}{%
+        \begin{tabular}{ccccccccccc}
+    
+            \hline
+            \multirow{2}{*}{$\alpha$} & \multirow{2}{*}{$\gamma$} & \multirow{2}{*}{Firm Cost} & \multicolumn{3}{c}{Executive Value} & \multirow{2}{*}{\makecell{Firm Cost \\ Ratio}} & \multicolumn{3}{c}{Exec. Value Ratio} & \multirow{2}{*}{Ptf}\\
+            & & & $\rho = 1.5$ & $\rho = 2$ & $\rho = 2.5$ & & $\rho = 1.5$ & $\rho = 2$ & $\rho = 2.5$ & \\
+            \hline
+            1 & 0 & 12.44 & 5.567 & 2.303 & -0.957 & 1 & 1 & 1 & 1 & 67-33 \\
+            0.75 & 0 & 13.58 & 5.533 & 2.237 & -1.046 & 1.092 & 0.994 & 0.971 & 1.093 & 67-33 \\
+            0.5 & 0 & 14.72 & 5.418 & 2.141 & -1.128 & 1.184 & 0.973 & 0.930 & 1.178 & 67-33 \\
+            1 & 0 & 12.44 & 9.742 & 7.865 & 5.992 & 1 & 1 & 1 & 1 & 50-50 \\
+            0.75 & 0 & 13.58 & 9.750 & 7.855 & 5.964 & 1.092 & 1.001 & 0.999 & 0.995 & 50-50 \\
+            0.5 & 0 & 14.72 & 9.611 & 7.728 & 5.848 & 1.184 & 0.987 & 0.983 & 0.976 & 50-50 \\
+            \hline
+        
+        \end{tabular}%
+        }
+    
+    \end{table}
+
+\end{frame}
 
 
 
